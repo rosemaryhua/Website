@@ -1,0 +1,9 @@
+prod:
+  password: 591eced275ef0fe47e06cb8a95e1a23c
+  theme_id: "79802990678"
+  store: revolution-robotics.myshopify.com
+
+dev:
+  password: 591eced275ef0fe47e06cb8a95e1a23c
+  theme_id: "79839592534"
+  store: revolution-robotics.myshopify.com

@@ -1,1 +1,2810 @@
-{"current":{"color_body_bg":"#252526","color_body_text":"#ffffff","color_price":"#d1ba98","color_savings_text":"#ff6565","color_borders":"#2b2a27","color_button":"#9f8561","color_button_text":"#ffffff","color_cart_dot":"#9f8561","color_small_image_bg":"#000000","color_large_image_bg":"#111111","color_header":"#1b1b1c","color_header_text":"#ffffff","color_announcement":"#cf2424","color_announcement_text":"#fff","color_footer":"#1b1b1c","color_footer_text":"#ffffff","color_drawer_background":"#000000","color_drawer_text":"#ffffff","color_drawer_border":"#2b2a27","color_drawer_button":"#9f8561","color_drawer_button_text":"#ffffff","color_modal_overlays":"#67635d","color_image_text":"#fff","color_image_overlay":"#000","color_image_overlay_opacity":15,"color_image_overlay_text_shadow":30,"type_header_font_family":"fjalla_one_n4","type_header_spacing":"150","type_header_base_size":40,"type_header_line_height":1.2,"type_header_capitalize":true,"type_headers_align_text":false,"type_base_font_family":"itc_conduit_n4","type_base_spacing":"50","type_base_size":18,"type_base_line_height":1.4,"type_body_align_text":true,"type_navigation_style":"heading","type_navigation_size":18,"type_product_style":"heading","type_collection_font":"heading","type_collection_size":23,"button_style":"angled","icon_weight":"5px","icon_linecaps":"miter","vendor_enable":false,"sku_enable":false,"quantity_enable":false,"variant_labels_enable":true,"variant_type":"button","enable_payment_button":true,"inventory_enable":false,"product_save_amount":true,"product_save_type":"dollar","product_zoom_enable":false,"quick_shop_enable":true,"quick_shop_text":"Quick view","product_grid_image_size":"square","product_hover_image":false,"product_color_swatches":false,"collection_color_swatches":false,"swatch_style":"round","product_video_width":"1280","product_video_height":"720","product_video_style":"muted","product_content_1":"","product_content_collapse_1":false,"product_content_2":"","product_content_collapse_2":true,"product_content_3":"","product_content_collapse_3":true,"product_contact":false,"product_contact_title":"Ask a question","product_contact_show_phone":false,"enable_product_reviews":true,"reviews_layout":"expandable","collection_grid_style":"overlaid-box","collection_grid_shape":"landscape","collection_grid_image":"collection","collection_grid_text_align":"bottom-center","collection_grid_tint":"#000000","collection_grid_opacity":10,"collection_grid_gutter":true,"cart_type":"drawer","cart_additional_buttons":false,"cart_notes_enable":false,"cart_terms_conditions_enable":false,"cart_terms_conditions_link":"","enable_currencies":true,"currency_format":"money_with_currency_format","supported_currencies":"USD HUF CNY TWD EUR GBP CAD INR AUD JPY","default_currency":"USD","social_facebook_link":"https:\/\/www.facebook.com\/RevoRobotics\/","social_twitter_link":"https:\/\/twitter.com\/RevoRobotics","social_pinterest_link":"","social_instagram_link":"https:\/\/www.instagram.com\/revorobotics\/","social_snapchat_link":"","social_tumblr_link":"","social_linkedin_link":"https:\/\/www.linkedin.com\/company\/revolutionrobotics\/","social_youtube_link":"https:\/\/www.youtube.com\/channel\/UC24eVQPZJ35fJF4JHlDsvNg","social_vimeo_link":"","share_facebook":true,"share_twitter":true,"share_pinterest":true,"homepage_social_image":"","favicon":"shopify:\/\/shop_images\/rrf-mark-red-transparent-bg.png","show_breadcrumbs":false,"search_type":"product,article,page","checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"small","checkout_body_background_image":"","checkout_body_background_color":"#000000","checkout_input_background_color_mode":"transparent","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#000000","checkout_heading_font":"Helvetica Neue","checkout_body_font":"Helvetica Neue","checkout_accent_color":"#ae9878","checkout_button_color":"#ae9878","checkout_error_color":"#ff6d6d","breadcrumb":true,"color_image_2":"#cf2424","color_image_2_opacity":0,"color_image_1":"#6d1414","color_image_1_opacity":0,"type_accent_style":"body","type_accent_bold":true,"type_accent_capitalize":true,"type_button_font":"heading","type_button_capitalize":false,"type_header_accent_transform":true,"type_base_accent_transform":true,"collection_grid_font":"heading","color_image_bg":"#000000","color_sale_tag":"#990000","color_input":"#ffffff","checkout_banner_background_color":"#fff","checkout_call_to_action_color":"#a26b25","sections":{"header":{"type":"header","blocks":{"1524768779513":{"type":"logo","settings":{"logo":"shopify:\/\/shop_images\/rrf-wide-white-transparent-bg_d413e50b-95a2-41b2-9a81-25a41108bde8.png","logo-inverted":"","desktop_logo_width":200,"mobile_logo_width":140}}},"block_order":["1524768779513"],"settings":{"main_menu_link_list":"main-menu","main_menu_alignment":"left-center","header_style":"sticky","sticky_index":true,"sticky_collection":false,"header_search_enable":false,"toolbar_menu":"","toolbar_social":true,"toolbar_currencies":false,"announcement_compact":false,"announcement_above_header":false}},"footer":{"type":"footer","blocks":{"1525444454442":{"type":"logo_social","settings":{"logo":"shopify:\/\/shop_images\/rrf-wide-white-transparent-bg.png","desktop_logo_height":50,"container_width":95}},"1494292487693":{"type":"newsletter","settings":{"show_footer_title":true,"title":"Sign up and stay in touch","text":"<p>Subscribe to get special offers, competition information, and free educational materials.<\/p>","container_width":25}},"1565054401376":{"type":"menu","settings":{"show_footer_title":false,"menu":"footer","container_width":15}}},"block_order":["1525444454442","1494292487693","1565054401376"],"settings":{"show_payment_icons":true,"show_copyright":true,"copyright_text":""}},"collection-template":{"type":"collection-template","settings":{"subcollection_style":"none","subcollections_per_row":5,"per_row":5,"rows_per_page":3}},"product-template":{"type":"product-template","settings":{"image_position":"right","image_size":"large","thumbnail_position":"beside","description_style":"default","social_enable":true}},"article-template":{"type":"article-template","settings":{"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true,"blog_show_rss":false,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"blog_show_excerpt":false,"blog_image_size":"wide"}},"product-sections-template":{"type":"product-sections-template","blocks":{"product-background-image-text":{"type":"background-image-text","settings":{"subtitle":"Impressive","title":"Large image with text box","text":"<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>","button_label":"","button_link":"shopify:\/\/collections\/all","image":"","alignment":"top left","color_border":"#3a6815","layout":"right","height":550,"parallax":false}},"product-text-columns":{"type":"text-columns","settings":{"title":"","align_text":"center","enable_image_1":true,"image_1":"","image_width_1":650,"title_1":"Example title","text_1":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_1":"","button_link_1":"","enable_image_2":true,"image_2":"","image_width_2":650,"title_2":"Example title","text_2":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_2":"","button_link_2":"","enable_image_3":true,"image_3":"","image_width_3":650,"title_3":"Example title","text_3":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_3":"","button_link_3":"","enable_image_4":true,"image_4":"","image_width_4":650,"title_4":"Example title","text_4":"<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>","button_label_4":"","button_link_4":""}}},"block_order":["product-background-image-text","product-text-columns"],"settings":{"image_position":"right","image_size":"large","thumbnail_position":"below","description_style":"default","social_enable":true,"collection_links_enable":true}},"page-sections-template":{"type":"page-sections-template","settings":{"page_title_enable":true,"page_content_enable":false}},"newsletter-popup":{"type":"newsletter-popup","settings":{"mode":"disabled","popup_seconds":5,"popup_days":30,"popup_title":"Sign up and save","popup_image":"","popup_text":"<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>","close_text":"No thanks","enable_newsletter":true,"button_label":"Optional button","button_link":"","enable_button":false}},"collection-header":{"type":"collection-header","settings":{"enable":false,"collection_image_enable":false,"parallax":false}},"collection-sidebar":{"type":"collection-sidebar","settings":{"enable_sidebar":false,"filter_style":"sidebar","tags_combine":false,"enable_sort":false}},"1525899982112":{"type":"instagram","settings":{"title":"","username":"@revorobotics","client_id":"13361314887.2a46ab3.ba968d23d5bb4004a7e462bc06bce6cd","count":"2","full_width":true,"divider":false}},"1525969132569":{"type":"promo-grid","blocks":{"1525969870126":{"type":"product","settings":{"product":"revolution-robotics-challenge-kit","subheading":"JUST RELEASED","heading":"The new 2019 challenge kit","textarea":"As former educators and parents of children in robotics programs, we wanted to design a kit adaptable to various age groups, robotics challenges, and learning levels. Presenting the new Challenge Kit - a single kit with limitless design possibilities!","link_label":"Buy now","label":"New","enable_price":true,"width":"100","text_size":100,"color_tint":"#ffbdbd","color_tint_opacity":0,"framed":true}}},"block_order":["1525969870126"],"settings":{"full_width":false,"gutter_size":5,"space_above":false,"space_below":false}},"1526048519234":{"type":"newsletter","settings":{"title":"Follow our progress!","text":"<p>Subscribe to get special offers, competition information, and free educational materials.<\/p>","color_background":"#171615","color_text":"#ffffff"}},"1526048620689":{"type":"blog-posts","settings":{"title":"Our blog","blog":"news","post_limit":3,"blog_show_tags":false,"blog_show_date":true,"blog_show_comments":false,"blog_show_author":false,"view_all":true,"blog_image_size":"wide","divider":false}},"collection-promotions":{"type":"collection-promotions","blocks":{"1526501090474":{"type":"advanced","settings":{"promo_collection":"","subheading":"Limited time","heading":"Revolution Robotics challenge kit","textarea":"Pre-order the Revolution Robotics Challenge Kit before it's too late!","cta_text1":"buy now","cta_link1":"shopify:\/\/products\/revolution-robotics-challenge-kit","cta_text2":"","cta_link2":"","image":"shopify:\/\/shop_images\/Girl_working_on_robot_fe95b14f-9255-43b8-ac2b-e0e29f922863.png","video_url":"","width":"50","height":400,"text_size":120,"text_align":"vertical-center horizontal-center","focal_point":"center","color_accent":"#000000","boxed":false,"framed":true}},"1526501360047":{"type":"banner","settings":{"promo_collection":"","heading":"get your kit today","text":"Don't miss out on our kit that was 100% funded on Kickstarter!","link":"shopify:\/\/products\/revolution-robotics-challenge-kit","label":"Buy now","image":"","color_tint":"#e6e6e5","color_tint_opacity":20,"framed":false}}},"block_order":["1526501090474","1526501360047"],"settings":{"gutter_size":20}},"1526481284428":{"type":"featured-content","settings":{"title":"Revolution Robotics Foundation","text":"<p>Revolution Robotics creates robotics kits, challenges, and competitions that develop critical 21st century work skills, while inspiring kids around the world to pursue degrees and careers in STEM.<\/p>","align_text":"center","narrow_column":true,"enlarge_text":true,"divider":false}},"footer-promotions":{"type":"footer-promotions","settings":{"hide_homepage":true,"image_size":"wide"}},"1565037866172":{"type":"hero-video","settings":{"title":"BE A \nSTEM HERO.","title_size":80,"subheading":"","link_text":"watch the video","link":"https:\/\/www.youtube.com\/watch?v=97ulgGtGrEg&t=3s","color_accent":"#ffffff","text_align":"vertical-center horizontal-left","video_url":"https:\/\/www.youtube.com\/watch?v=PTHvVFFbsco&feature=youtu.be","section_height":"650px","mobile_height":"auto"}},"1565040633527":{"type":"text-columns","blocks":{"1565040633527-0":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/programs.png","image_width":370,"title":"Programs","text":"<p>Our story-based learning challenges are available to kids, teachers, and team mentors through our free mobile app. The step-by-step challenge guides provide a full curriculum of fun learning activities empowering any parent or teacher to start and mentor a robotics team. Want to help test our mobile app before it goes public?<\/p>","button_label":"Request to be a tester","button_link":"shopify:\/\/pages\/contact-us"}},"1565040633527-1":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/platform.png","image_width":370,"title":"Platform","text":"<p>Today's proprietary robotics platforms are too complex and too expensive for most kids and schools.&nbsp; We've created a revolutionary open-source platform using standard components to drastically reduce the cost and complexity of starting a robotics program.&nbsp;<\/p>","button_label":"Learn more","button_link":"https:\/\/www.kickstarter.com\/projects\/revorobotics\/revolution-robotics-affordable-and-fun-open-source-robot-kit"}},"1565040633527-2":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/Screen_Shot_2019-08-14_at_2.33.19_PM_ab52e3ad-4b95-47bb-8345-15b2028128f2.png","image_width":370,"title":"Participation","text":"<p>We envision a world where more kids participate in robotics than any other organized sport. Where participation is accessible to kids from any socio-economic background and success doesn't depend on having an engineer for a coach or thousands of dollars of extra advanced parts.&nbsp;<\/p>","button_label":"Start a team","button_link":"shopify:\/\/pages\/contact-us"}}},"block_order":["1565040633527-0","1565040633527-1","1565040633527-2"],"settings":{"title":"Our Strategy","align_text":"center","divider":false}},"1565042314523":{"type":"background-image-text","settings":{"subtitle":"Kickstarter Update","title":"THANK YOU for helping us reach 100%","text":"<p>The Revolution Robotics Kickstarter campaign is 100% funded, but it's not too late to become a STEM hero by purchasing a Challenge Kit for a young person or school near you.<\/p>","button_label":"Buy Now","button_link":"shopify:\/\/products\/revolution-robotics-challenge-kit","image":"shopify:\/\/shop_images\/IMG_1213_1.JPG","focal_point":"center","color_border":"#f4f4f4","layout":"right","height":550,"framed":true,"parallax":true}},"page-faq-template":{"type":"page-faq-template","blocks":{"page-faq-template-0":{"type":"rich-text","settings":{"title":"Shipping policy","text":"<p>Have questions about shipping &amp; kit fulfillment? Check out some frequently answered questions below!<\/p>","align_text":"left"}},"page-faq-template-1":{"type":"question","settings":{"title":"Where do you ship to?","text":"<p>The Revolution Robotics program is meant to be an international educational experience and we are prepared to ship robots anywhere in the world. Since all of the charging cables included in the kit are universal USB cables, there are no concerns with outlet adapters.<\/p>"}},"page-faq-template-2":{"type":"question","settings":{"title":"How long will my order take?","text":"<p>Our Revolution Robotics Challenge Kits are available via pre-order now. The first batch of kits will be fulfilled in November 2019.&nbsp;<\/p>"}},"page-faq-template-3":{"type":"rich-text","settings":{"title":"Challenge kit Details","text":"<p>Take a look at this section for more technical details about our revolutionary 2019 Challenge Kit!<\/p>","align_text":"left"}},"1565059553005":{"type":"question","settings":{"title":"How is the Revolution Robotics Challenge Kit different from other educational robotics kits?","text":"<p>The Challenge Kit is designed to be open source, affordable and easier for students and adults alike to use. Lower cost, mobile control and programming, free online resources and activities, and open source community support all help make the Challenge Kit an incredible option for educational and competitive robotics.<\/p>"}},"1565059586745":{"type":"question","settings":{"title":"What is the age range for the Challenge Kit?","text":"<p>While the Revolution Robotics Challenge Kit is suitable for any age, the kit will be used for competitions hosted for students ages 8 - 13.<\/p>"}},"1565059612466":{"type":"question","settings":{"title":"Is the Revolution Robotics Challenge Kit suitable for someone who has never built or programmed a robot previously?","text":"<p>Yes. The Challenge Kit is suitable for any skill level and anyone over the age of 8. Novices can follow the provided instructions to assemble their first robot and then use the Revolution app's drag and drop features to configure, program and control their robot. Experienced robot builders can enjoy the opportunity of building their own creation and then accessing the Python based coding in the app to write their code.<\/p>"}},"page-faq-template-4":{"type":"question","settings":{"title":"Which Raspberry Pi model is used for the Revolution robot?","text":"<p>We are using the Raspberry Pi Zero W, a $10 micro-computer with build in bluetooth and wifi, in our Robot Brain. The USB and HDMI ports are accessible to makers who wish to extend their robot&rsquo;s capabilities with third-party accessories.<\/p>"}},"1565059344300":{"type":"question","settings":{"title":"Does the Revolution Robotics Challenge Kit come with a controller?","text":"<p>Any Android or iOS smartphone or tablet can be used to configure, program, and control the robot through our free app. The Revolution Robotics Challenge Kit does not require you to spend additional money for a robot controller.<\/p>"}},"1565059397525":{"type":"question","settings":{"title":"Does the Revolution Challenge Kit robot have the capability to be programmed for autonomous control?","text":"<p>Yes, most definitely. Coding and programming are integral parts of the Revolution Robotics experience. More important, beginners can use the Blockly adapted programming option while more advanced coders can enter into the actual code, based on Python, to achieve more advanced operations. Also, it is important to remember that ours is an open source platform and users can choose from many options to program and use their robot kits.<\/p>"}},"1565059408551":{"type":"question","settings":{"title":"Is the app available for both the Android and iOS operating systems?","text":"<p>Yes, the Revolution Robotics App works on iOS and Android smartphones and tablets compatible with Bluetooth Low Energy (BLE).<\/p>"}},"1565059516092":{"type":"question","settings":{"title":"What is the power source for the Revolution robot?","text":"<p>The robot's brain is powered by a rechargeable battery built into the brain. Six (6) AA batteries are the power source for the robot's peripherals. The Revolution Robotics Challenge Kit comes with six (6) rechargeable batteries and a charger.<\/p>"}},"1565059431841":{"type":"rich-text","settings":{"title":"Programs & Competitions","text":"<p>Have questions about our mobile challenges &amp; annual open competitions? Check out some answers here!<\/p>","align_text":"left"}},"1565059505067":{"type":"question","settings":{"title":"Is there additional information about the Online Challenge that is being offered as part of the rewards? What will the prizes be?","text":"<p>Once the kits are shipped late fall 2019, the Revolution Robotics Foundation will host an online challenge exclusively for backers of the Kickstarter campaign. All backers will be notified by email about the challenge. Backers will post videos and pictures of their robots online (such as on our website, in our forum, on our youtube channel, etc...). Prizes have not been determined, but if you have some ideas about prizes you would like to see, please feel free to email us at kickstarter@revolutionrobotics.org.<\/p>"}},"1565059679775":{"type":"rich-text","settings":{"title":"Support & Operations","text":"<p>Need help navigating the mobile app or building your challenge kit? Check this section for answers!<\/p>","align_text":"left"}},"1565059716180":{"type":"question","settings":{"title":"Where can I get technical questions answered after my Revolution Robotics kit arrives?","text":"<p>Email us at tech@revolutionrobotics.org. Also, customers will have two additional methods to get in touch with the Revolution Robotics staff. First, customers can visit our \"Contact Us\" web page and send us a message through our online web form. Second, customers will be able to contact staff for technical support through our online users forum.<\/p>"}}},"block_order":["page-faq-template-0","page-faq-template-1","page-faq-template-2","page-faq-template-3","1565059553005","1565059586745","1565059612466","page-faq-template-4","1565059344300","1565059397525","1565059408551","1565059516092","1565059431841","1565059505067","1565059679775","1565059716180"],"settings":{"page_title_enable":false,"page_content_enable":false}},"page-contact-template":{"type":"page-contact-template","blocks":{"page-contact-template-0":{"type":"contact-form","settings":{"title":"","show_phone":true,"narrow_column":true}}},"block_order":["page-contact-template-0"],"settings":{"page_title_enable":true,"page_content_enable":true}},"rosemaryhua-our-team":{"type":"rosemaryhua-our-team","blocks":{"1565070076637":{"type":"text-columns","settings":{"title":"board of directors","align_text":"center","enable_image_1":true,"image_1":"shopify:\/\/shop_images\/jared.jpg","image_width_1":250,"title_1":"jared schrieber","text_1":"<p><strong>Co-Founder &amp; President<\/strong><\/p>\n<p>Superpower: Inspiring Others<\/p>\n<p>Jared is a serial entrepreneur, start-up investor, and board member. He is the Co-founder, CEO, and Chairman of InfoScout as well as Co-founder of the Pat Tillman Foundation.<\/p>\n<p>As a former algebra teacher, football coach, and athletic director, Jared has always had a passion for both STEM education and competitive sports. More recently, he turned his garage into a lab where he mentored his kids' robotics teams.<\/p>","button_label_1":"","button_link_1":"","enable_image_2":true,"image_2":"shopify:\/\/shop_images\/Screen_Shot_2019-08-06_at_3.17.29_PM.png","image_width_2":290,"title_2":"Rosemary Hua","text_2":"<p><strong>Chief Executive Officer &amp;&nbsp;Board Director<\/strong><\/p>\n<p>Superpower: Having a Bias for Action<\/p>\n<p>Rosemary Hua is a tech industry leader and seasoned non-profit executive with more than 10 years of experience leading a global charity. She is the Co-founder of Empathy FX International which builds and maintains schools in Ghana. In the corporate world, Rosemary is a seasoned leader in the eCommerce industry, working at both retail giants Walmart and Amazon.&nbsp;With a background dually rooted in education non-profit and tech industries, Rosemary is well positioned to advance the mission of Revolution Robotics and to inspire students around the world to pursue STEM degrees and careers.&nbsp;<\/p>\n<p><\/p>","button_label_2":"","button_link_2":"","enable_image_3":true,"image_3":"shopify:\/\/shop_images\/JMorrellaProfile.png","image_width_3":250,"title_3":"Jason Morella","text_3":"<p><strong>Co-Founder &amp; Board&nbsp;Director<\/strong><\/p>\n<p>Superpower: Building A Better Tomorrow<\/p>\n<p>Prior to co-founding Revolution Robotics, Jason was the President of the Robotics Education &amp; Competition Foundation, launching and building the VEX and VEX IQ Robotics Programs, eventually becoming the world's largest robotics competition.<\/p>\n<p>Jason's past endeavors include overseeing the Western United States for FIRST Robotics for seven years, being a member of the Game Design Committees for FIRST and VEX, testifying before the U.S. Congress as an expert on STEM Education, and being named the San Jose Unified School District Teacher of the Year in 1999.<\/p>","button_label_3":"","button_link_3":"","enable_image_4":true,"image_4":"shopify:\/\/shop_images\/davelavery_2.png","image_width_4":650,"title_4":"Dave Lavery","text_4":"<p><strong>Board&nbsp;Director<\/strong><\/p>\n<p>Superpower: TBD<\/p>\n<p>Dave Lavery founded and directs the NASA Robotics Alliance Project, including NASA participation in the FIRST robotics competition program. This project focuses on exposing high school students to real engineering challenges by having them work side-by-side with professional engineering mentors.<\/p>\n<p>At NASA, Dave currently manages the design and development of the next generation of Mars exploration spacecraft, and advanced technologies to enable them. He is the NASA Program Executive for the Mars Science Laboratory mission and the joint European-U.S. Mars Express mission.&nbsp;<\/p>","button_label_4":"","button_link_4":""}},"1565357269327":{"type":"image-hero","settings":{"parallax":true,"title":"Our STEM Superheroes","title_size":80,"subheading":"","link":"","link_text":"","link_2":"","link_text_2":"","color_accent":"rgba(0,0,0,0)","text_align":"vertical-center horizontal-center","image":"shopify:\/\/shop_images\/IMG_6426.jpg","focal_point":"center center","section_height":"650px","mobile_height":"auto"}},"1565070546192":{"type":"text-columns","settings":{"title":"","align_text":"center","enable_image_1":true,"image_1":"shopify:\/\/shop_images\/DDudasheadshot.jpeg","image_width_1":650,"title_1":"David Dudas","text_1":"<p><strong>Chief Technology Officer<\/strong><\/p>\n<p>Superpower: Getting Things Done<\/p>\n<p>David has about 8 years of experience in the automotive industry and robotics. He is a founding board member of the Hungarian Robot Builders Association.<br>David is a passionate robot builder with years of experience bringing embedded projects from concept to mass production. He joined Revolution Robotics in 2018 to bring our robots to life for students, makers, and enthusiasts around the world.<\/p>\n<p><\/p>","button_label_1":"","button_link_1":"","enable_image_2":true,"image_2":"shopify:\/\/shop_images\/Balazs_original_copy.jpg","image_width_2":650,"title_2":"Balazs Maczak","text_2":"<p><strong>Lead Mobile App Developer<\/strong><\/p>\n<p>Superpower: Understanding Obfuscated Code<\/p>\n<p>Since Bal&aacute;zs started mobile development almost a decade ago he worked with a broad variety of companies from small start-ups to multinational enterprises as well. He really enjoys building awesome things - for which programming is a fantastic tool - and he believes that with right STEM education more and more people can share his passion. As a father of two Bal&aacute;zs is really excited to help Revolution Robotics transform the way future generations can learn about the world.<\/p>","button_label_2":"","button_link_2":"","enable_image_3":true,"image_3":"shopify:\/\/shop_images\/Aron_Pavel_Headshot_1.jpeg","image_width_3":650,"title_3":"Aron Pavel","text_3":"<p><strong>Mobile App Developer<\/strong><\/p>\n<p>Superpower: Coding While Sleeping<\/p>\n<p>My name is &Aacute;ron P&aacute;vel, and I live in Budapest, Hungary. I've been developing mobile applications since 2012. I've been working on platforms (both natively and on React Native as well) and web applications.<\/p>\n<p><\/p>","button_label_3":"","button_link_3":"","enable_image_4":true,"image_4":"shopify:\/\/shop_images\/Daniel_Buga_2.jpg","image_width_4":650,"title_4":"Daniel Buga","text_4":"<p><strong>Embedded Developer<\/strong><\/p>\n<p>Superpower: Misunderstanding the Obvious<\/p>\n<p>Daniel is an electrical engineer who loves killer tech - except for killer robots. He believes that technology can make the world a better place and STEM education is an essential part of this.<\/p>","button_label_4":"","button_link_4":""}},"1565070852204":{"type":"text-and-image","settings":{"image":"shopify:\/\/shop_images\/Ria_original.jpg","image_width":500,"subtitle":"2019 internship","title":"read about ria","text":"<p>Ria is&nbsp;one of our Social Media Marketing Specialists at the Revolution Robotics Foundation! Read about her internship experience &amp; travels to our Hungary office in&nbsp;this blog post.<\/p>","button_label":"Read now","button_link":"shopify:\/\/blogs\/news\/ria-vieiras-internship-with-revolution-robotics","layout":"right"}},"1565071030161":{"type":"text-columns","settings":{"title":"","align_text":"center","enable_image_1":true,"image_1":"shopify:\/\/shop_images\/vajk_headshot3.jpg","image_width_1":650,"title_1":"Vajk Hermecz","text_1":"<p><strong>Software Developer<\/strong><\/p>\n<p>Superpower: Staring Down Problems<\/p>\n<p>Vajk was 4 years old when he got a Commodore 64 and he is working with computers ever since. Learning programming languages is like learning a second language to him.<\/p>\n<p>Vajk recognizes the power of getting involved with technology at an early age and he wants to enable others to experience this journey.<\/p>","button_label_1":"","button_link_1":"","enable_image_2":true,"image_2":"shopify:\/\/shop_images\/mjr3_headshot_280_2_1.jpeg","image_width_2":650,"title_2":"Miller j. Roberts","text_2":"<p><strong>Program Development Director<\/strong><\/p>\n<p>Superpower: Providing Encouragement<\/p>\n<p>Miller, a self-proclaimed jack of all trades, joins the Revolution Robotics team with 10 years of competitive robotics experience. He looks forward to being a part of this exciting new platform and inspiring more of tomorrow&rsquo;s STEM leaders.<\/p>","button_label_2":"","button_link_2":"","enable_image_3":true,"image_3":"shopify:\/\/shop_images\/Kayla_picture.jpg","image_width_3":650,"title_3":"Kayla Bayusik","text_3":"<p><strong>Social Media Marketing Specialist<\/strong><\/p>\n<p>Superpower: TBD<\/p>\n<p>Kayla is a Social Media Marketing specialist who went on a trip to Hungary for her internship with us this summer! Please read about her experience here.<\/p>","button_label_3":"Read now","button_link_3":"shopify:\/\/blogs\/news\/kayla-bayusiks-internship-with-revolution-robotics","enable_image_4":true,"image_4":"shopify:\/\/shop_images\/rrf-mark-red-transparent-bg.png","image_width_4":650,"title_4":"Join us","text_4":"<p>Interested in joining our team?<\/p>","button_label_4":"Contact Us","button_link_4":"shopify:\/\/pages\/contact-us"}},"1565071488380":{"type":"text-and-image","settings":{"image":"shopify:\/\/shop_images\/softeq_photo_2.jpg","image_width":500,"subtitle":"Softeq","title":"our Hardware Sidekicks","text":"<p>Revolution Robotics partnered with Softeq's amazing engineers to develop and open-source the robot brain in our Challenge Kit.<\/p>","button_label":"","button_link":"","layout":"left"}},"1565071556600":{"type":"image-hero","settings":{"parallax":true,"title":"Our Mobile App Sidekicks","title_size":80,"subheading":"The Revolution Robotics Foundation is proud to have Supercharge behind the development of our mobile app that will allow users to configure, program, and control the Revolution Robotics robot through a series of learning challenges, using any iOS or Android smartphone or tablet.","link":"","link_text":"","link_2":"","link_text_2":"","color_accent":"rgba(0,0,0,0)","text_align":"vertical-center horizontal-center","image":"shopify:\/\/shop_images\/superchargeteam_ver2_3b956cf9-6781-4b50-a62e-512bc3d4f54a.jpg","focal_point":"center center","section_height":"650px","mobile_height":"auto"}},"1565071677061":{"type":"text-and-image","settings":{"image":"shopify:\/\/shop_images\/WebTeamPhotoYuDaFu_reduced.jpeg","image_width":500,"subtitle":"Synergy Digital","title":"Our Global Manufacturing Sidekicks","text":"<p>Revolution Robotics is working closely with Synergy Digital to bring our robotics parts and kits to life. Several of the manufacturing team leads are pictured with Jared Schrieber and David Dudas.<\/p>","button_label":"","button_link":"","layout":"right"}}},"block_order":["1565070076637","1565357269327","1565070546192","1565070852204","1565071030161","1565071488380","1565071556600","1565071677061"],"settings":{"page_title_enable":true,"page_content_enable":false}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"product_recommendations_heading":"You may also like","related_count":5}},"recently-viewed":{"type":"recently-viewed","settings":{"show_section":true,"recent_count":5}},"troubleshooting-by-leds":{"type":"troubleshooting-by-leds","blocks":{"1574335395894":{"type":"Image","settings":{"image":"shopify:\/\/shop_images\/1_bcdf8eef-ca15-4776-bbea-80a31db418ec.png","title":"Internal battery indicator","titletextarea":"<div class=\"innnn-er---panel\">\n              <div class=\"my-img center\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/1_brain_913bf245-ce39-40b5-a386-0611c4f932d2_480x480.png?v=1573745721\" alt=\"\" width=\"480\" style=\"float: right;\">\n              <\/div>\n              <h3>Internal battery LED<\/h3>\n              <ul><\/ul>\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_gray_480x480.png?v=1573746535\" alt=\"\" width=\"16\" height=\"16\"> If it’s <span style=\"color: #cccccc;\"><b>blank<\/b><\/span>, your Robot Brain is turned OFF or completely discharged\n                <br>\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_red_480x480.png?v=1573746672\" alt=\"\" width=\"16\" height=\"16\"> If it’s solid <span style=\"color: #ff2a00;\"><b>red<\/b><\/span>, and every other LEDs are <span style=\"color: #cccccc;\"><b>blank<\/b><\/span>, your Robot Brain is seriously discharged and you should charge it immediately<\/div>\n\n              <p>It indicates the charge level of the internal batteries:<\/p>\n              <p style=\"padding-left: 30px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_battery_480x480.png?v=1573747029\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"342\">\n              <\/p>\n              <p style=\" text-align: center;\">100%              66%               33%              0%<\/p>\n\n              <h3>Charging the internal battery<\/h3>\n              <p style=\"padding-left: 15px;\">Note that you can charge the Robot Brain <b>ONLY<\/b> when it’s turned ON<\/p>\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/battery-charging-good_480x480.gif?v=1573747262\" alt=\"\" width=\"16\" height=\"16\"> While the Robot Brain is charging, the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon1_480x480.png?v=1573747462\" alt=\"\" width=\"31\" height=\"25\"> LED will show the charge level and it blinks with <span style=\"color: #00aaff;\"><b>blue<\/b> <\/span>color to show that charging is in progress.<\/div>\n\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_green_480x480.png?v=1573747670\" alt=\"\" width=\"16\" height=\"16\"> When the blue blinking stops and the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon1_480x480.png?v=1573747462\" alt=\"\" width=\"31\" height=\"25\"> LED is solid <span style=\"color: #80ff00;\"><b>green<\/b><\/span>, your Robot Brain is completely charged.\n              <\/div>\n              <p style=\"padding-left: 15px;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/no-motor-battery_480x480.gif?v=1573747818\" alt=\"\" width=\"16\" height=\"16\"> If the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon1_480x480.png?v=1573747462\" alt=\"\" width=\"31\" height=\"25\"> LED blinks in<b><span style=\"color: #ff2a00;\"> red<\/span> <\/b>during the charging, it indicates that your charger cannot deliver enough power. If it happens, please replace your charger and make sure that it's capable for 2A @ 5V.<\/p>\n            <\/div>"}},"1574335453654":{"type":"Image","settings":{"image":"shopify:\/\/shop_images\/22_7f7dc311-da47-4c4f-bc48-c3520e60293f.png","title":"Motor battery pack indicator","titletextarea":"<div class=\"innnn-er---panel\">\n              <h3>Motor battery pack indication<\/h3>\n\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/battery-discharge_480x480.gif?v=1573748329\" alt=\"\" width=\"16\" height=\"16\"> When the Robot Brain is turned ON and Motor battery pack is connected, the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon2_480x480.png?v=1573748245\" alt=\"\" width=\"31\" height=\"25\"> LED will show the charge level of the motor battery pack. From <span style=\"color: #80ff00;\"><strong>green<\/strong> <\/span>(100%) to <span style=\"color: #ff2a00;\"><strong>red<\/strong> <\/span>(0%).<\/div>\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_gray_480x480.png?v=1573746535\" alt=\"\" width=\"16\" height=\"16\"> If the Motor battery pack is not connected to the Robot Brain the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon2_480x480.png?v=1573748245\" alt=\"\" width=\"31\" height=\"25\"> LED is <span style=\"color: #cccccc;\"><b>blank<\/b><\/span>.<\/div>\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/no-motor-battery_480x480.gif?v=1573747818\" alt=\"\" width=\"16\" height=\"16\"> If you try to drive your robot without the Motor battery pack attached every LED will go <span style=\"color: #cccccc;\"><b>blank<\/b><\/span> and the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon2_480x480.png?v=1573748245\" alt=\"\" width=\"31\" height=\"25\"> LED will show a <span style=\"color: #ff2a00;\"><strong>red<\/strong> <\/span>warning sign.<\/div>\n\n              <h2>Turning ON the Robot Brain<\/h2>\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <div>\n                    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/battery-discharge_480x480.gif?v=1573748329\" alt=\"\" width=\"16\" height=\"16\"> After turning ON you brain the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon1_480x480.png?v=1573747462\" alt=\"\" width=\"31\" height=\"25\"> LED will immediately show the internal battery level.<\/div>\n\n                  <div style=\"padding-left: 15px;\">The LED circle will show the booting progress with <span style=\"color: #ffff00;\"><b>yellow<\/b> <\/span>LEDs:<\/div>\n                <\/div>\n                <div class=\"my-img center\">\n                  <div><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-with-startup_480x480.gif?v=1573749401\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/div>\n                <\/div>\n              <\/div>\n\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <p>Once the booting process is done the LED circle will show a <span style=\"color: #80ff00;\"><b>green<\/b> <\/span>pulsing effect.<\/p>\n                <\/div>\n                <div class=\"my-img center\">\n                  <p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-ready_480x480.gif?v=1573750094\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/p>\n                <\/div>\n              <\/div>\n\n\n              <h2>Robot Brain error<\/h2>\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <p style=\"padding-left: 15px;\">If there is a major fault with your Robot Brain and it cannot start properly, you’ll see the <span style=\"color: #ff2a00;\"><b>red<\/b> <\/span>ring of error.<\/p>\n                <\/div>\n                <div class=\"my-img center\">\n                  <p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-error_480x480.gif?v=1573810333\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/p>\n                <\/div>\n              <\/div>\n              <div style=\"padding-left: 15px;\">If it happens, try to restart your Robot Brain first. If it doesn’t help, you can restore the Robot’s Software on the SD card anytime with the help of our guide.<\/div>\n              <div style=\"padding-left: 15px;\"><a href=\"https:\/\/revolutionrobotics.org\/pages\/sd-card\">https:\/\/revolutionrobotics.org\/pages\/sd-card<\/a><\/div>\n\n              <div style=\"padding-left: 15px;\">If the red ring of error happens during the update procedure, please wait a few minutes before you restart the Robot Brain.<\/div>\n            <\/div>"}},"1574335485768":{"type":"Image","settings":{"image":"shopify:\/\/shop_images\/33_db216729-e883-4881-9150-0cc71575a45a.png","title":"Wireless connection indicator","titletextarea":"<div class=\"innnn-er---panel\">\n              <h2>Wireless connection LED<\/h2>\n              <div>\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/ready-for-connection_480x480.gif?v=1573811069\" alt=\"\" width=\"16\" height=\"16\"> After the software successfully started (you see the pulsing <span style=\"color: #80ff00;\"><b>green<\/b> <\/span>light on the LED circle) the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon3_480x480.png?v=1573811312\" alt=\"\" width=\"31\" height=\"25\"> LED will blink with <span style=\"color: #00aaff;\"><b>blue<\/b> <\/span>color. It indicates that your Robot Brain is ready for a connection. When you successfully connect with the application the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon3_480x480.png?v=1573811312\" alt=\"\" width=\"31\" height=\"25\"> LED will change to solid <span style=\"color: #00aaff;\"><b>blue<\/b><\/span>.<\/div>\n\n              <h2>Status LED<\/h2>\n              <div>The <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon4_480x480.png?v=1573813619\" alt=\"\" width=\"31\" height=\"25\"> LED is <span style=\"color: #ff2a00;\"><b>red<\/b> <\/span>if the Robot Brain is turned ON, the internal battery is not discharged and you are not actively controlling your robot.<\/div>\n              <div style=\"padding-left: 15px;\">The <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon4_480x480.png?v=1573813619\" alt=\"\" width=\"31\" height=\"25\"> LED is <span style=\"color: #80ff00;\"><b>green<\/b> <\/span>when you are actively remote controlling your robot. If the LED remains <span style=\"color: #80ff00;\"><b>green<\/b> <\/span>the communication is stable between the Robot and the Mobile App.<\/div>\n              <div style=\"padding-left: 15px;\">In special cases, when you are not actively controlling your Robot, but you execute motor or sensor tests, the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon4_480x480.png?v=1573813619\" alt=\"\" width=\"31\" height=\"25\"> LED is <span style=\"color: #ff8000;\"><b>orange<\/b><\/span>.<\/div>\n\n              <h2>Updating the Firmware<\/h2>\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <p style=\"padding-left: 15px;\">If you update your Robot from the Mobile App you’ll see a rainbow light on the LED circle:<\/p>\n                <\/div>\n                <div class=\"my-img center\">\n                  <p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-rainbow_480x480.gif?v=1573815535\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/p>\n                <\/div>\n              <\/div>\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <p style=\"padding-left: 15px;\">During the update procedure the Robot will disconnect from the Mobile App and it’s possible that you’ll see the red ring of error for a few seconds.<\/p>\n                  <p style=\"padding-left: 15px;\">Sometimes we have to update the Microcontroller inside your Robot Brain. In this case all 4 status LEDs will turn to purple and you’ll see a blue progress animation on the LED circle:<\/p>\n                <\/div>  \n                <div class=\"my-img center\">\n                  <p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-fw-update_480x480.gif?v=1573816139\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/p>\n                <\/div>\n              <\/div>\n            <\/div>"}},"1574335508605":{"type":"Image","settings":{"image":"shopify:\/\/shop_images\/44_23a399a8-b3a7-42fd-9083-b50e059aefda.png","title":"Robot status indicator","titletextarea":"<div class=\"innnn-er---panel\">\n              <h2>Troubleshooting by LEDs<\/h2>\n              <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/LED_troubleshoot_transparent.png?v=1573823133\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"1000\">\n            <\/div>"}}},"block_order":["1574335395894","1574335453654","1574335485768","1574335508605"],"settings":{"title":"LEDS ON THE ROBOT BRAIN","title2":"STATUS LEDS"}}},"content_for_index":["1565037866172","1526481284428","1565042314523","1565040633527","1525969132569","1526048519234","1526048620689","1525899982112"]},"presets":{"Modern":{"color_body_bg":"#ffffff","color_body_text":"#000000","color_price":"#1c1d1d","color_savings_text":"#ff4e4e","color_borders":"#e8e8e1","color_button":"#111111","color_button_text":"#fff","color_cart_dot":"#ff4f33","color_small_image_bg":"#fff","color_large_image_bg":"#0f0f0f","color_header":"#fff","color_header_text":"#000","color_announcement":"#0f0f0f","color_announcement_text":"#fff","color_footer":"#ffffff","color_footer_text":"#000000","color_drawer_background":"#ffffff","color_drawer_text":"#000000","color_drawer_border":"#e8e8e1","color_drawer_button":"#111111","color_drawer_button_text":"#ffffff","color_modal_overlays":"#e6e6e6","color_image_overlay":"#000","color_image_overlay_text_shadow":20,"type_header_font_family":"bauer_bodoni_n7","type_header_spacing":"0","type_header_base_size":40,"type_header_line_height":1,"type_header_capitalize":false,"type_headers_align_text":true,"type_base_font_family":"futura_n4","type_base_spacing":"25","type_base_size":17,"type_base_line_height":1.6,"type_body_align_text":true,"type_navigation_style":"body","type_navigation_size":18,"type_product_style":"body","type_collection_font":"heading","type_collection_size":26,"button_style":"square","icon_weight":"3px","icon_linecaps":"miter","vendor_enable":false,"sku_enable":false,"quantity_enable":false,"variant_type":"button","inventory_enable":true,"quick_shop_text":"Quick view","product_grid_image_size":"natural","product_hover_image":false,"product_color_swatches":false,"collection_color_swatches":false,"product_video_width":"960","product_video_height":"1280","product_video_style":"muted","product_contact":false,"collection_grid_style":"overlaid","collection_grid_shape":"square","collection_grid_image":"product","collection_grid_text_align":"center","collection_grid_tint":"#000000","collection_grid_opacity":10,"collection_grid_gutter":true,"cart_type":"drawer","cart_notes_enable":false,"cart_terms_conditions_enable":false,"currency_format":"money_format","social_facebook_link":"https:\/\/www.facebook.com\/shopify","social_pinterest_link":"https:\/\/www.pinterest.com\/shopify","social_instagram_link":"https:\/\/instagram.com\/shopify","share_facebook":true,"share_twitter":true,"share_pinterest":true,"checkout_logo_position":"left","checkout_logo_size":"small","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#fafafa","checkout_accent_color":"#111111","checkout_button_color":"#111111","checkout_error_color":"#ff6d6d","breadcrumb":true,"sections":{"header":{"type":"header","blocks":{"1524770014057":{"type":"logo","settings":{"desktop_logo_width":140,"mobile_logo_width":110}},"1524770292306":{"type":"announcement","settings":{"text":"Free shipping","link_text":"On all orders over $100"}},"1524770296206":{"type":"announcement","settings":{"text":"Hassle-free returns","link_text":"30-day postage paid returns"}}},"block_order":["1524770014057","1524770292306","1524770296206"],"settings":{"main_menu_link_list":"main-menu","main_menu_alignment":"center-split","header_style":"sticky","sticky_index":false,"sticky_collection":false,"header_search_enable":true,"toolbar_menu":"top","toolbar_social":true,"announcement_compact":true}},"footer":{"type":"footer","blocks":{"1494301487048":{"type":"logo_social","settings":{"container_width":95}},"1494301487049":{"type":"menu","settings":{"menu":"footer","container_width":25}},"1494292487693":{"type":"newsletter","settings":{"container_width":33}}},"block_order":["1494301487049","1494292487693","1494301487048"],"settings":{"show_payment_icons":false}},"collection-template":{"type":"collection-template","settings":{"subcollection_style":"above","subcollections_per_row":5,"per_row":4}},"product-template":{"type":"product-template","settings":{"image_size":"large","social_enable":true}},"article-template":{"type":"article-template","settings":{"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"1498163293234":{"type":"featured-content","settings":{"align_text":"center","narrow_column":false,"enlarge_text":true,"divider":false}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true,"blog_show_rss":false,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"blog_image_size":"wide"}},"1499789718857":{"type":"featured-collections","blocks":{"1499789718857-0":{"type":"collection","settings":{}},"1499789718857-1":{"type":"collection","settings":{}},"1499789718857-2":{"type":"collection","settings":{}},"1499789718857-3":{"type":"collection","settings":{}}},"block_order":["1499789718857-0","1499789718857-1","1499789718857-2","1499789718857-3"],"settings":{"title":"Shop by category","divider":false,"per_row":4,"enable_gutter":true}},"1499790633921":{"type":"background-image-text","settings":{"button_link":"shopify:\/\/collections\/all","focal_point":"80% 0","color_border":"#cdb8ac","layout":"left","height":750,"framed":false,"parallax":true}},"product-sections-template":{"type":"product-sections-template","blocks":{"product-image-row":{"type":"image-row","settings":{"enable_gutter":false,"enable_zoom":true}},"product-text-and-image":{"type":"text-and-image","settings":{"layout":"left"}},"product-background-image-text":{"type":"background-image-text","settings":{"alignment":"center","color_border":"#f4f4f4","layout":"right","height":550,"parallax":true}},"product-text-columns":{"type":"text-columns","settings":{}},"product-hero-video":{"type":"hero-video","settings":{"text_align":"vertical-bottom horizontal-left","section_height":"650px","mobile_height":"auto"}}},"block_order":["product-image-row","product-text-and-image","product-background-image-text","product-text-columns","product-hero-video"],"settings":{"image_size":"medium","social_enable":true,"collection_links_enable":true}},"page-sections-template":{"type":"page-sections-template","blocks":{"page-image-hero":{"type":"image-hero","settings":{}},"page-rich-text":{"type":"rich-text","settings":{"align_text":"center","narrow_column":true,"enlarge_text":true}},"page-text-columns":{"type":"text-columns","settings":{}},"page-background-image-text":{"type":"background-image-text","settings":{"alignment":"center","color_border":"#f4f4f4","layout":"right","height":550}},"page-featured-collection":{"type":"featured-collection","settings":{"title":"Featured collection","per_row":4,"rows":1,"view_all":true}}},"block_order":["page-image-hero","page-rich-text","page-text-columns","page-background-image-text","page-featured-collection"],"settings":{"page_title_enable":false,"page_content_enable":false}},"newsletter-popup":{"type":"newsletter-popup","settings":{}},"1524769873765":{"type":"slideshow","blocks":{"1524769873765-0":{"type":"image","settings":{"title_size":80,"link":"shopify:\/\/collections\/all","link_text":"Shop all","text_align":"vertical-center horizontal-left","focal_point":"top center"}}},"block_order":["1524769873765-0"],"settings":{"section_height":"750px","mobile_height":"auto","parallax":true,"style":"minimal","autoplay":false,"autoplay_speed":7}},"collection-header":{"type":"collection-header","settings":{"enable":true,"collection_image_enable":true,"parallax":true}},"collection-sidebar":{"type":"collection-sidebar","blocks":{"1524772785241":{"type":"subcollections","settings":{}},"1524772580942":{"type":"tags_all","settings":{}}},"block_order":["1524772785241","1524772580942"],"settings":{"enable_sidebar":true,"filter_style":"sidebar","tags_combine":false,"enable_sort":true}},"1525115199973":{"type":"blog-posts","settings":{"title":"From the journal","blog":"news","post_limit":3,"blog_show_tags":false,"blog_show_date":true,"blog_show_comments":false,"blog_show_author":false,"view_all":true,"blog_image_size":"wide","divider":false}},"1525118065355":{"type":"map","settings":{}},"1525295772132":{"type":"featured-collection","settings":{"per_row":4,"rows":1,"view_all":true,"divider":false}},"1525886124958":{"type":"promo-grid","blocks":{"1525886482727":{"type":"advanced","settings":{"cta_link1":"shopify:\/\/collections\/all","width":"100","height":720,"text_size":120,"focal_point":"80% 50%","boxed":false,"framed":false}},"1525886854810":{"type":"sale_collection","settings":{"width":"50","boxed":false,"framed":true}},"1525911710924":{"type":"sale_collection","settings":{"width":"50","boxed":false,"framed":true}}},"block_order":["1525886482727","1525886854810","1525911710924"],"settings":{"full_width":false,"gutter_size":20,"space_above":false,"space_below":false}},"1525912530555":{"type":"promo-grid","blocks":{"1525912530555-0":{"type":"advanced","settings":{"cta_link1":"shopify:\/\/collections\/all","width":"50","height":800,"text_size":120,"text_align":"vertical-center horizontal-center","focal_point":"center","boxed":false,"framed":true}},"1525912530555-1":{"type":"advanced","settings":{"cta_link1":"shopify:\/\/collections\/all","width":"50","height":500,"text_size":120,"text_align":"vertical-bottom horizontal-center","focal_point":"80% 50%","boxed":true,"framed":false}}},"block_order":["1525912530555-0","1525912530555-1"],"settings":{"full_width":true,"gutter_size":20,"space_above":false,"space_below":false}},"1526068199595":{"type":"instagram","settings":{}},"collection-promotions":{"type":"collection-promotions","blocks":{"1526403837307":{"type":"banner","settings":{"link":"shopify:\/\/collections\/all","label":"Shop now","color_tint":"#e95454","color_tint_opacity":10,"framed":false}},"1526496043079":{"type":"advanced","settings":{"cta_link1":"shopify:\/\/collections\/all","width":"100","height":500,"text_size":120,"text_align":"vertical-center horizontal-center","focal_point":"center","boxed":false,"framed":true}}},"block_order":["1526403837307","1526496043079"],"settings":{"gutter_size":20}}},"content_for_index":["1524769873765","1498163293234","1525912530555","1499789718857","1525886124958","1525295772132","1499790633921","1525115199973","1525118065355","1526068199595"]},"Vintage":{"color_body_bg":"#ffffff","color_body_text":"#000000","color_price":"#1c1d1d","color_savings_text":"#72acc7","color_borders":"#f2f2f2","color_button":"#682d2d","color_button_text":"#fff","color_cart_dot":"#682d2d","color_small_image_bg":"#f7f7f9","color_large_image_bg":"#682d2d","color_header":"#ffffff","color_header_text":"#000000","color_announcement":"#6a2727","color_announcement_text":"#ffffff","color_footer":"#f7f7f9","color_footer_text":"#593b32","color_drawer_background":"#ffffff","color_drawer_text":"#000000","color_drawer_border":"#e8e8e1","color_drawer_button":"#682d2d","color_drawer_button_text":"#ffffff","color_modal_overlays":"#cdc9c2","color_image_overlay":"#000","color_image_overlay_text_shadow":30,"type_header_font_family":"americana_n8","type_header_spacing":"0","type_header_base_size":36,"type_header_line_height":1.2,"type_header_capitalize":true,"type_headers_align_text":true,"type_base_font_family":"avenir_next_n4","type_base_spacing":"0","type_base_size":18,"type_base_line_height":1.5,"type_body_align_text":true,"type_navigation_style":"heading","type_navigation_size":17,"type_product_style":"body","type_collection_font":"heading","type_collection_size":20,"button_style":"square","icon_weight":"3px","icon_linecaps":"miter","vendor_enable":false,"sku_enable":false,"quantity_enable":false,"variant_type":"button","inventory_enable":false,"quick_shop_text":"Quick view","product_grid_image_size":"square","product_hover_image":true,"product_color_swatches":false,"collection_color_swatches":false,"product_video_width":"1280","product_video_height":"720","product_video_style":"muted","product_contact":true,"collection_grid_style":"below","collection_grid_shape":"landscape","collection_grid_image":"product","collection_grid_text_align":"top-center","collection_grid_tint":"#000000","collection_grid_opacity":0,"collection_grid_gutter":true,"cart_type":"drawer","cart_notes_enable":false,"cart_terms_conditions_enable":false,"currency_format":"money_format","social_facebook_link":"https:\/\/www.facebook.com\/shopify","social_twitter_link":"https:\/\/twitter.com\/shopify","social_instagram_link":"https:\/\/instagram.com\/shopify","social_youtube_link":"https:\/\/www.youtube.com\/user\/shopify","share_facebook":true,"share_twitter":true,"share_pinterest":true,"checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#f5f5f5","checkout_accent_color":"#682d2d","checkout_button_color":"#682d2d","checkout_error_color":"#ff6d6d","product_fixed_image_height":false,"breadcrumb":true,"sections":{"header":{"type":"header","blocks":{"1520882467782":{"type":"logo","settings":{}},"1521051841065":{"type":"announcement","settings":{"text":"Free shipping","link_text":"On all orders over $100","link":"shopify:\/\/collections\/all"}},"1520888647304":{"type":"announcement","settings":{"text":"Hassle-free returns","link_text":"30-day postage paid returns","link":"shopify:\/\/collections\/all"}}},"block_order":["1520882467782","1521051841065","1520888647304"],"settings":{"main_menu_link_list":"main-menu","main_menu_alignment":"center-split","header_style":"normal","sticky_index":true,"sticky_collection":true,"header_search_enable":true,"toolbar_menu":"toolbar","toolbar_social":true,"announcement_compact":true}},"footer":{"type":"footer","blocks":{"1494301487048":{"type":"logo_social","settings":{"container_width":95}},"1494301487049":{"type":"menu","settings":{"menu":"footer","container_width":25}},"1494292487693":{"type":"newsletter","settings":{"container_width":30}}},"block_order":["1494301487049","1494292487693","1494301487048"],"settings":{"show_payment_icons":false}},"collection-template":{"type":"collection-template","settings":{"subcollection_style":"above","subcollections_per_row":3,"per_row":2}},"product-template":{"type":"product-template","settings":{"image_size":"large","thumbnail_position":"below","social_enable":false}},"article-template":{"type":"article-template","settings":{"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"1498163293234":{"type":"featured-content","settings":{"align_text":"center","narrow_column":true,"enlarge_text":true,"divider":false}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true,"blog_show_rss":false,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"blog_image_size":"wide"}},"1499790633921":{"type":"background-image-text","settings":{"button_link":"shopify:\/\/collections\/all","focal_point":"center","color_border":"#6a635b","layout":"right","height":750,"framed":true,"parallax":true}},"product-sections-template":{"type":"product-sections-template","blocks":{"product-image-row":{"type":"image-row","settings":{"enable_gutter":false,"enable_zoom":true}},"product-text-and-image":{"type":"text-and-image","settings":{"layout":"left"}},"product-background-image-text":{"type":"background-image-text","settings":{"alignment":"center","color_border":"#f4f4f4","layout":"right","height":550,"parallax":true}},"product-text-columns":{"type":"text-columns","settings":{}},"product-hero-video":{"type":"hero-video","settings":{"text_align":"vertical-bottom horizontal-left","section_height":"650px","mobile_height":"auto"}}},"block_order":["product-image-row","product-text-and-image","product-background-image-text","product-text-columns","product-hero-video"],"settings":{"image_size":"medium","social_enable":true,"collection_links_enable":true}},"page-sections-template":{"type":"page-sections-template","blocks":{"page-rich-text":{"type":"rich-text","settings":{"align_text":"center","narrow_column":true,"enlarge_text":true}},"page-text-columns":{"type":"text-columns","settings":{}},"page-background-image-text":{"type":"background-image-text","settings":{"alignment":"center","color_border":"#f4f4f4","layout":"right","height":550}},"page-featured-collection":{"type":"featured-collection","settings":{"per_row":4,"rows":1,"view_all":true}}},"block_order":["page-rich-text","page-text-columns","page-background-image-text","page-featured-collection"],"settings":{"page_title_enable":false,"page_content_enable":false}},"newsletter-popup":{"type":"newsletter-popup","settings":{}},"collection-header":{"type":"collection-header","settings":{"enable":true,"collection_image_enable":true,"parallax":true}},"collection-sidebar":{"type":"collection-sidebar","blocks":{"1524772785241":{"type":"subcollections","settings":{}},"1524772580942":{"type":"tags_all","settings":{}}},"block_order":["1524772785241","1524772580942"],"settings":{"enable_sidebar":true,"filter_style":"sidebar","tags_combine":false,"enable_sort":true}},"1523298253705":{"type":"slideshow","blocks":{"1523298253705-0":{"type":"image","settings":{}},"1523298253705-1":{"type":"image","settings":{"title_size":80,"text_align":"vertical-bottom horizontal-right","focal_point":"center center"}}},"block_order":["1523298253705-0","1523298253705-1"],"settings":{"section_height":"100vh","mobile_height":"500px","parallax":true,"style":"minimal","autoplay":true,"autoplay_speed":7}},"list-collections-template":{"type":"list-collections-template","settings":{"title_enable":true,"display_type":"all","sort":"alphabetical","grid":"3"}},"1523380258742":{"type":"featured-collections","disabled":true,"blocks":{"1523380258742-0":{"type":"collection","settings":{}},"1523380258742-1":{"type":"collection","settings":{}},"1523380258742-2":{"type":"collection","settings":{}},"1524685811204":{"type":"collection","settings":{}},"1524685816171":{"type":"collection","settings":{}},"1524685829380":{"type":"collection","settings":{}}},"block_order":["1523380258742-0","1523380258742-1","1523380258742-2","1524685811204","1524685816171","1524685829380"],"settings":{"divider":false,"per_row":3,"enable_gutter":true}},"1524685456938":{"type":"background-image-text","settings":{"button_link":"shopify:\/\/collections\/all","focal_point":"center","color_border":"#655147","layout":"right","height":650,"framed":true,"parallax":true}},"1524685919990":{"type":"featured-collection","settings":{"per_row":4,"rows":1,"view_all":true,"divider":false}},"1524685997883":{"type":"newsletter","settings":{"color_background":"#f7f7f9","color_text":"#3f2e2e"}},"1524686167862":{"type":"featured-collection","settings":{"per_row":3,"rows":1,"view_all":true,"divider":false}},"1524686876171":{"type":"featured-collections","blocks":{"1524686876171-0":{"type":"collection","settings":{}},"1524686876171-1":{"type":"collection","settings":{}}},"block_order":["1524686876171-0","1524686876171-1"],"settings":{"divider":false,"per_row":2,"enable_gutter":true}},"1525878145666":{"type":"promo-grid","blocks":{"1525879359021":{"type":"advanced","settings":{"cta_link1":"shopify:\/\/collections\/all","width":"100","height":500,"text_size":120,"text_align":"vertical-center horizontal-center","focal_point":"80% 50%","boxed":false,"framed":true}}},"block_order":["1525879359021"],"settings":{"full_width":false,"gutter_size":20,"space_above":false,"space_below":false}},"1525881294487":{"type":"promo-grid","blocks":{"1525881312850":{"type":"banner","settings":{"link":"shopify:\/\/collections\/all","label":"Learn more","color_tint":"#d69344","color_tint_opacity":14,"framed":true}}},"block_order":["1525881312850"],"settings":{"full_width":false,"gutter_size":0,"space_above":false,"space_below":false}},"1525968536765":{"type":"promo-grid","blocks":{"1525968571112":{"type":"product","settings":{"label":"New","enable_price":true,"width":"100","text_size":100,"color_tint":"#000","color_tint_opacity":0,"framed":false}}},"block_order":["1525968571112"],"settings":{"full_width":false,"gutter_size":20,"space_above":false,"space_below":false}},"1525969002555":{"type":"blog-posts","settings":{"blog":"news","post_limit":3,"blog_show_tags":false,"blog_show_date":true,"blog_show_comments":false,"blog_show_author":false,"view_all":true,"blog_image_size":"wide","divider":false}},"1526333080570":{"type":"instagram","settings":{}},"1526493275292":{"type":"promo-grid","blocks":{"1526493290477":{"type":"sale_collection","settings":{"width":"100","boxed":true,"framed":true}}},"block_order":["1526493290477"],"settings":{"full_width":false,"gutter_size":20,"space_above":false,"space_below":true}},"collection-promotions":{"type":"collection-promotions","blocks":{"1526501666154":{"type":"sale_collection","settings":{"width":"100","boxed":true,"framed":true}},"1526501699095":{"type":"banner","settings":{"heading":"Free shipping","link":"shopify:\/\/collections\/all","label":"Learn more","color_tint":"#d69344","color_tint_opacity":14,"framed":true}}},"block_order":["1526501666154","1526501699095"],"settings":{"gutter_size":20}}},"content_for_index":["1523298253705","1498163293234","1525878145666","1523380258742","1524686876171","1526493275292","1524685456938","1524685919990","1525881294487","1524686167862","1524685997883","1499790633921","1525968536765","1525969002555","1526333080570"]},"Bold":{"color_body_bg":"#000000","color_body_text":"#ffffff","color_price":"#d1ba98","color_savings_text":"#ff6565","color_borders":"#2b2a27","color_button":"#9f8561","color_button_text":"#ffffff","color_cart_dot":"#9f8561","color_small_image_bg":"#000000","color_large_image_bg":"#111111","color_header":"#000000","color_header_text":"#ffffff","color_announcement":"#cf2424","color_announcement_text":"#fff","color_footer":"#000000","color_footer_text":"#ffffff","color_drawer_background":"#000000","color_drawer_text":"#ffffff","color_drawer_border":"#2b2a27","color_drawer_button":"#9f8561","color_drawer_button_text":"#ffffff","color_modal_overlays":"#67635d","color_image_overlay":"#000","color_image_overlay_opacity":15,"color_image_overlay_text_shadow":30,"type_header_font_family":"fjalla_one_n4","type_header_spacing":"150","type_header_base_size":45,"type_header_line_height":1.2,"type_header_capitalize":true,"type_headers_align_text":true,"type_base_font_family":"itc_conduit_n4","type_base_spacing":"50","type_base_size":18,"type_base_line_height":1.4,"type_body_align_text":true,"type_navigation_style":"heading","type_navigation_size":18,"type_product_style":"heading","type_collection_font":"heading","type_collection_size":23,"button_style":"angled","icon_weight":"5px","icon_linecaps":"miter","vendor_enable":false,"sku_enable":false,"quantity_enable":false,"variant_type":"button","inventory_enable":false,"product_save_amount":true,"product_zoom_enable":false,"quick_shop_enable":true,"quick_shop_text":"Quick view","product_grid_image_size":"square","product_hover_image":false,"product_color_swatches":false,"collection_color_swatches":false,"product_video_width":"1280","product_video_height":"720","product_video_style":"muted","product_content_collapse_1":false,"product_content_collapse_2":true,"product_content_collapse_3":true,"product_contact":false,"enable_product_reviews":true,"reviews_layout":"expandable","collection_grid_style":"overlaid-box","collection_grid_shape":"landscape","collection_grid_image":"collection","collection_grid_text_align":"bottom-center","collection_grid_tint":"#000000","collection_grid_opacity":10,"collection_grid_gutter":true,"cart_type":"drawer","currency_format":"money_format","social_facebook_link":"https:\/\/www.facebook.com\/shopify","social_twitter_link":"https:\/\/twitter.com\/shopify","social_youtube_link":"https:\/\/www.youtube.com\/user\/shopify","share_facebook":true,"share_twitter":true,"share_pinterest":true,"checkout_logo_position":"left","checkout_logo_size":"small","checkout_body_background_color":"#000000","checkout_input_background_color_mode":"transparent","checkout_sidebar_background_color":"#000000","checkout_heading_font":"Helvetica Neue","checkout_body_font":"Helvetica Neue","checkout_accent_color":"#ae9878","checkout_button_color":"#ae9878","checkout_error_color":"#ff6d6d","color_image_2":"#cf2424","color_image_2_opacity":0,"color_image_1":"#6d1414","color_image_1_opacity":0,"type_accent_style":"body","type_accent_bold":true,"type_accent_capitalize":true,"type_button_font":"heading","type_button_capitalize":false,"type_header_accent_transform":true,"type_base_accent_transform":true,"collection_grid_font":"heading","color_image_bg":"#000000","breadcrumb":true,"color_sale_tag":"#990000","color_input":"#ffffff","checkout_banner_background_color":"#fff","checkout_call_to_action_color":"#a26b25","sections":{"header":{"type":"header","blocks":{"1524768779513":{"type":"logo","settings":{}}},"block_order":["1524768779513"],"settings":{"main_menu_link_list":"main-menu","main_menu_alignment":"left-center","header_style":"normal","sticky_index":true,"sticky_collection":false,"header_search_enable":false,"toolbar_social":false,"announcement_compact":false}},"footer":{"type":"footer","blocks":{"1494292487693":{"type":"newsletter","settings":{}},"1526406521795":{"type":"menu","settings":{"menu":"footer","container_width":25}},"1525444454442":{"type":"logo_social","settings":{"container_width":95}}},"block_order":["1494292487693","1526406521795","1525444454442"],"settings":{"show_payment_icons":true}},"collection-template":{"type":"collection-template","settings":{"subcollection_style":"above","subcollections_per_row":3,"per_row":5}},"product-template":{"type":"product-template","settings":{"image_size":"large","social_enable":true}},"article-template":{"type":"article-template","settings":{"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"social_sharing_blog":true}},"blog-template":{"type":"blog-template","settings":{"blog_show_tag_filter":true,"blog_show_rss":false,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false,"blog_image_size":"wide"}},"1499790633921":{"type":"background-image-text","settings":{"button_link":"shopify:\/\/collections\/all","focal_point":"center","color_border":"#090909","layout":"right","height":750,"framed":false,"parallax":true}},"product-sections-template":{"type":"product-sections-template","blocks":{"product-background-image-text":{"type":"background-image-text","settings":{"button_link":"shopify:\/\/collections\/all","alignment":"top left","color_border":"#3a6815","layout":"right","height":550,"parallax":false}},"product-text-columns":{"type":"text-columns","settings":{}}},"block_order":["product-background-image-text","product-text-columns"],"settings":{"image_size":"large","thumbnail_position":"below","social_enable":true,"collection_links_enable":true}},"page-sections-template":{"type":"page-sections-template","blocks":{"page-rich-text":{"type":"rich-text","settings":{"align_text":"center","narrow_column":true,"enlarge_text":true}},"page-text-columns":{"type":"text-columns","settings":{}},"page-background-image-text":{"type":"background-image-text","settings":{"alignment":"center","color_border":"#f4f4f4","layout":"right","height":550}},"page-featured-collection":{"type":"featured-collection","settings":{"per_row":4,"rows":1,"view_all":true}}},"block_order":["page-rich-text","page-text-columns","page-background-image-text","page-featured-collection"],"settings":{"page_title_enable":false,"page_content_enable":false}},"newsletter-popup":{"type":"newsletter-popup","settings":{}},"1524768368258":{"type":"slideshow","blocks":{"1524768368258-0":{"type":"image","settings":{"link":"shopify:\/\/collections\/all","link_text":"Shop all","text_align":"vertical-center horizontal-left","focal_point":"top center"}}},"block_order":["1524768368258-0"],"settings":{"section_height":"750px","mobile_height":"auto","parallax":true,"style":"minimal","autoplay":true,"autoplay_speed":5}},"collection-header":{"type":"collection-header","settings":{"enable":true,"collection_image_enable":false,"parallax":false}},"collection-sidebar":{"type":"collection-sidebar","blocks":{"1524772785241":{"type":"subcollections","settings":{}},"1524772580942":{"type":"tags_all","settings":{}}},"block_order":["1524772785241","1524772580942"],"settings":{"enable_sidebar":true,"filter_style":"sidebar","tags_combine":false,"enable_sort":true}},"1525290496166":{"type":"featured-collections","blocks":{"1525290496166-0":{"type":"collection","settings":{}},"1525290496166-2":{"type":"collection","settings":{}},"1525290496166-1":{"type":"collection","settings":{}}},"block_order":["1525290496166-0","1525290496166-2","1525290496166-1"],"settings":{"divider":false,"per_row":3,"enable_gutter":true}},"1525899982112":{"type":"instagram","settings":{}},"1525969132569":{"type":"promo-grid","blocks":{"1525969870126":{"type":"product","settings":{"link_label":"Shop now","label":"New","enable_price":true,"width":"50","text_size":100,"color_tint":"#f8ebd4","color_tint_opacity":0,"framed":true}},"1525969996422":{"type":"product","settings":{"link_label":"Shop now","label":"New","enable_price":true,"width":"50","text_size":100,"color_tint":"#ff0000","color_tint_opacity":0,"framed":true}}},"block_order":["1525969870126","1525969996422"],"settings":{"full_width":false,"gutter_size":5,"space_above":false,"space_below":false}},"1526048428302":{"type":"featured-collection","settings":{"per_row":4,"rows":1,"view_all":false,"divider":false}},"1526048519234":{"type":"newsletter","settings":{"color_background":"#171615","color_text":"#ffffff"}},"1526048620689":{"type":"blog-posts","settings":{"title":"Our blog","blog":"news","post_limit":3,"blog_show_tags":false,"blog_show_date":true,"blog_show_comments":false,"blog_show_author":false,"view_all":true,"blog_image_size":"wide","divider":false}},"collection-promotions":{"type":"collection-promotions","blocks":{"1526501090474":{"type":"advanced","settings":{"cta_link1":"shopify:\/\/collections\/all","width":"50","height":400,"text_size":120,"text_align":"vertical-center horizontal-center","focal_point":"center","boxed":false,"framed":true}},"1526501130849":{"type":"sale_collection","settings":{"width":"50","boxed":false,"framed":true}},"1526501360047":{"type":"banner","settings":{"label":"Shop 2017","color_tint":"#514f4b","color_tint_opacity":20,"framed":false}}},"block_order":["1526501090474","1526501130849","1526501360047"],"settings":{"gutter_size":20}},"1526480838446":{"type":"background-image-text","settings":{"button_link":"shopify:\/\/collections\/all","focal_point":"center","color_border":"#f4f4f4","layout":"left","height":750,"framed":false,"parallax":true}},"1526481284428":{"type":"featured-content","settings":{"align_text":"center","narrow_column":true,"enlarge_text":true,"divider":false}},"1526481405629":{"type":"promo-grid","blocks":{"1526481405629-1":{"type":"advanced","settings":{"width":"100","height":660,"text_size":120,"text_align":"vertical-center horizontal-center","focal_point":"center","boxed":false,"framed":false}}},"block_order":["1526481405629-1"],"settings":{"full_width":false,"gutter_size":34,"space_above":false,"space_below":true}}},"content_for_index":["1524768368258","1526481284428","1525969132569","1525290496166","1526048428302","1526480838446","1499790633921","1526048519234","1526048620689","1526481405629","1525899982112"]}}}
+{
+  "current": {
+    "color_body_bg": "#252526",
+    "color_body_text": "#ffffff",
+    "color_price": "#d1ba98",
+    "color_savings_text": "#ff6565",
+    "color_borders": "#2b2a27",
+    "color_button": "#9f8561",
+    "color_button_text": "#ffffff",
+    "color_cart_dot": "#9f8561",
+    "color_small_image_bg": "#000000",
+    "color_large_image_bg": "#111111",
+    "color_header": "#1b1b1c",
+    "color_header_text": "#ffffff",
+    "color_announcement": "#cf2424",
+    "color_announcement_text": "#fff",
+    "color_footer": "#1b1b1c",
+    "color_footer_text": "#ffffff",
+    "color_drawer_background": "#000000",
+    "color_drawer_text": "#ffffff",
+    "color_drawer_border": "#2b2a27",
+    "color_drawer_button": "#9f8561",
+    "color_drawer_button_text": "#ffffff",
+    "color_modal_overlays": "#67635d",
+    "color_image_text": "#fff",
+    "color_image_overlay": "#000",
+    "color_image_overlay_opacity": 15,
+    "color_image_overlay_text_shadow": 30,
+    "type_header_font_family": "fjalla_one_n4",
+    "type_header_spacing": "150",
+    "type_header_base_size": 40,
+    "type_header_line_height": 1.2,
+    "type_header_capitalize": true,
+    "type_headers_align_text": false,
+    "type_base_font_family": "itc_conduit_n4",
+    "type_base_spacing": "50",
+    "type_base_size": 18,
+    "type_base_line_height": 1.4,
+    "type_body_align_text": true,
+    "type_navigation_style": "heading",
+    "type_navigation_size": 18,
+    "type_product_style": "heading",
+    "type_collection_font": "heading",
+    "type_collection_size": 23,
+    "button_style": "angled",
+    "icon_weight": "5px",
+    "icon_linecaps": "miter",
+    "vendor_enable": false,
+    "sku_enable": false,
+    "quantity_enable": false,
+    "variant_labels_enable": true,
+    "variant_type": "button",
+    "enable_payment_button": true,
+    "inventory_enable": false,
+    "product_save_amount": true,
+    "product_save_type": "dollar",
+    "product_zoom_enable": false,
+    "quick_shop_enable": true,
+    "quick_shop_text": "Quick view",
+    "product_grid_image_size": "square",
+    "product_hover_image": false,
+    "product_color_swatches": false,
+    "collection_color_swatches": false,
+    "swatch_style": "round",
+    "product_video_width": "1280",
+    "product_video_height": "720",
+    "product_video_style": "muted",
+    "product_content_1": "",
+    "product_content_collapse_1": false,
+    "product_content_2": "",
+    "product_content_collapse_2": true,
+    "product_content_3": "",
+    "product_content_collapse_3": true,
+    "product_contact": false,
+    "product_contact_title": "Ask a question",
+    "product_contact_show_phone": false,
+    "enable_product_reviews": true,
+    "reviews_layout": "expandable",
+    "collection_grid_style": "overlaid-box",
+    "collection_grid_shape": "landscape",
+    "collection_grid_image": "collection",
+    "collection_grid_text_align": "bottom-center",
+    "collection_grid_tint": "#000000",
+    "collection_grid_opacity": 10,
+    "collection_grid_gutter": true,
+    "cart_type": "drawer",
+    "cart_additional_buttons": false,
+    "cart_notes_enable": false,
+    "cart_terms_conditions_enable": false,
+    "cart_terms_conditions_link": "",
+    "enable_currencies": true,
+    "currency_format": "money_with_currency_format",
+    "supported_currencies": "USD HUF CNY TWD EUR GBP CAD INR AUD JPY",
+    "default_currency": "USD",
+    "social_facebook_link": "https:\/\/www.facebook.com\/RevoRobotics\/",
+    "social_twitter_link": "https:\/\/twitter.com\/RevoRobotics",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/revorobotics\/",
+    "social_snapchat_link": "",
+    "social_tumblr_link": "",
+    "social_linkedin_link": "https:\/\/www.linkedin.com\/company\/revolutionrobotics\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UC24eVQPZJ35fJF4JHlDsvNg",
+    "social_vimeo_link": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "homepage_social_image": "",
+    "favicon": "shopify:\/\/shop_images\/rrf-mark-red-transparent-bg.png",
+    "show_breadcrumbs": false,
+    "search_type": "product,article,page",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#000000",
+    "checkout_input_background_color_mode": "transparent",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#000000",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#ae9878",
+    "checkout_button_color": "#ae9878",
+    "checkout_error_color": "#ff6d6d",
+    "breadcrumb": true,
+    "color_image_2": "#cf2424",
+    "color_image_2_opacity": 0,
+    "color_image_1": "#6d1414",
+    "color_image_1_opacity": 0,
+    "type_accent_style": "body",
+    "type_accent_bold": true,
+    "type_accent_capitalize": true,
+    "type_button_font": "heading",
+    "type_button_capitalize": false,
+    "type_header_accent_transform": true,
+    "type_base_accent_transform": true,
+    "collection_grid_font": "heading",
+    "color_image_bg": "#000000",
+    "color_sale_tag": "#990000",
+    "color_input": "#ffffff",
+    "checkout_banner_background_color": "#fff",
+    "checkout_call_to_action_color": "#a26b25",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1524768779513": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/rrf-wide-white-transparent-bg_d413e50b-95a2-41b2-9a81-25a41108bde8.png",
+              "logo-inverted": "",
+              "desktop_logo_width": 200,
+              "mobile_logo_width": 140
+            }
+          }
+        },
+        "block_order": [
+          "1524768779513"
+        ],
+        "settings": {
+          "main_menu_link_list": "main-menu",
+          "main_menu_alignment": "left-center",
+          "header_style": "sticky",
+          "sticky_index": true,
+          "sticky_collection": false,
+          "header_search_enable": false,
+          "toolbar_menu": "",
+          "toolbar_social": true,
+          "toolbar_currencies": false,
+          "announcement_compact": false,
+          "announcement_above_header": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1525444454442": {
+            "type": "logo_social",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/rrf-wide-white-transparent-bg.png",
+              "desktop_logo_height": 50,
+              "container_width": 95
+            }
+          },
+          "1494292487693": {
+            "type": "newsletter",
+            "settings": {
+              "show_footer_title": true,
+              "title": "Sign up and stay in touch",
+              "text": "<p>Subscribe to get special offers, competition information, and free educational materials.<\/p>",
+              "container_width": 25
+            }
+          },
+          "1565054401376": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": false,
+              "menu": "footer",
+              "container_width": 15
+            }
+          }
+        },
+        "block_order": [
+          "1525444454442",
+          "1494292487693",
+          "1565054401376"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "show_copyright": true,
+          "copyright_text": ""
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "subcollection_style": "none",
+          "subcollections_per_row": 5,
+          "per_row": 5,
+          "rows_per_page": 3
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_position": "right",
+          "image_size": "large",
+          "thumbnail_position": "beside",
+          "description_style": "default",
+          "social_enable": true
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_tags": true,
+          "blog_show_date": true,
+          "blog_show_comments": true,
+          "blog_show_author": false,
+          "social_sharing_blog": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "blog_show_tag_filter": true,
+          "blog_show_rss": false,
+          "blog_show_tags": true,
+          "blog_show_date": true,
+          "blog_show_comments": true,
+          "blog_show_author": false,
+          "blog_show_excerpt": false,
+          "blog_image_size": "wide"
+        }
+      },
+      "product-sections-template": {
+        "type": "product-sections-template",
+        "blocks": {
+          "product-background-image-text": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "Impressive",
+              "title": "Large image with text box",
+              "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+              "button_label": "",
+              "button_link": "shopify:\/\/collections\/all",
+              "image": "",
+              "alignment": "top left",
+              "color_border": "#3a6815",
+              "layout": "right",
+              "height": 550,
+              "parallax": false
+            }
+          },
+          "product-text-columns": {
+            "type": "text-columns",
+            "settings": {
+              "title": "",
+              "align_text": "center",
+              "enable_image_1": true,
+              "image_1": "",
+              "image_width_1": 650,
+              "title_1": "Example title",
+              "text_1": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "",
+              "image_width_2": 650,
+              "title_2": "Example title",
+              "text_2": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "",
+              "image_width_3": 650,
+              "title_3": "Example title",
+              "text_3": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_3": "",
+              "button_link_3": "",
+              "enable_image_4": true,
+              "image_4": "",
+              "image_width_4": 650,
+              "title_4": "Example title",
+              "text_4": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+              "button_label_4": "",
+              "button_link_4": ""
+            }
+          }
+        },
+        "block_order": [
+          "product-background-image-text",
+          "product-text-columns"
+        ],
+        "settings": {
+          "image_position": "right",
+          "image_size": "large",
+          "thumbnail_position": "below",
+          "description_style": "default",
+          "social_enable": true,
+          "collection_links_enable": true
+        }
+      },
+      "page-sections-template": {
+        "type": "page-sections-template",
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": false
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "mode": "disabled",
+          "popup_seconds": 5,
+          "popup_days": 30,
+          "popup_title": "Sign up and save",
+          "popup_image": "",
+          "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>",
+          "close_text": "No thanks",
+          "enable_newsletter": true,
+          "button_label": "Optional button",
+          "button_link": "",
+          "enable_button": false
+        }
+      },
+      "collection-header": {
+        "type": "collection-header",
+        "settings": {
+          "enable": false,
+          "collection_image_enable": false,
+          "parallax": false
+        }
+      },
+      "collection-sidebar": {
+        "type": "collection-sidebar",
+        "settings": {
+          "enable_sidebar": false,
+          "filter_style": "sidebar",
+          "tags_combine": false,
+          "enable_sort": false
+        }
+      },
+      "1525899982112": {
+        "type": "instagram",
+        "settings": {
+          "title": "",
+          "username": "@revorobotics",
+          "client_id": "13361314887.2a46ab3.ba968d23d5bb4004a7e462bc06bce6cd",
+          "count": "2",
+          "full_width": true,
+          "divider": false
+        }
+      },
+      "1525969132569": {
+        "type": "promo-grid",
+        "blocks": {
+          "1525969870126": {
+            "type": "product",
+            "settings": {
+              "product": "revolution-robotics-challenge-kit",
+              "subheading": "JUST RELEASED",
+              "heading": "The new 2019 challenge kit",
+              "textarea": "As former educators and parents of children in robotics programs, we wanted to design a kit adaptable to various age groups, robotics challenges, and learning levels. Presenting the new Challenge Kit - a single kit with limitless design possibilities!",
+              "link_label": "Buy now",
+              "label": "New",
+              "enable_price": true,
+              "width": "100",
+              "text_size": 100,
+              "color_tint": "#ffbdbd",
+              "color_tint_opacity": 0,
+              "framed": true
+            }
+          }
+        },
+        "block_order": [
+          "1525969870126"
+        ],
+        "settings": {
+          "full_width": false,
+          "gutter_size": 5,
+          "space_above": false,
+          "space_below": false
+        }
+      },
+      "1526048519234": {
+        "type": "newsletter",
+        "settings": {
+          "title": "Follow our progress!",
+          "text": "<p>Subscribe to get special offers, competition information, and free educational materials.<\/p>",
+          "color_background": "#171615",
+          "color_text": "#ffffff"
+        }
+      },
+      "1526048620689": {
+        "type": "blog-posts",
+        "settings": {
+          "title": "Our blog",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_show_tags": false,
+          "blog_show_date": true,
+          "blog_show_comments": false,
+          "blog_show_author": false,
+          "view_all": true,
+          "blog_image_size": "wide",
+          "divider": false
+        }
+      },
+      "collection-promotions": {
+        "type": "collection-promotions",
+        "blocks": {
+          "1526501090474": {
+            "type": "advanced",
+            "settings": {
+              "promo_collection": "",
+              "subheading": "Limited time",
+              "heading": "Revolution Robotics challenge kit",
+              "textarea": "Pre-order the Revolution Robotics Challenge Kit before it's too late!",
+              "cta_text1": "buy now",
+              "cta_link1": "shopify:\/\/products\/revolution-robotics-challenge-kit",
+              "cta_text2": "",
+              "cta_link2": "",
+              "image": "shopify:\/\/shop_images\/Girl_working_on_robot_fe95b14f-9255-43b8-ac2b-e0e29f922863.png",
+              "video_url": "",
+              "width": "50",
+              "height": 400,
+              "text_size": 120,
+              "text_align": "vertical-center horizontal-center",
+              "focal_point": "center",
+              "color_accent": "#000000",
+              "boxed": false,
+              "framed": true
+            }
+          },
+          "1526501360047": {
+            "type": "banner",
+            "settings": {
+              "promo_collection": "",
+              "heading": "get your kit today",
+              "text": "Don't miss out on our kit that was 100% funded on Kickstarter!",
+              "link": "shopify:\/\/products\/revolution-robotics-challenge-kit",
+              "label": "Buy now",
+              "image": "",
+              "color_tint": "#e6e6e5",
+              "color_tint_opacity": 20,
+              "framed": false
+            }
+          }
+        },
+        "block_order": [
+          "1526501090474",
+          "1526501360047"
+        ],
+        "settings": {
+          "gutter_size": 20
+        }
+      },
+      "1526481284428": {
+        "type": "featured-content",
+        "settings": {
+          "title": "Revolution Robotics Foundation",
+          "text": "<p>Revolution Robotics creates robotics kits, challenges, and competitions that develop critical 21st century work skills, while inspiring kids around the world to pursue degrees and careers in STEM.<\/p>",
+          "align_text": "center",
+          "narrow_column": true,
+          "enlarge_text": true,
+          "divider": false
+        }
+      },
+      "footer-promotions": {
+        "type": "footer-promotions",
+        "settings": {
+          "hide_homepage": true,
+          "image_size": "wide"
+        }
+      },
+      "1565037866172": {
+        "type": "hero-video",
+        "settings": {
+          "title": "BE A \nSTEM HERO.",
+          "title_size": 80,
+          "subheading": "",
+          "link_text": "watch the video",
+          "link": "https:\/\/www.youtube.com\/watch?v=97ulgGtGrEg&t=3s",
+          "color_accent": "#ffffff",
+          "text_align": "vertical-center horizontal-left",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=PTHvVFFbsco&feature=youtu.be",
+          "section_height": "650px",
+          "mobile_height": "auto"
+        }
+      },
+      "1565040633527": {
+        "type": "text-columns",
+        "blocks": {
+          "1565040633527-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/programs.png",
+              "image_width": 370,
+              "title": "Programs",
+              "text": "<p>Our story-based learning challenges are available to kids, teachers, and team mentors through our free mobile app. The step-by-step challenge guides provide a full curriculum of fun learning activities empowering any parent or teacher to start and mentor a robotics team. Want to help test our mobile app before it goes public?<\/p>",
+              "button_label": "Request to be a tester",
+              "button_link": "shopify:\/\/pages\/contact-us"
+            }
+          },
+          "1565040633527-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/platform.png",
+              "image_width": 370,
+              "title": "Platform",
+              "text": "<p>Today's proprietary robotics platforms are too complex and too expensive for most kids and schools.&nbsp; We've created a revolutionary open-source platform using standard components to drastically reduce the cost and complexity of starting a robotics program.&nbsp;<\/p>",
+              "button_label": "Learn more",
+              "button_link": "https:\/\/www.kickstarter.com\/projects\/revorobotics\/revolution-robotics-affordable-and-fun-open-source-robot-kit"
+            }
+          },
+          "1565040633527-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2019-08-14_at_2.33.19_PM_ab52e3ad-4b95-47bb-8345-15b2028128f2.png",
+              "image_width": 370,
+              "title": "Participation",
+              "text": "<p>We envision a world where more kids participate in robotics than any other organized sport. Where participation is accessible to kids from any socio-economic background and success doesn't depend on having an engineer for a coach or thousands of dollars of extra advanced parts.&nbsp;<\/p>",
+              "button_label": "Start a team",
+              "button_link": "shopify:\/\/pages\/contact-us"
+            }
+          }
+        },
+        "block_order": [
+          "1565040633527-0",
+          "1565040633527-1",
+          "1565040633527-2"
+        ],
+        "settings": {
+          "title": "Our Strategy",
+          "align_text": "center",
+          "divider": false
+        }
+      },
+      "1565042314523": {
+        "type": "background-image-text",
+        "settings": {
+          "subtitle": "Kickstarter Update",
+          "title": "THANK YOU for helping us reach 100%",
+          "text": "<p>The Revolution Robotics Kickstarter campaign is 100% funded, but it's not too late to become a STEM hero by purchasing a Challenge Kit for a young person or school near you.<\/p>",
+          "button_label": "Buy Now",
+          "button_link": "shopify:\/\/products\/revolution-robotics-challenge-kit",
+          "image": "shopify:\/\/shop_images\/IMG_1213_1.JPG",
+          "focal_point": "center",
+          "color_border": "#f4f4f4",
+          "layout": "right",
+          "height": 550,
+          "framed": true,
+          "parallax": true
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "page-faq-template-0": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Shipping policy",
+              "text": "<p>Have questions about shipping &amp; kit fulfillment? Check out some frequently answered questions below!<\/p>",
+              "align_text": "left"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "Where do you ship to?",
+              "text": "<p>The Revolution Robotics program is meant to be an international educational experience and we are prepared to ship robots anywhere in the world. Since all of the charging cables included in the kit are universal USB cables, there are no concerns with outlet adapters.<\/p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "How long will my order take?",
+              "text": "<p>Our Revolution Robotics Challenge Kits are available via pre-order now. The first batch of kits will be fulfilled in November 2019.&nbsp;<\/p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Challenge kit Details",
+              "text": "<p>Take a look at this section for more technical details about our revolutionary 2019 Challenge Kit!<\/p>",
+              "align_text": "left"
+            }
+          },
+          "1565059553005": {
+            "type": "question",
+            "settings": {
+              "title": "How is the Revolution Robotics Challenge Kit different from other educational robotics kits?",
+              "text": "<p>The Challenge Kit is designed to be open source, affordable and easier for students and adults alike to use. Lower cost, mobile control and programming, free online resources and activities, and open source community support all help make the Challenge Kit an incredible option for educational and competitive robotics.<\/p>"
+            }
+          },
+          "1565059586745": {
+            "type": "question",
+            "settings": {
+              "title": "What is the age range for the Challenge Kit?",
+              "text": "<p>While the Revolution Robotics Challenge Kit is suitable for any age, the kit will be used for competitions hosted for students ages 8 - 13.<\/p>"
+            }
+          },
+          "1565059612466": {
+            "type": "question",
+            "settings": {
+              "title": "Is the Revolution Robotics Challenge Kit suitable for someone who has never built or programmed a robot previously?",
+              "text": "<p>Yes. The Challenge Kit is suitable for any skill level and anyone over the age of 8. Novices can follow the provided instructions to assemble their first robot and then use the Revolution app's drag and drop features to configure, program and control their robot. Experienced robot builders can enjoy the opportunity of building their own creation and then accessing the Python based coding in the app to write their code.<\/p>"
+            }
+          },
+          "page-faq-template-4": {
+            "type": "question",
+            "settings": {
+              "title": "Which Raspberry Pi model is used for the Revolution robot?",
+              "text": "<p>We are using the Raspberry Pi Zero W, a $10 micro-computer with build in bluetooth and wifi, in our Robot Brain. The USB and HDMI ports are accessible to makers who wish to extend their robot&rsquo;s capabilities with third-party accessories.<\/p>"
+            }
+          },
+          "1565059344300": {
+            "type": "question",
+            "settings": {
+              "title": "Does the Revolution Robotics Challenge Kit come with a controller?",
+              "text": "<p>Any Android or iOS smartphone or tablet can be used to configure, program, and control the robot through our free app. The Revolution Robotics Challenge Kit does not require you to spend additional money for a robot controller.<\/p>"
+            }
+          },
+          "1565059397525": {
+            "type": "question",
+            "settings": {
+              "title": "Does the Revolution Challenge Kit robot have the capability to be programmed for autonomous control?",
+              "text": "<p>Yes, most definitely. Coding and programming are integral parts of the Revolution Robotics experience. More important, beginners can use the Blockly adapted programming option while more advanced coders can enter into the actual code, based on Python, to achieve more advanced operations. Also, it is important to remember that ours is an open source platform and users can choose from many options to program and use their robot kits.<\/p>"
+            }
+          },
+          "1565059408551": {
+            "type": "question",
+            "settings": {
+              "title": "Is the app available for both the Android and iOS operating systems?",
+              "text": "<p>Yes, the Revolution Robotics App works on iOS and Android smartphones and tablets compatible with Bluetooth Low Energy (BLE).<\/p>"
+            }
+          },
+          "1565059516092": {
+            "type": "question",
+            "settings": {
+              "title": "What is the power source for the Revolution robot?",
+              "text": "<p>The robot's brain is powered by a rechargeable battery built into the brain. Six (6) AA batteries are the power source for the robot's peripherals. The Revolution Robotics Challenge Kit comes with six (6) rechargeable batteries and a charger.<\/p>"
+            }
+          },
+          "1565059431841": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Programs & Competitions",
+              "text": "<p>Have questions about our mobile challenges &amp; annual open competitions? Check out some answers here!<\/p>",
+              "align_text": "left"
+            }
+          },
+          "1565059505067": {
+            "type": "question",
+            "settings": {
+              "title": "Is there additional information about the Online Challenge that is being offered as part of the rewards? What will the prizes be?",
+              "text": "<p>Once the kits are shipped late fall 2019, the Revolution Robotics Foundation will host an online challenge exclusively for backers of the Kickstarter campaign. All backers will be notified by email about the challenge. Backers will post videos and pictures of their robots online (such as on our website, in our forum, on our youtube channel, etc...). Prizes have not been determined, but if you have some ideas about prizes you would like to see, please feel free to email us at kickstarter@revolutionrobotics.org.<\/p>"
+            }
+          },
+          "1565059679775": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Support & Operations",
+              "text": "<p>Need help navigating the mobile app or building your challenge kit? Check this section for answers!<\/p>",
+              "align_text": "left"
+            }
+          },
+          "1565059716180": {
+            "type": "question",
+            "settings": {
+              "title": "Where can I get technical questions answered after my Revolution Robotics kit arrives?",
+              "text": "<p>Email us at tech@revolutionrobotics.org. Also, customers will have two additional methods to get in touch with the Revolution Robotics staff. First, customers can visit our \"Contact Us\" web page and send us a message through our online web form. Second, customers will be able to contact staff for technical support through our online users forum.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq-template-0",
+          "page-faq-template-1",
+          "page-faq-template-2",
+          "page-faq-template-3",
+          "1565059553005",
+          "1565059586745",
+          "1565059612466",
+          "page-faq-template-4",
+          "1565059344300",
+          "1565059397525",
+          "1565059408551",
+          "1565059516092",
+          "1565059431841",
+          "1565059505067",
+          "1565059679775",
+          "1565059716180"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "page-contact-template-0": {
+            "type": "contact-form",
+            "settings": {
+              "title": "",
+              "show_phone": true,
+              "narrow_column": true
+            }
+          }
+        },
+        "block_order": [
+          "page-contact-template-0"
+        ],
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": true
+        }
+      },
+      "rosemaryhua-our-team": {
+        "type": "rosemaryhua-our-team",
+        "blocks": {
+          "1565070076637": {
+            "type": "text-columns",
+            "settings": {
+              "title": "board of directors",
+              "align_text": "center",
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/jared.jpg",
+              "image_width_1": 250,
+              "title_1": "jared schrieber",
+              "text_1": "<p><strong>Co-Founder &amp; President<\/strong><\/p>\n<p>Superpower: Inspiring Others<\/p>\n<p>Jared is a serial entrepreneur, start-up investor, and board member. He is the Co-founder, CEO, and Chairman of InfoScout as well as Co-founder of the Pat Tillman Foundation.<\/p>\n<p>As a former algebra teacher, football coach, and athletic director, Jared has always had a passion for both STEM education and competitive sports. More recently, he turned his garage into a lab where he mentored his kids' robotics teams.<\/p>",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/Screen_Shot_2019-08-06_at_3.17.29_PM.png",
+              "image_width_2": 290,
+              "title_2": "Rosemary Hua",
+              "text_2": "<p><strong>Chief Executive Officer &amp;&nbsp;Board Director<\/strong><\/p>\n<p>Superpower: Having a Bias for Action<\/p>\n<p>Rosemary Hua is a tech industry leader and seasoned non-profit executive with more than 10 years of experience leading a global charity. She is the Co-founder of Empathy FX International which builds and maintains schools in Ghana. In the corporate world, Rosemary is a seasoned leader in the eCommerce industry, working at both retail giants Walmart and Amazon.&nbsp;With a background dually rooted in education non-profit and tech industries, Rosemary is well positioned to advance the mission of Revolution Robotics and to inspire students around the world to pursue STEM degrees and careers.&nbsp;<\/p>\n<p><\/p>",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/JMorrellaProfile.png",
+              "image_width_3": 250,
+              "title_3": "Jason Morella",
+              "text_3": "<p><strong>Co-Founder &amp; Board&nbsp;Director<\/strong><\/p>\n<p>Superpower: Building A Better Tomorrow<\/p>\n<p>Prior to co-founding Revolution Robotics, Jason was the President of the Robotics Education &amp; Competition Foundation, launching and building the VEX and VEX IQ Robotics Programs, eventually becoming the world's largest robotics competition.<\/p>\n<p>Jason's past endeavors include overseeing the Western United States for FIRST Robotics for seven years, being a member of the Game Design Committees for FIRST and VEX, testifying before the U.S. Congress as an expert on STEM Education, and being named the San Jose Unified School District Teacher of the Year in 1999.<\/p>",
+              "button_label_3": "",
+              "button_link_3": "",
+              "enable_image_4": true,
+              "image_4": "shopify:\/\/shop_images\/davelavery_2.png",
+              "image_width_4": 650,
+              "title_4": "Dave Lavery",
+              "text_4": "<p><strong>Board&nbsp;Director<\/strong><\/p>\n<p>Superpower: TBD<\/p>\n<p>Dave Lavery founded and directs the NASA Robotics Alliance Project, including NASA participation in the FIRST robotics competition program. This project focuses on exposing high school students to real engineering challenges by having them work side-by-side with professional engineering mentors.<\/p>\n<p>At NASA, Dave currently manages the design and development of the next generation of Mars exploration spacecraft, and advanced technologies to enable them. He is the NASA Program Executive for the Mars Science Laboratory mission and the joint European-U.S. Mars Express mission.&nbsp;<\/p>",
+              "button_label_4": "",
+              "button_link_4": ""
+            }
+          },
+          "1565357269327": {
+            "type": "image-hero",
+            "settings": {
+              "parallax": true,
+              "title": "Our STEM Superheroes",
+              "title_size": 80,
+              "subheading": "",
+              "link": "",
+              "link_text": "",
+              "link_2": "",
+              "link_text_2": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/IMG_6426.jpg",
+              "focal_point": "center center",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
+          "1565070546192": {
+            "type": "text-columns",
+            "settings": {
+              "title": "",
+              "align_text": "center",
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/DDudasheadshot.jpeg",
+              "image_width_1": 650,
+              "title_1": "David Dudas",
+              "text_1": "<p><strong>Chief Technology Officer<\/strong><\/p>\n<p>Superpower: Getting Things Done<\/p>\n<p>David has about 8 years of experience in the automotive industry and robotics. He is a founding board member of the Hungarian Robot Builders Association.<br>David is a passionate robot builder with years of experience bringing embedded projects from concept to mass production. He joined Revolution Robotics in 2018 to bring our robots to life for students, makers, and enthusiasts around the world.<\/p>\n<p><\/p>",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/Balazs_original_copy.jpg",
+              "image_width_2": 650,
+              "title_2": "Balazs Maczak",
+              "text_2": "<p><strong>Lead Mobile App Developer<\/strong><\/p>\n<p>Superpower: Understanding Obfuscated Code<\/p>\n<p>Since Bal&aacute;zs started mobile development almost a decade ago he worked with a broad variety of companies from small start-ups to multinational enterprises as well. He really enjoys building awesome things - for which programming is a fantastic tool - and he believes that with right STEM education more and more people can share his passion. As a father of two Bal&aacute;zs is really excited to help Revolution Robotics transform the way future generations can learn about the world.<\/p>",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/Aron_Pavel_Headshot_1.jpeg",
+              "image_width_3": 650,
+              "title_3": "Aron Pavel",
+              "text_3": "<p><strong>Mobile App Developer<\/strong><\/p>\n<p>Superpower: Coding While Sleeping<\/p>\n<p>My name is &Aacute;ron P&aacute;vel, and I live in Budapest, Hungary. I've been developing mobile applications since 2012. I've been working on platforms (both natively and on React Native as well) and web applications.<\/p>\n<p><\/p>",
+              "button_label_3": "",
+              "button_link_3": "",
+              "enable_image_4": true,
+              "image_4": "shopify:\/\/shop_images\/Daniel_Buga_2.jpg",
+              "image_width_4": 650,
+              "title_4": "Daniel Buga",
+              "text_4": "<p><strong>Embedded Developer<\/strong><\/p>\n<p>Superpower: Misunderstanding the Obvious<\/p>\n<p>Daniel is an electrical engineer who loves killer tech - except for killer robots. He believes that technology can make the world a better place and STEM education is an essential part of this.<\/p>",
+              "button_label_4": "",
+              "button_link_4": ""
+            }
+          },
+          "1565070852204": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ria_original.jpg",
+              "image_width": 500,
+              "subtitle": "2019 internship",
+              "title": "read about ria",
+              "text": "<p>Ria is&nbsp;one of our Social Media Marketing Specialists at the Revolution Robotics Foundation! Read about her internship experience &amp; travels to our Hungary office in&nbsp;this blog post.<\/p>",
+              "button_label": "Read now",
+              "button_link": "shopify:\/\/blogs\/news\/ria-vieiras-internship-with-revolution-robotics",
+              "layout": "right"
+            }
+          },
+          "1565071030161": {
+            "type": "text-columns",
+            "settings": {
+              "title": "",
+              "align_text": "center",
+              "enable_image_1": true,
+              "image_1": "shopify:\/\/shop_images\/vajk_headshot3.jpg",
+              "image_width_1": 650,
+              "title_1": "Vajk Hermecz",
+              "text_1": "<p><strong>Software Developer<\/strong><\/p>\n<p>Superpower: Staring Down Problems<\/p>\n<p>Vajk was 4 years old when he got a Commodore 64 and he is working with computers ever since. Learning programming languages is like learning a second language to him.<\/p>\n<p>Vajk recognizes the power of getting involved with technology at an early age and he wants to enable others to experience this journey.<\/p>",
+              "button_label_1": "",
+              "button_link_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify:\/\/shop_images\/mjr3_headshot_280_2_1.jpeg",
+              "image_width_2": 650,
+              "title_2": "Miller j. Roberts",
+              "text_2": "<p><strong>Program Development Director<\/strong><\/p>\n<p>Superpower: Providing Encouragement<\/p>\n<p>Miller, a self-proclaimed jack of all trades, joins the Revolution Robotics team with 10 years of competitive robotics experience. He looks forward to being a part of this exciting new platform and inspiring more of tomorrow&rsquo;s STEM leaders.<\/p>",
+              "button_label_2": "",
+              "button_link_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify:\/\/shop_images\/Kayla_picture.jpg",
+              "image_width_3": 650,
+              "title_3": "Kayla Bayusik",
+              "text_3": "<p><strong>Social Media Marketing Specialist<\/strong><\/p>\n<p>Superpower: TBD<\/p>\n<p>Kayla is a Social Media Marketing specialist who went on a trip to Hungary for her internship with us this summer! Please read about her experience here.<\/p>",
+              "button_label_3": "Read now",
+              "button_link_3": "shopify:\/\/blogs\/news\/kayla-bayusiks-internship-with-revolution-robotics",
+              "enable_image_4": true,
+              "image_4": "shopify:\/\/shop_images\/rrf-mark-red-transparent-bg.png",
+              "image_width_4": 650,
+              "title_4": "Join us",
+              "text_4": "<p>Interested in joining our team?<\/p>",
+              "button_label_4": "Contact Us",
+              "button_link_4": "shopify:\/\/pages\/contact-us"
+            }
+          },
+          "1565071488380": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/softeq_photo_2.jpg",
+              "image_width": 500,
+              "subtitle": "Softeq",
+              "title": "our Hardware Sidekicks",
+              "text": "<p>Revolution Robotics partnered with Softeq's amazing engineers to develop and open-source the robot brain in our Challenge Kit.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "layout": "left"
+            }
+          },
+          "1565071556600": {
+            "type": "image-hero",
+            "settings": {
+              "parallax": true,
+              "title": "Our Mobile App Sidekicks",
+              "title_size": 80,
+              "subheading": "The Revolution Robotics Foundation is proud to have Supercharge behind the development of our mobile app that will allow users to configure, program, and control the Revolution Robotics robot through a series of learning challenges, using any iOS or Android smartphone or tablet.",
+              "link": "",
+              "link_text": "",
+              "link_2": "",
+              "link_text_2": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/superchargeteam_ver2_3b956cf9-6781-4b50-a62e-512bc3d4f54a.jpg",
+              "focal_point": "center center",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
+          "1565071677061": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/WebTeamPhotoYuDaFu_reduced.jpeg",
+              "image_width": 500,
+              "subtitle": "Synergy Digital",
+              "title": "Our Global Manufacturing Sidekicks",
+              "text": "<p>Revolution Robotics is working closely with Synergy Digital to bring our robotics parts and kits to life. Several of the manufacturing team leads are pictured with Jared Schrieber and David Dudas.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "layout": "right"
+            }
+          }
+        },
+        "block_order": [
+          "1565070076637",
+          "1565357269327",
+          "1565070546192",
+          "1565070852204",
+          "1565071030161",
+          "1565071488380",
+          "1565071556600",
+          "1565071677061"
+        ],
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_heading": "You may also like",
+          "related_count": 5
+        }
+      },
+      "recently-viewed": {
+        "type": "recently-viewed",
+        "settings": {
+          "show_section": true,
+          "recent_count": 5
+        }
+      },
+      "troubleshooting-by-leds": {
+        "type": "troubleshooting-by-leds",
+        "blocks": {
+          "1574335395894": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1_bcdf8eef-ca15-4776-bbea-80a31db418ec.png",
+              "title": "Internal battery indicator",
+              "titletextarea": "<div class=\"innnn-er---panel\">\n              <div class=\"my-img center\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/1_brain_913bf245-ce39-40b5-a386-0611c4f932d2_480x480.png?v=1573745721\" alt=\"\" width=\"480\" style=\"float: right;\">\n              <\/div>\n              <h3>Internal battery LED<\/h3>\n              <ul><\/ul>\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_gray_480x480.png?v=1573746535\" alt=\"\" width=\"16\" height=\"16\"> If it’s <span style=\"color: #cccccc;\"><b>blank<\/b><\/span>, your Robot Brain is turned OFF or completely discharged\n                <br>\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_red_480x480.png?v=1573746672\" alt=\"\" width=\"16\" height=\"16\"> If it’s solid <span style=\"color: #ff2a00;\"><b>red<\/b><\/span>, and every other LEDs are <span style=\"color: #cccccc;\"><b>blank<\/b><\/span>, your Robot Brain is seriously discharged and you should charge it immediately<\/div>\n\n              <p>It indicates the charge level of the internal batteries:<\/p>\n              <p style=\"padding-left: 30px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_battery_480x480.png?v=1573747029\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"342\">\n              <\/p>\n              <p style=\" text-align: center;\">100%              66%               33%              0%<\/p>\n\n              <h3>Charging the internal battery<\/h3>\n              <p style=\"padding-left: 15px;\">Note that you can charge the Robot Brain <b>ONLY<\/b> when it’s turned ON<\/p>\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/battery-charging-good_480x480.gif?v=1573747262\" alt=\"\" width=\"16\" height=\"16\"> While the Robot Brain is charging, the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon1_480x480.png?v=1573747462\" alt=\"\" width=\"31\" height=\"25\"> LED will show the charge level and it blinks with <span style=\"color: #00aaff;\"><b>blue<\/b> <\/span>color to show that charging is in progress.<\/div>\n\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_green_480x480.png?v=1573747670\" alt=\"\" width=\"16\" height=\"16\"> When the blue blinking stops and the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon1_480x480.png?v=1573747462\" alt=\"\" width=\"31\" height=\"25\"> LED is solid <span style=\"color: #80ff00;\"><b>green<\/b><\/span>, your Robot Brain is completely charged.\n              <\/div>\n              <p style=\"padding-left: 15px;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/no-motor-battery_480x480.gif?v=1573747818\" alt=\"\" width=\"16\" height=\"16\"> If the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon1_480x480.png?v=1573747462\" alt=\"\" width=\"31\" height=\"25\"> LED blinks in<b><span style=\"color: #ff2a00;\"> red<\/span> <\/b>during the charging, it indicates that your charger cannot deliver enough power. If it happens, please replace your charger and make sure that it's capable for 2A @ 5V.<\/p>\n            <\/div>"
+            }
+          },
+          "1574335453654": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/22_7f7dc311-da47-4c4f-bc48-c3520e60293f.png",
+              "title": "Motor battery pack indicator",
+              "titletextarea": "<div class=\"innnn-er---panel\">\n              <h3>Motor battery pack indication<\/h3>\n\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/battery-discharge_480x480.gif?v=1573748329\" alt=\"\" width=\"16\" height=\"16\"> When the Robot Brain is turned ON and Motor battery pack is connected, the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon2_480x480.png?v=1573748245\" alt=\"\" width=\"31\" height=\"25\"> LED will show the charge level of the motor battery pack. From <span style=\"color: #80ff00;\"><strong>green<\/strong> <\/span>(100%) to <span style=\"color: #ff2a00;\"><strong>red<\/strong> <\/span>(0%).<\/div>\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/3_led_gray_480x480.png?v=1573746535\" alt=\"\" width=\"16\" height=\"16\"> If the Motor battery pack is not connected to the Robot Brain the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon2_480x480.png?v=1573748245\" alt=\"\" width=\"31\" height=\"25\"> LED is <span style=\"color: #cccccc;\"><b>blank<\/b><\/span>.<\/div>\n              <div style=\"padding-left: 15px;\">\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/no-motor-battery_480x480.gif?v=1573747818\" alt=\"\" width=\"16\" height=\"16\"> If you try to drive your robot without the Motor battery pack attached every LED will go <span style=\"color: #cccccc;\"><b>blank<\/b><\/span> and the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon2_480x480.png?v=1573748245\" alt=\"\" width=\"31\" height=\"25\"> LED will show a <span style=\"color: #ff2a00;\"><strong>red<\/strong> <\/span>warning sign.<\/div>\n\n              <h2>Turning ON the Robot Brain<\/h2>\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <div>\n                    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/battery-discharge_480x480.gif?v=1573748329\" alt=\"\" width=\"16\" height=\"16\"> After turning ON you brain the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon1_480x480.png?v=1573747462\" alt=\"\" width=\"31\" height=\"25\"> LED will immediately show the internal battery level.<\/div>\n\n                  <div style=\"padding-left: 15px;\">The LED circle will show the booting progress with <span style=\"color: #ffff00;\"><b>yellow<\/b> <\/span>LEDs:<\/div>\n                <\/div>\n                <div class=\"my-img center\">\n                  <div><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-with-startup_480x480.gif?v=1573749401\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/div>\n                <\/div>\n              <\/div>\n\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <p>Once the booting process is done the LED circle will show a <span style=\"color: #80ff00;\"><b>green<\/b> <\/span>pulsing effect.<\/p>\n                <\/div>\n                <div class=\"my-img center\">\n                  <p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-ready_480x480.gif?v=1573750094\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/p>\n                <\/div>\n              <\/div>\n\n\n              <h2>Robot Brain error<\/h2>\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <p style=\"padding-left: 15px;\">If there is a major fault with your Robot Brain and it cannot start properly, you’ll see the <span style=\"color: #ff2a00;\"><b>red<\/b> <\/span>ring of error.<\/p>\n                <\/div>\n                <div class=\"my-img center\">\n                  <p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-error_480x480.gif?v=1573810333\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/p>\n                <\/div>\n              <\/div>\n              <div style=\"padding-left: 15px;\">If it happens, try to restart your Robot Brain first. If it doesn’t help, you can restore the Robot’s Software on the SD card anytime with the help of our guide.<\/div>\n              <div style=\"padding-left: 15px;\"><a href=\"https:\/\/revolutionrobotics.org\/pages\/sd-card\">https:\/\/revolutionrobotics.org\/pages\/sd-card<\/a><\/div>\n\n              <div style=\"padding-left: 15px;\">If the red ring of error happens during the update procedure, please wait a few minutes before you restart the Robot Brain.<\/div>\n            <\/div>"
+            }
+          },
+          "1574335485768": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/33_db216729-e883-4881-9150-0cc71575a45a.png",
+              "title": "Wireless connection indicator",
+              "titletextarea": "<div class=\"innnn-er---panel\">\n              <h2>Wireless connection LED<\/h2>\n              <div>\n                <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/ready-for-connection_480x480.gif?v=1573811069\" alt=\"\" width=\"16\" height=\"16\"> After the software successfully started (you see the pulsing <span style=\"color: #80ff00;\"><b>green<\/b> <\/span>light on the LED circle) the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon3_480x480.png?v=1573811312\" alt=\"\" width=\"31\" height=\"25\"> LED will blink with <span style=\"color: #00aaff;\"><b>blue<\/b> <\/span>color. It indicates that your Robot Brain is ready for a connection. When you successfully connect with the application the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon3_480x480.png?v=1573811312\" alt=\"\" width=\"31\" height=\"25\"> LED will change to solid <span style=\"color: #00aaff;\"><b>blue<\/b><\/span>.<\/div>\n\n              <h2>Status LED<\/h2>\n              <div>The <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon4_480x480.png?v=1573813619\" alt=\"\" width=\"31\" height=\"25\"> LED is <span style=\"color: #ff2a00;\"><b>red<\/b> <\/span>if the Robot Brain is turned ON, the internal battery is not discharged and you are not actively controlling your robot.<\/div>\n              <div style=\"padding-left: 15px;\">The <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon4_480x480.png?v=1573813619\" alt=\"\" width=\"31\" height=\"25\"> LED is <span style=\"color: #80ff00;\"><b>green<\/b> <\/span>when you are actively remote controlling your robot. If the LED remains <span style=\"color: #80ff00;\"><b>green<\/b> <\/span>the communication is stable between the Robot and the Mobile App.<\/div>\n              <div style=\"padding-left: 15px;\">In special cases, when you are not actively controlling your Robot, but you execute motor or sensor tests, the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/4_small_icon4_480x480.png?v=1573813619\" alt=\"\" width=\"31\" height=\"25\"> LED is <span style=\"color: #ff8000;\"><b>orange<\/b><\/span>.<\/div>\n\n              <h2>Updating the Firmware<\/h2>\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <p style=\"padding-left: 15px;\">If you update your Robot from the Mobile App you’ll see a rainbow light on the LED circle:<\/p>\n                <\/div>\n                <div class=\"my-img center\">\n                  <p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-rainbow_480x480.gif?v=1573815535\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/p>\n                <\/div>\n              <\/div>\n              <div class=\"csm---main--first-box\">\n                <div class=\"csm---main--first-box-inne\">\n                  <p style=\"padding-left: 15px;\">During the update procedure the Robot will disconnect from the Mobile App and it’s possible that you’ll see the red ring of error for a few seconds.<\/p>\n                  <p style=\"padding-left: 15px;\">Sometimes we have to update the Microcontroller inside your Robot Brain. In this case all 4 status LEDs will turn to purple and you’ll see a blue progress animation on the LED circle:<\/p>\n                <\/div>  \n                <div class=\"my-img center\">\n                  <p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/brain-fw-update_480x480.gif?v=1573816139\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"350\"><\/p>\n                <\/div>\n              <\/div>\n            <\/div>"
+            }
+          },
+          "1574335508605": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/44_23a399a8-b3a7-42fd-9083-b50e059aefda.png",
+              "title": "Robot status indicator",
+              "titletextarea": "<div class=\"innnn-er---panel\">\n              <h2>Troubleshooting by LEDs<\/h2>\n              <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0252\/5318\/3574\/files\/LED_troubleshoot_transparent.png?v=1573823133\" alt=\"\" style=\"display: block; margin-left: auto; margin-right: auto;\" width=\"1000\">\n            <\/div>"
+            }
+          }
+        },
+        "block_order": [
+          "1574335395894",
+          "1574335453654",
+          "1574335485768",
+          "1574335508605"
+        ],
+        "settings": {
+          "title": "LEDS ON THE ROBOT BRAIN",
+          "title2": "STATUS LEDS"
+        }
+      }
+    },
+    "content_for_index": [
+      "1565037866172",
+      "1526481284428",
+      "1565042314523",
+      "1565040633527",
+      "1525969132569",
+      "1526048519234",
+      "1526048620689",
+      "1525899982112"
+    ]
+  },
+  "presets": {
+    "Modern": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_price": "#1c1d1d",
+      "color_savings_text": "#ff4e4e",
+      "color_borders": "#e8e8e1",
+      "color_button": "#111111",
+      "color_button_text": "#fff",
+      "color_cart_dot": "#ff4f33",
+      "color_small_image_bg": "#fff",
+      "color_large_image_bg": "#0f0f0f",
+      "color_header": "#fff",
+      "color_header_text": "#000",
+      "color_announcement": "#0f0f0f",
+      "color_announcement_text": "#fff",
+      "color_footer": "#ffffff",
+      "color_footer_text": "#000000",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#e6e6e6",
+      "color_image_overlay": "#000",
+      "color_image_overlay_text_shadow": 20,
+      "type_header_font_family": "bauer_bodoni_n7",
+      "type_header_spacing": "0",
+      "type_header_base_size": 40,
+      "type_header_line_height": 1,
+      "type_header_capitalize": false,
+      "type_headers_align_text": true,
+      "type_base_font_family": "futura_n4",
+      "type_base_spacing": "25",
+      "type_base_size": 17,
+      "type_base_line_height": 1.6,
+      "type_body_align_text": true,
+      "type_navigation_style": "body",
+      "type_navigation_size": 18,
+      "type_product_style": "body",
+      "type_collection_font": "heading",
+      "type_collection_size": 26,
+      "button_style": "square",
+      "icon_weight": "3px",
+      "icon_linecaps": "miter",
+      "vendor_enable": false,
+      "sku_enable": false,
+      "quantity_enable": false,
+      "variant_type": "button",
+      "inventory_enable": true,
+      "quick_shop_text": "Quick view",
+      "product_grid_image_size": "natural",
+      "product_hover_image": false,
+      "product_color_swatches": false,
+      "collection_color_swatches": false,
+      "product_video_width": "960",
+      "product_video_height": "1280",
+      "product_video_style": "muted",
+      "product_contact": false,
+      "collection_grid_style": "overlaid",
+      "collection_grid_shape": "square",
+      "collection_grid_image": "product",
+      "collection_grid_text_align": "center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 10,
+      "collection_grid_gutter": true,
+      "cart_type": "drawer",
+      "cart_notes_enable": false,
+      "cart_terms_conditions_enable": false,
+      "currency_format": "money_format",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#111111",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "breadcrumb": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1524770014057": {
+              "type": "logo",
+              "settings": {
+                "desktop_logo_width": 140,
+                "mobile_logo_width": 110
+              }
+            },
+            "1524770292306": {
+              "type": "announcement",
+              "settings": {
+                "text": "Free shipping",
+                "link_text": "On all orders over $100"
+              }
+            },
+            "1524770296206": {
+              "type": "announcement",
+              "settings": {
+                "text": "Hassle-free returns",
+                "link_text": "30-day postage paid returns"
+              }
+            }
+          },
+          "block_order": [
+            "1524770014057",
+            "1524770292306",
+            "1524770296206"
+          ],
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "center-split",
+            "header_style": "sticky",
+            "sticky_index": false,
+            "sticky_collection": false,
+            "header_search_enable": true,
+            "toolbar_menu": "top",
+            "toolbar_social": true,
+            "announcement_compact": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494301487048": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 95
+              }
+            },
+            "1494301487049": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "container_width": 25
+              }
+            },
+            "1494292487693": {
+              "type": "newsletter",
+              "settings": {
+                "container_width": 33
+              }
+            }
+          },
+          "block_order": [
+            "1494301487049",
+            "1494292487693",
+            "1494301487048"
+          ],
+          "settings": {
+            "show_payment_icons": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "subcollection_style": "above",
+            "subcollections_per_row": 5,
+            "per_row": 4
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "large",
+            "social_enable": true
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "1498163293234": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": false,
+            "enlarge_text": true,
+            "divider": false
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "1499789718857": {
+          "type": "featured-collections",
+          "blocks": {
+            "1499789718857-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1499789718857-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1499789718857-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1499789718857-3": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1499789718857-0",
+            "1499789718857-1",
+            "1499789718857-2",
+            "1499789718857-3"
+          ],
+          "settings": {
+            "title": "Shop by category",
+            "divider": false,
+            "per_row": 4,
+            "enable_gutter": true
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify:\/\/collections\/all",
+            "focal_point": "80% 0",
+            "color_border": "#cdb8ac",
+            "layout": "left",
+            "height": 750,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "product-image-row": {
+              "type": "image-row",
+              "settings": {
+                "enable_gutter": false,
+                "enable_zoom": true
+              }
+            },
+            "product-text-and-image": {
+              "type": "text-and-image",
+              "settings": {
+                "layout": "left"
+              }
+            },
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550,
+                "parallax": true
+              }
+            },
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {}
+            },
+            "product-hero-video": {
+              "type": "hero-video",
+              "settings": {
+                "text_align": "vertical-bottom horizontal-left",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            }
+          },
+          "block_order": [
+            "product-image-row",
+            "product-text-and-image",
+            "product-background-image-text",
+            "product-text-columns",
+            "product-hero-video"
+          ],
+          "settings": {
+            "image_size": "medium",
+            "social_enable": true,
+            "collection_links_enable": true
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-image-hero": {
+              "type": "image-hero",
+              "settings": {}
+            },
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "align_text": "center",
+                "narrow_column": true,
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {}
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+                "title": "Featured collection",
+                "per_row": 4,
+                "rows": 1,
+                "view_all": true
+              }
+            }
+          },
+          "block_order": [
+            "page-image-hero",
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {}
+        },
+        "1524769873765": {
+          "type": "slideshow",
+          "blocks": {
+            "1524769873765-0": {
+              "type": "image",
+              "settings": {
+                "title_size": 80,
+                "link": "shopify:\/\/collections\/all",
+                "link_text": "Shop all",
+                "text_align": "vertical-center horizontal-left",
+                "focal_point": "top center"
+              }
+            }
+          },
+          "block_order": [
+            "1524769873765-0"
+          ],
+          "settings": {
+            "section_height": "750px",
+            "mobile_height": "auto",
+            "parallax": true,
+            "style": "minimal",
+            "autoplay": false,
+            "autoplay_speed": 7
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+            "enable": true,
+            "collection_image_enable": true,
+            "parallax": true
+          }
+        },
+        "collection-sidebar": {
+          "type": "collection-sidebar",
+          "blocks": {
+            "1524772785241": {
+              "type": "subcollections",
+              "settings": {}
+            },
+            "1524772580942": {
+              "type": "tags_all",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1524772785241",
+            "1524772580942"
+          ],
+          "settings": {
+            "enable_sidebar": true,
+            "filter_style": "sidebar",
+            "tags_combine": false,
+            "enable_sort": true
+          }
+        },
+        "1525115199973": {
+          "type": "blog-posts",
+          "settings": {
+            "title": "From the journal",
+            "blog": "news",
+            "post_limit": 3,
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "view_all": true,
+            "blog_image_size": "wide",
+            "divider": false
+          }
+        },
+        "1525118065355": {
+          "type": "map",
+          "settings": {}
+        },
+        "1525295772132": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row": 4,
+            "rows": 1,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1525886124958": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525886482727": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify:\/\/collections\/all",
+                "width": "100",
+                "height": 720,
+                "text_size": 120,
+                "focal_point": "80% 50%",
+                "boxed": false,
+                "framed": false
+              }
+            },
+            "1525886854810": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1525911710924": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "boxed": false,
+                "framed": true
+              }
+            }
+          },
+          "block_order": [
+            "1525886482727",
+            "1525886854810",
+            "1525911710924"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1525912530555": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525912530555-0": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify:\/\/collections\/all",
+                "width": "50",
+                "height": 800,
+                "text_size": 120,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1525912530555-1": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify:\/\/collections\/all",
+                "width": "50",
+                "height": 500,
+                "text_size": 120,
+                "text_align": "vertical-bottom horizontal-center",
+                "focal_point": "80% 50%",
+                "boxed": true,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1525912530555-0",
+            "1525912530555-1"
+          ],
+          "settings": {
+            "full_width": true,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1526068199595": {
+          "type": "instagram",
+          "settings": {}
+        },
+        "collection-promotions": {
+          "type": "collection-promotions",
+          "blocks": {
+            "1526403837307": {
+              "type": "banner",
+              "settings": {
+                "link": "shopify:\/\/collections\/all",
+                "label": "Shop now",
+                "color_tint": "#e95454",
+                "color_tint_opacity": 10,
+                "framed": false
+              }
+            },
+            "1526496043079": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify:\/\/collections\/all",
+                "width": "100",
+                "height": 500,
+                "text_size": 120,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": true
+              }
+            }
+          },
+          "block_order": [
+            "1526403837307",
+            "1526496043079"
+          ],
+          "settings": {
+            "gutter_size": 20
+          }
+        }
+      },
+      "content_for_index": [
+        "1524769873765",
+        "1498163293234",
+        "1525912530555",
+        "1499789718857",
+        "1525886124958",
+        "1525295772132",
+        "1499790633921",
+        "1525115199973",
+        "1525118065355",
+        "1526068199595"
+      ]
+    },
+    "Vintage": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_price": "#1c1d1d",
+      "color_savings_text": "#72acc7",
+      "color_borders": "#f2f2f2",
+      "color_button": "#682d2d",
+      "color_button_text": "#fff",
+      "color_cart_dot": "#682d2d",
+      "color_small_image_bg": "#f7f7f9",
+      "color_large_image_bg": "#682d2d",
+      "color_header": "#ffffff",
+      "color_header_text": "#000000",
+      "color_announcement": "#6a2727",
+      "color_announcement_text": "#ffffff",
+      "color_footer": "#f7f7f9",
+      "color_footer_text": "#593b32",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#682d2d",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#cdc9c2",
+      "color_image_overlay": "#000",
+      "color_image_overlay_text_shadow": 30,
+      "type_header_font_family": "americana_n8",
+      "type_header_spacing": "0",
+      "type_header_base_size": 36,
+      "type_header_line_height": 1.2,
+      "type_header_capitalize": true,
+      "type_headers_align_text": true,
+      "type_base_font_family": "avenir_next_n4",
+      "type_base_spacing": "0",
+      "type_base_size": 18,
+      "type_base_line_height": 1.5,
+      "type_body_align_text": true,
+      "type_navigation_style": "heading",
+      "type_navigation_size": 17,
+      "type_product_style": "body",
+      "type_collection_font": "heading",
+      "type_collection_size": 20,
+      "button_style": "square",
+      "icon_weight": "3px",
+      "icon_linecaps": "miter",
+      "vendor_enable": false,
+      "sku_enable": false,
+      "quantity_enable": false,
+      "variant_type": "button",
+      "inventory_enable": false,
+      "quick_shop_text": "Quick view",
+      "product_grid_image_size": "square",
+      "product_hover_image": true,
+      "product_color_swatches": false,
+      "collection_color_swatches": false,
+      "product_video_width": "1280",
+      "product_video_height": "720",
+      "product_video_style": "muted",
+      "product_contact": true,
+      "collection_grid_style": "below",
+      "collection_grid_shape": "landscape",
+      "collection_grid_image": "product",
+      "collection_grid_text_align": "top-center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 0,
+      "collection_grid_gutter": true,
+      "cart_type": "drawer",
+      "cart_notes_enable": false,
+      "cart_terms_conditions_enable": false,
+      "currency_format": "money_format",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_twitter_link": "https:\/\/twitter.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "social_youtube_link": "https:\/\/www.youtube.com\/user\/shopify",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_accent_color": "#682d2d",
+      "checkout_button_color": "#682d2d",
+      "checkout_error_color": "#ff6d6d",
+      "product_fixed_image_height": false,
+      "breadcrumb": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1520882467782": {
+              "type": "logo",
+              "settings": {}
+            },
+            "1521051841065": {
+              "type": "announcement",
+              "settings": {
+                "text": "Free shipping",
+                "link_text": "On all orders over $100",
+                "link": "shopify:\/\/collections\/all"
+              }
+            },
+            "1520888647304": {
+              "type": "announcement",
+              "settings": {
+                "text": "Hassle-free returns",
+                "link_text": "30-day postage paid returns",
+                "link": "shopify:\/\/collections\/all"
+              }
+            }
+          },
+          "block_order": [
+            "1520882467782",
+            "1521051841065",
+            "1520888647304"
+          ],
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "center-split",
+            "header_style": "normal",
+            "sticky_index": true,
+            "sticky_collection": true,
+            "header_search_enable": true,
+            "toolbar_menu": "toolbar",
+            "toolbar_social": true,
+            "announcement_compact": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494301487048": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 95
+              }
+            },
+            "1494301487049": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "container_width": 25
+              }
+            },
+            "1494292487693": {
+              "type": "newsletter",
+              "settings": {
+                "container_width": 30
+              }
+            }
+          },
+          "block_order": [
+            "1494301487049",
+            "1494292487693",
+            "1494301487048"
+          ],
+          "settings": {
+            "show_payment_icons": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "subcollection_style": "above",
+            "subcollections_per_row": 3,
+            "per_row": 2
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "large",
+            "thumbnail_position": "below",
+            "social_enable": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "1498163293234": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": false
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify:\/\/collections\/all",
+            "focal_point": "center",
+            "color_border": "#6a635b",
+            "layout": "right",
+            "height": 750,
+            "framed": true,
+            "parallax": true
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "product-image-row": {
+              "type": "image-row",
+              "settings": {
+                "enable_gutter": false,
+                "enable_zoom": true
+              }
+            },
+            "product-text-and-image": {
+              "type": "text-and-image",
+              "settings": {
+                "layout": "left"
+              }
+            },
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550,
+                "parallax": true
+              }
+            },
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {}
+            },
+            "product-hero-video": {
+              "type": "hero-video",
+              "settings": {
+                "text_align": "vertical-bottom horizontal-left",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            }
+          },
+          "block_order": [
+            "product-image-row",
+            "product-text-and-image",
+            "product-background-image-text",
+            "product-text-columns",
+            "product-hero-video"
+          ],
+          "settings": {
+            "image_size": "medium",
+            "social_enable": true,
+            "collection_links_enable": true
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "align_text": "center",
+                "narrow_column": true,
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {}
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+                "per_row": 4,
+                "rows": 1,
+                "view_all": true
+              }
+            }
+          },
+          "block_order": [
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {}
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+            "enable": true,
+            "collection_image_enable": true,
+            "parallax": true
+          }
+        },
+        "collection-sidebar": {
+          "type": "collection-sidebar",
+          "blocks": {
+            "1524772785241": {
+              "type": "subcollections",
+              "settings": {}
+            },
+            "1524772580942": {
+              "type": "tags_all",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1524772785241",
+            "1524772580942"
+          ],
+          "settings": {
+            "enable_sidebar": true,
+            "filter_style": "sidebar",
+            "tags_combine": false,
+            "enable_sort": true
+          }
+        },
+        "1523298253705": {
+          "type": "slideshow",
+          "blocks": {
+            "1523298253705-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "1523298253705-1": {
+              "type": "image",
+              "settings": {
+                "title_size": 80,
+                "text_align": "vertical-bottom horizontal-right",
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1523298253705-0",
+            "1523298253705-1"
+          ],
+          "settings": {
+            "section_height": "100vh",
+            "mobile_height": "500px",
+            "parallax": true,
+            "style": "minimal",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "title_enable": true,
+            "display_type": "all",
+            "sort": "alphabetical",
+            "grid": "3"
+          }
+        },
+        "1523380258742": {
+          "type": "featured-collections",
+          "disabled": true,
+          "blocks": {
+            "1523380258742-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1523380258742-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1523380258742-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1524685811204": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1524685816171": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1524685829380": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1523380258742-0",
+            "1523380258742-1",
+            "1523380258742-2",
+            "1524685811204",
+            "1524685816171",
+            "1524685829380"
+          ],
+          "settings": {
+            "divider": false,
+            "per_row": 3,
+            "enable_gutter": true
+          }
+        },
+        "1524685456938": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify:\/\/collections\/all",
+            "focal_point": "center",
+            "color_border": "#655147",
+            "layout": "right",
+            "height": 650,
+            "framed": true,
+            "parallax": true
+          }
+        },
+        "1524685919990": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row": 4,
+            "rows": 1,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1524685997883": {
+          "type": "newsletter",
+          "settings": {
+            "color_background": "#f7f7f9",
+            "color_text": "#3f2e2e"
+          }
+        },
+        "1524686167862": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row": 3,
+            "rows": 1,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1524686876171": {
+          "type": "featured-collections",
+          "blocks": {
+            "1524686876171-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1524686876171-1": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1524686876171-0",
+            "1524686876171-1"
+          ],
+          "settings": {
+            "divider": false,
+            "per_row": 2,
+            "enable_gutter": true
+          }
+        },
+        "1525878145666": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525879359021": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify:\/\/collections\/all",
+                "width": "100",
+                "height": 500,
+                "text_size": 120,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "80% 50%",
+                "boxed": false,
+                "framed": true
+              }
+            }
+          },
+          "block_order": [
+            "1525879359021"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1525881294487": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525881312850": {
+              "type": "banner",
+              "settings": {
+                "link": "shopify:\/\/collections\/all",
+                "label": "Learn more",
+                "color_tint": "#d69344",
+                "color_tint_opacity": 14,
+                "framed": true
+              }
+            }
+          },
+          "block_order": [
+            "1525881312850"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 0,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1525968536765": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525968571112": {
+              "type": "product",
+              "settings": {
+                "label": "New",
+                "enable_price": true,
+                "width": "100",
+                "text_size": 100,
+                "color_tint": "#000",
+                "color_tint_opacity": 0,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1525968571112"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1525969002555": {
+          "type": "blog-posts",
+          "settings": {
+            "blog": "news",
+            "post_limit": 3,
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "view_all": true,
+            "blog_image_size": "wide",
+            "divider": false
+          }
+        },
+        "1526333080570": {
+          "type": "instagram",
+          "settings": {}
+        },
+        "1526493275292": {
+          "type": "promo-grid",
+          "blocks": {
+            "1526493290477": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "100",
+                "boxed": true,
+                "framed": true
+              }
+            }
+          },
+          "block_order": [
+            "1526493290477"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": true
+          }
+        },
+        "collection-promotions": {
+          "type": "collection-promotions",
+          "blocks": {
+            "1526501666154": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "100",
+                "boxed": true,
+                "framed": true
+              }
+            },
+            "1526501699095": {
+              "type": "banner",
+              "settings": {
+                "heading": "Free shipping",
+                "link": "shopify:\/\/collections\/all",
+                "label": "Learn more",
+                "color_tint": "#d69344",
+                "color_tint_opacity": 14,
+                "framed": true
+              }
+            }
+          },
+          "block_order": [
+            "1526501666154",
+            "1526501699095"
+          ],
+          "settings": {
+            "gutter_size": 20
+          }
+        }
+      },
+      "content_for_index": [
+        "1523298253705",
+        "1498163293234",
+        "1525878145666",
+        "1523380258742",
+        "1524686876171",
+        "1526493275292",
+        "1524685456938",
+        "1524685919990",
+        "1525881294487",
+        "1524686167862",
+        "1524685997883",
+        "1499790633921",
+        "1525968536765",
+        "1525969002555",
+        "1526333080570"
+      ]
+    },
+    "Bold": {
+      "color_body_bg": "#000000",
+      "color_body_text": "#ffffff",
+      "color_price": "#d1ba98",
+      "color_savings_text": "#ff6565",
+      "color_borders": "#2b2a27",
+      "color_button": "#9f8561",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#9f8561",
+      "color_small_image_bg": "#000000",
+      "color_large_image_bg": "#111111",
+      "color_header": "#000000",
+      "color_header_text": "#ffffff",
+      "color_announcement": "#cf2424",
+      "color_announcement_text": "#fff",
+      "color_footer": "#000000",
+      "color_footer_text": "#ffffff",
+      "color_drawer_background": "#000000",
+      "color_drawer_text": "#ffffff",
+      "color_drawer_border": "#2b2a27",
+      "color_drawer_button": "#9f8561",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#67635d",
+      "color_image_overlay": "#000",
+      "color_image_overlay_opacity": 15,
+      "color_image_overlay_text_shadow": 30,
+      "type_header_font_family": "fjalla_one_n4",
+      "type_header_spacing": "150",
+      "type_header_base_size": 45,
+      "type_header_line_height": 1.2,
+      "type_header_capitalize": true,
+      "type_headers_align_text": true,
+      "type_base_font_family": "itc_conduit_n4",
+      "type_base_spacing": "50",
+      "type_base_size": 18,
+      "type_base_line_height": 1.4,
+      "type_body_align_text": true,
+      "type_navigation_style": "heading",
+      "type_navigation_size": 18,
+      "type_product_style": "heading",
+      "type_collection_font": "heading",
+      "type_collection_size": 23,
+      "button_style": "angled",
+      "icon_weight": "5px",
+      "icon_linecaps": "miter",
+      "vendor_enable": false,
+      "sku_enable": false,
+      "quantity_enable": false,
+      "variant_type": "button",
+      "inventory_enable": false,
+      "product_save_amount": true,
+      "product_zoom_enable": false,
+      "quick_shop_enable": true,
+      "quick_shop_text": "Quick view",
+      "product_grid_image_size": "square",
+      "product_hover_image": false,
+      "product_color_swatches": false,
+      "collection_color_swatches": false,
+      "product_video_width": "1280",
+      "product_video_height": "720",
+      "product_video_style": "muted",
+      "product_content_collapse_1": false,
+      "product_content_collapse_2": true,
+      "product_content_collapse_3": true,
+      "product_contact": false,
+      "enable_product_reviews": true,
+      "reviews_layout": "expandable",
+      "collection_grid_style": "overlaid-box",
+      "collection_grid_shape": "landscape",
+      "collection_grid_image": "collection",
+      "collection_grid_text_align": "bottom-center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 10,
+      "collection_grid_gutter": true,
+      "cart_type": "drawer",
+      "currency_format": "money_format",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_twitter_link": "https:\/\/twitter.com\/shopify",
+      "social_youtube_link": "https:\/\/www.youtube.com\/user\/shopify",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#000000",
+      "checkout_input_background_color_mode": "transparent",
+      "checkout_sidebar_background_color": "#000000",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#ae9878",
+      "checkout_button_color": "#ae9878",
+      "checkout_error_color": "#ff6d6d",
+      "color_image_2": "#cf2424",
+      "color_image_2_opacity": 0,
+      "color_image_1": "#6d1414",
+      "color_image_1_opacity": 0,
+      "type_accent_style": "body",
+      "type_accent_bold": true,
+      "type_accent_capitalize": true,
+      "type_button_font": "heading",
+      "type_button_capitalize": false,
+      "type_header_accent_transform": true,
+      "type_base_accent_transform": true,
+      "collection_grid_font": "heading",
+      "color_image_bg": "#000000",
+      "breadcrumb": true,
+      "color_sale_tag": "#990000",
+      "color_input": "#ffffff",
+      "checkout_banner_background_color": "#fff",
+      "checkout_call_to_action_color": "#a26b25",
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1524768779513": {
+              "type": "logo",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1524768779513"
+          ],
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "left-center",
+            "header_style": "normal",
+            "sticky_index": true,
+            "sticky_collection": false,
+            "header_search_enable": false,
+            "toolbar_social": false,
+            "announcement_compact": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494292487693": {
+              "type": "newsletter",
+              "settings": {}
+            },
+            "1526406521795": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "container_width": 25
+              }
+            },
+            "1525444454442": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 95
+              }
+            }
+          },
+          "block_order": [
+            "1494292487693",
+            "1526406521795",
+            "1525444454442"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "subcollection_style": "above",
+            "subcollections_per_row": 3,
+            "per_row": 5
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "large",
+            "social_enable": true
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify:\/\/collections\/all",
+            "focal_point": "center",
+            "color_border": "#090909",
+            "layout": "right",
+            "height": 750,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "product-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "button_link": "shopify:\/\/collections\/all",
+                "alignment": "top left",
+                "color_border": "#3a6815",
+                "layout": "right",
+                "height": 550,
+                "parallax": false
+              }
+            },
+            "product-text-columns": {
+              "type": "text-columns",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "product-background-image-text",
+            "product-text-columns"
+          ],
+          "settings": {
+            "image_size": "large",
+            "thumbnail_position": "below",
+            "social_enable": true,
+            "collection_links_enable": true
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "align_text": "center",
+                "narrow_column": true,
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {}
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+                "per_row": 4,
+                "rows": 1,
+                "view_all": true
+              }
+            }
+          },
+          "block_order": [
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {}
+        },
+        "1524768368258": {
+          "type": "slideshow",
+          "blocks": {
+            "1524768368258-0": {
+              "type": "image",
+              "settings": {
+                "link": "shopify:\/\/collections\/all",
+                "link_text": "Shop all",
+                "text_align": "vertical-center horizontal-left",
+                "focal_point": "top center"
+              }
+            }
+          },
+          "block_order": [
+            "1524768368258-0"
+          ],
+          "settings": {
+            "section_height": "750px",
+            "mobile_height": "auto",
+            "parallax": true,
+            "style": "minimal",
+            "autoplay": true,
+            "autoplay_speed": 5
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+            "enable": true,
+            "collection_image_enable": false,
+            "parallax": false
+          }
+        },
+        "collection-sidebar": {
+          "type": "collection-sidebar",
+          "blocks": {
+            "1524772785241": {
+              "type": "subcollections",
+              "settings": {}
+            },
+            "1524772580942": {
+              "type": "tags_all",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1524772785241",
+            "1524772580942"
+          ],
+          "settings": {
+            "enable_sidebar": true,
+            "filter_style": "sidebar",
+            "tags_combine": false,
+            "enable_sort": true
+          }
+        },
+        "1525290496166": {
+          "type": "featured-collections",
+          "blocks": {
+            "1525290496166-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1525290496166-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1525290496166-1": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1525290496166-0",
+            "1525290496166-2",
+            "1525290496166-1"
+          ],
+          "settings": {
+            "divider": false,
+            "per_row": 3,
+            "enable_gutter": true
+          }
+        },
+        "1525899982112": {
+          "type": "instagram",
+          "settings": {}
+        },
+        "1525969132569": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525969870126": {
+              "type": "product",
+              "settings": {
+                "link_label": "Shop now",
+                "label": "New",
+                "enable_price": true,
+                "width": "50",
+                "text_size": 100,
+                "color_tint": "#f8ebd4",
+                "color_tint_opacity": 0,
+                "framed": true
+              }
+            },
+            "1525969996422": {
+              "type": "product",
+              "settings": {
+                "link_label": "Shop now",
+                "label": "New",
+                "enable_price": true,
+                "width": "50",
+                "text_size": 100,
+                "color_tint": "#ff0000",
+                "color_tint_opacity": 0,
+                "framed": true
+              }
+            }
+          },
+          "block_order": [
+            "1525969870126",
+            "1525969996422"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 5,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1526048428302": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row": 4,
+            "rows": 1,
+            "view_all": false,
+            "divider": false
+          }
+        },
+        "1526048519234": {
+          "type": "newsletter",
+          "settings": {
+            "color_background": "#171615",
+            "color_text": "#ffffff"
+          }
+        },
+        "1526048620689": {
+          "type": "blog-posts",
+          "settings": {
+            "title": "Our blog",
+            "blog": "news",
+            "post_limit": 3,
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "view_all": true,
+            "blog_image_size": "wide",
+            "divider": false
+          }
+        },
+        "collection-promotions": {
+          "type": "collection-promotions",
+          "blocks": {
+            "1526501090474": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify:\/\/collections\/all",
+                "width": "50",
+                "height": 400,
+                "text_size": 120,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1526501130849": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1526501360047": {
+              "type": "banner",
+              "settings": {
+                "label": "Shop 2017",
+                "color_tint": "#514f4b",
+                "color_tint_opacity": 20,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1526501090474",
+            "1526501130849",
+            "1526501360047"
+          ],
+          "settings": {
+            "gutter_size": 20
+          }
+        },
+        "1526480838446": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify:\/\/collections\/all",
+            "focal_point": "center",
+            "color_border": "#f4f4f4",
+            "layout": "left",
+            "height": 750,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "1526481284428": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": false
+          }
+        },
+        "1526481405629": {
+          "type": "promo-grid",
+          "blocks": {
+            "1526481405629-1": {
+              "type": "advanced",
+              "settings": {
+                "width": "100",
+                "height": 660,
+                "text_size": 120,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1526481405629-1"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 34,
+            "space_above": false,
+            "space_below": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1524768368258",
+        "1526481284428",
+        "1525969132569",
+        "1525290496166",
+        "1526048428302",
+        "1526480838446",
+        "1499790633921",
+        "1526048519234",
+        "1526048620689",
+        "1526481405629",
+        "1525899982112"
+      ]
+    }
+  }
+}

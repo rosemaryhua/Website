@@ -4,8 +4,8 @@
     "theme_name": "Impulse",
     "theme_author": "Archetype Themes",
     "theme_version": "2.1.1",
-    "theme_documentation_url": "https://archetypethemes.co/blogs/impulse",
-    "theme_support_url": "https://archetypethemes.co/pages/support#impulse"
+    "theme_documentation_url": "https:\/\/archetypethemes.co\/blogs\/impulse",
+    "theme_support_url": "https:\/\/archetypethemes.co\/pages\/support#impulse"
   },
   {
     "name": "Colors",
@@ -579,7 +579,7 @@
         "type": "checkbox",
         "id": "enable_payment_button",
         "label": "Show dynamic checkout button",
-        "info": "Lets customers check out directly using a familiar payment method. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+        "info": "Lets customers check out directly using a familiar payment method. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
         "default": true
       },
       {
@@ -661,7 +661,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Requires variant picker style above to be set to 'Buttons'. [Learn how to set up swatches](https://archetypethemes.co/blogs/impulse/how-do-i-set-up-color-swatches)"
+        "content": "Requires variant picker style above to be set to 'Buttons'. [Learn how to set up swatches](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
       },
       {
         "type": "checkbox",
@@ -695,7 +695,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Impulse supports .MP4, YouTube and Vimeo product videos through a product image's 'alt' tag. Not all features supported by Vimeo. [Learn more](https://archetypethemes.co/blogs/impulse/how-do-i-add-product-videos)"
+        "content": "Impulse supports .MP4, YouTube and Vimeo product videos through a product image's 'alt' tag. Not all features supported by Vimeo. [Learn more](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-add-product-videos)"
       },
       {
         "type": "text",
@@ -793,7 +793,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Add reviews by enabling the setting below and installing the [Shopify Product Reviews app](https://apps.shopify.com/product-reviews)."
+        "content": "Add reviews by enabling the setting below and installing the [Shopify Product Reviews app](https:\/\/apps.shopify.com\/product-reviews)."
       },
       {
         "type": "checkbox",
@@ -999,7 +999,7 @@
       },
       {
         "type": "paragraph",
-        "content": "To offer multiple currencies on your online store, you must first [edit your store's currency formatting](https://help.shopify.com/manual/using-themes/troubleshooting/help-script-find-money-formats)."
+        "content": "To offer multiple currencies on your online store, you must first [edit your store's currency formatting](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/help-script-find-money-formats)."
       },
       {
         "type": "checkbox",
@@ -1012,14 +1012,14 @@
         "id": "currency_format",
         "label": "Format",
         "options": [
-         {
-           "value": "money_format",
-           "label": "Without currency ($10.00)"
-         },
-         {
-           "value": "money_with_currency_format",
-           "label": "With currency ($10.00 CAD)"
-         }
+          {
+            "value": "money_format",
+            "label": "Without currency ($10.00)"
+          },
+          {
+            "value": "money_with_currency_format",
+            "label": "With currency ($10.00 CAD)"
+          }
         ],
         "default": "money_format"
       },
@@ -1050,55 +1050,55 @@
         "type": "text",
         "id": "social_facebook_link",
         "label": "Facebook",
-        "info": "https://www.facebook.com/shopify"
+        "info": "https:\/\/www.facebook.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_twitter_link",
         "label": "Twitter",
-        "info": "https://twitter.com/shopify"
+        "info": "https:\/\/twitter.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_pinterest_link",
         "label": "Pinterest",
-        "info": "https://www.pinterest.com/shopify"
+        "info": "https:\/\/www.pinterest.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_instagram_link",
         "label": "Instagram",
-        "info": "https://instagram.com/shopify"
+        "info": "https:\/\/instagram.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_snapchat_link",
         "label": "Snapchat",
-        "info": "https://www.snapchat.com/add/shopify"
+        "info": "https:\/\/www.snapchat.com\/add\/shopify"
       },
       {
         "type": "text",
         "id": "social_tumblr_link",
         "label": "Tumblr",
-        "info": "http://shopify.tumblr.com"
+        "info": "http:\/\/shopify.tumblr.com"
       },
       {
         "type": "text",
         "id": "social_linkedin_link",
         "label": "LinkedIn",
-        "info": "https://www.linkedin.com/in/shopify"
+        "info": "https:\/\/www.linkedin.com\/in\/shopify"
       },
       {
         "type": "text",
         "id": "social_youtube_link",
         "label": "YouTube",
-        "info": "https://www.youtube.com/user/shopify"
+        "info": "https:\/\/www.youtube.com\/user\/shopify"
       },
       {
         "type": "text",
         "id": "social_vimeo_link",
         "label": "Vimeo",
-        "info": "https://vimeo.com/shopify"
+        "info": "https:\/\/vimeo.com\/shopify"
       },
       {
         "type": "header",
