@@ -1,0 +1,88 @@
+<div class="page-width page-content">
+  {% include 'breadcrumbs' %}
+  <div class="grid">
+    <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth">
+      <header class="section-header own--headercsmm--dsds">
+        <h1 class="csm--ownsd-sd section-header__title {{ page.title }}">{{ page.title }}</h1>
+      </header>
+      <div class="rte rte--nomargin">
+        <div class="container">
+          <h3 class='own--title--csm'>{{ section.settings.title }}</h3>
+          <h3 class='own--title--csm--Status'>{{ section.settings.title2 }}</h3>
+          {% for block in section.blocks %}
+          <button class="btn input-group-btn accordion">
+            <div class="csmm---acco--img"><img src="{{ block.settings.image | img_url:'master'}}" alt="{{ block.settings.title }}" ></div>
+            <div class="csmm---acco--imgtext">{{ block.settings.title  }}</div>
+          </button>
+          <div class="panel">
+            {{ block.settings.titletextarea }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Page Description",
+"class": "index-section",
+"max_blocks": 10,
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "text",
+"id": "title2",
+"label": "Heading"
+}
+
+],
+"blocks": [
+{
+"type": "Image",
+"name": "Imagepage",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "textarea",
+"id": "titletextarea",
+"label": "Description"
+}
+]
+}
+],
+"presets": [
+{
+"name": "ImageText",
+"category": "Image",
+"blocks": [
+{
+"type": "Image"
+},
+{
+"type": "Image"
+},
+{
+"type": "Image"
+},
+{
+"type": "Image"
+}
+]
+}
+]
+}
+{% endschema %}

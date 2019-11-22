@@ -1,0 +1,139 @@
+
+
+{% section 'troubleshooting-by-leds' %}
+<style>
+
+  .csm---main--first-box .my-img.center img {
+    width: 100%;
+  }
+  .csm---main--first-box .my-img.center {
+    width: 50%;
+   /* float: right;*/
+  }
+
+  .csm---main--first-box-inne {
+    width: 50%;
+    float: left;
+  }
+  .csm---main--first-box {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+  @media(max-width:767px){
+    .csm---main--first-box-inne {
+      width: 100%;
+      float: unset;
+    }
+    .csm---main--first-box .my-img.center {
+      width: 100%;
+      float: unset;
+    }
+  }
+
+  .accordion {
+    background-color: #3b895e;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 10px;
+  }
+
+
+
+  .accordion:after {
+    content: '\002B' !important;
+    font-size: 25px;
+  }
+
+  .accordion.active:after {
+    content: "\2212" !important;
+  }
+
+  .panel {
+    padding: 0 18px;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+  }
+  .innnn-er---panel {
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+  .csmm---acco--imgtext {
+    display: inline-block;
+    width: 94%;
+    padding-left: 20px;
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+  }
+  .csmm---acco--img {
+    display: inline-block;
+
+    width: 3%;
+  }
+  h1.csm--ownsd-sd {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  h3.own--title--csm {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  h3.own--title--csm--Status {
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  header.section-header.own--headercsmm--dsds {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  button.btn.input-group-btn.accordion {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media(max-width:1300px){
+    .csmm---acco--imgtext {
+
+      top: 0px;
+    }
+  }
+  @media(max-width:360px){
+    .csmm---acco--imgtext {
+
+      font-size: 17px;
+    }
+  }
+  @media(max-width:520px){
+    .csmm---acco--imgtext {
+      display: inline-block;
+      width: 83%;
+      padding-left: 3px;
+      position: relative;
+      top: -10px;
+     
+    }
+
+    .csmm---acco--img {
+      display: inline-block;
+      width: 15%;
+    }
+  }
+
+  
+</style>
