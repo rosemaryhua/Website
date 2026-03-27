@@ -1,6 +1,8 @@
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import { FAMILY_COLORS } from '../utils/constants'
 import { MAP_PINS, CITY_CENTERS } from '../utils/mapPins'
+
+const PinMap = lazy(() => import('./PinMap'))
 
 export default function MapView({ data, onUpdateMapsConfig }) {
   const { families = [], mapsConfig = {} } = data
@@ -147,7 +149,7 @@ export default function MapView({ data, onUpdateMapsConfig }) {
           })}
         </div>
       ) : (
-        <div className="flex-1 overflow-y-auto">
+        <div className="flex-1 flex flex-col">
           {/* City filter */}
           <div className="flex gap-2 p-3 overflow-x-auto shrink-0 bg-white border-b border-gray-100">
             {cities.map(city => (
@@ -163,32 +165,32 @@ export default function MapView({ data, onUpdateMapsConfig }) {
             ))}
           </div>
 
-          {/* Pin list */}
-          <div className="divide-y divide-gray-100">
-            {filteredPins.map((pin, i) => (
-              <button
-                key={i}
-                onClick={() => openInGoogleMaps(pin)}
-                className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 active:bg-gray-100 transition-colors text-left"
-              >
-                <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white shrink-0">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                  </svg>
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-gray-900 truncate">{pin.name}</p>
-                  <p className="text-xs text-gray-400">{pin.lat.toFixed(4)}, {pin.lng.toFixed(4)}</p>
-                </div>
-                <svg className="w-4 h-4 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </button>
-            ))}
-          </div>
+          {/* Map */}
+          <Suspense fallback={<div className="flex-1 flex items-center justify-center"><p className="text-sm text-gray-400">Loading map...</p></div>}>
+            <PinMap cityFilter={cityFilter} />
+          </Suspense>
 
-          <div className="p-4 text-center text-xs text-gray-400">
-            Tap any pin to open in Google Maps
+          {/* Pin list below map */}
+          <div className="shrink-0 max-h-[40%] overflow-y-auto border-t border-gray-200">
+            <div className="divide-y divide-gray-100">
+              {filteredPins.map((pin, i) => (
+                <button
+                  key={i}
+                  onClick={() => openInGoogleMaps(pin)}
+                  className="w-full px-4 py-2.5 flex items-center gap-3 hover:bg-gray-50 active:bg-gray-100 transition-colors text-left"
+                >
+                  <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center text-white shrink-0">
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                  </div>
+                  <p className="flex-1 text-sm font-medium text-gray-900 truncate">{pin.name}</p>
+                  <svg className="w-4 h-4 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       )}
