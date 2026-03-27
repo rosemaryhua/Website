@@ -74,7 +74,7 @@ export default function Settings({
   }
 
   return (
-    <div className="flex-1 overflow-y-auto p-4 space-y-6">
+    <div className="p-4 space-y-6">
       {/* Your Family */}
       <section>
         <h2 className="text-lg font-bold text-gray-900 mb-3">Your Family</h2>

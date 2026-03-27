@@ -109,7 +109,7 @@ export default function App() {
       </header>
 
       {/* Content */}
-      <main className="flex-1 overflow-hidden">
+      <main className="flex-1 overflow-y-auto flex flex-col">
         <Routes>
           <Route path="/" element={<DailySchedule data={enrichedData} />} />
           <Route path="/map" element={<MapView data={enrichedData} />} />
