@@ -4,9 +4,17 @@ import { FAMILIES, DEFAULT_TRIP_DATES } from '../utils/constants'
 import { SEED_ITINERARIES, SEED_TRIP_DATES } from '../utils/seedData'
 
 const LOCAL_KEY = 'familyTripData'
+const DATA_VERSION_KEY = 'familyTripDataVersion'
+const CURRENT_VERSION = 3 // bump this to force a refresh of seed data
 
 function getLocalData() {
   try {
+    const storedVersion = parseInt(localStorage.getItem(DATA_VERSION_KEY) || '0')
+    if (storedVersion < CURRENT_VERSION) {
+      localStorage.removeItem(LOCAL_KEY)
+      localStorage.setItem(DATA_VERSION_KEY, String(CURRENT_VERSION))
+      return null
+    }
     const stored = localStorage.getItem(LOCAL_KEY)
     return stored ? JSON.parse(stored) : null
   } catch {
@@ -16,6 +24,7 @@ function getLocalData() {
 
 function saveLocalData(data) {
   localStorage.setItem(LOCAL_KEY, JSON.stringify(data))
+  localStorage.setItem(DATA_VERSION_KEY, String(CURRENT_VERSION))
 }
 
 const defaultData = () => ({
