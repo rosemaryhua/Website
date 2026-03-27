@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom'
 import { useAppData } from './hooks/useAppData'
 import DailySchedule from './components/DailySchedule'
@@ -14,6 +14,56 @@ const tabs = [
   { path: '/vote', label: 'Vote', icon: VoteIcon },
   { path: '/settings', label: 'Settings', icon: SettingsIcon },
 ]
+
+const TRIP_PASSWORD = 'korea2026'
+
+function PasswordGate({ children }) {
+  const [authenticated, setAuthenticated] = useState(() =>
+    sessionStorage.getItem('tripAuth') === 'true'
+  )
+  const [input, setInput] = useState('')
+  const [error, setError] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (input === TRIP_PASSWORD) {
+      sessionStorage.setItem('tripAuth', 'true')
+      setAuthenticated(true)
+    } else {
+      setError(true)
+      setInput('')
+    }
+  }
+
+  if (authenticated) return children
+
+  return (
+    <div className="h-full flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-900 p-6">
+      <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-sm text-center">
+        <div className="text-4xl mb-3">🇰🇷</div>
+        <h1 className="text-xl font-bold text-gray-900 mb-1">Family Trip</h1>
+        <p className="text-sm text-gray-500 mb-6">Enter the password to continue</p>
+        <input
+          type="password"
+          value={input}
+          onChange={(e) => { setInput(e.target.value); setError(false) }}
+          placeholder="Password"
+          className={`w-full px-4 py-3 rounded-xl border-2 text-center text-lg outline-none transition-colors ${
+            error ? 'border-red-400 bg-red-50' : 'border-gray-200 focus:border-blue-400'
+          }`}
+          autoFocus
+        />
+        {error && <p className="text-red-500 text-sm mt-2">Wrong password, try again</p>}
+        <button
+          type="submit"
+          className="w-full mt-4 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+        >
+          Enter
+        </button>
+      </form>
+    </div>
+  )
+}
 
 export default function App() {
   const navigate = useNavigate()
@@ -40,6 +90,7 @@ export default function App() {
   const chatCount = (data.chat || []).length
 
   return (
+    <PasswordGate>
     <div className="h-full flex flex-col bg-gray-50">
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-4 py-3 shrink-0 shadow-lg">
@@ -109,6 +160,7 @@ export default function App() {
         </div>
       </nav>
     </div>
+    </PasswordGate>
   )
 }
 
