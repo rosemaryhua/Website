@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-family-1: #3b82f6;
+  --color-family-2: #10b981;
+  --color-family-3: #f59e0b;
+  --color-family-4: #ef4444;
+  --color-family-1-light: #dbeafe;
+  --color-family-2-light: #d1fae5;
+  --color-family-3-light: #fef3c7;
+  --color-family-4-light: #fee2e2;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.75rem;
+}

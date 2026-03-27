@@ -1,0 +1,175 @@
+import { useState } from 'react'
+import { format, parseISO } from 'date-fns'
+import { FAMILY_COLORS } from '../utils/constants'
+
+export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
+  const { votes = [], families = [] } = data
+  const [showNew, setShowNew] = useState(false)
+  const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (!title.trim()) return
+    onAddVote({
+      title: title.trim(),
+      description: description.trim(),
+      proposedBy: currentFamily,
+    })
+    setTitle('')
+    setDescription('')
+    setShowNew(false)
+  }
+
+  const sortedVotes = [...votes].reverse()
+
+  return (
+    <div className="flex flex-col h-full">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        {/* New proposal button */}
+        {!showNew && currentFamily && (
+          <button
+            onClick={() => setShowNew(true)}
+            className="w-full py-3 border-2 border-dashed border-blue-300 rounded-xl text-blue-600 font-medium hover:bg-blue-50 transition-colors"
+          >
+            + Propose an Activity
+          </button>
+        )}
+
+        {!currentFamily && (
+          <div className="p-4 bg-yellow-50 rounded-xl text-center text-yellow-700 text-sm">
+            Select your family in Settings to propose and vote on activities
+          </div>
+        )}
+
+        {/* New proposal form */}
+        {showNew && (
+          <form onSubmit={handleSubmit} className="bg-blue-50 rounded-xl p-4 space-y-3">
+            <input
+              type="text"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              placeholder="Activity name (e.g., Beach day at Bondi)"
+              className="w-full px-3 py-2 rounded-lg border border-blue-200 text-sm outline-none focus:ring-2 focus:ring-blue-300"
+              autoFocus
+            />
+            <textarea
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              placeholder="Details (optional) — when, where, what to bring..."
+              rows={2}
+              className="w-full px-3 py-2 rounded-lg border border-blue-200 text-sm outline-none focus:ring-2 focus:ring-blue-300 resize-none"
+            />
+            <div className="flex gap-2">
+              <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium">
+                Propose
+              </button>
+              <button type="button" onClick={() => setShowNew(false)} className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm">
+                Cancel
+              </button>
+            </div>
+          </form>
+        )}
+
+        {/* Vote cards */}
+        {sortedVotes.length === 0 && !showNew && (
+          <div className="text-center text-gray-400 py-12">
+            <svg className="w-12 h-12 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+            <p>No activity proposals yet</p>
+          </div>
+        )}
+
+        {sortedVotes.map(proposal => {
+          const proposer = families.find(f => f.id === proposal.proposedBy)
+          const yesVotes = Object.entries(proposal.votes || {}).filter(([, v]) => v === 'yes')
+          const noVotes = Object.entries(proposal.votes || {}).filter(([, v]) => v === 'no')
+          const myVote = currentFamily ? (proposal.votes || {})[currentFamily] : null
+
+          return (
+            <div key={proposal.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+              <div className="p-4">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <h3 className="font-semibold text-gray-900">{proposal.title}</h3>
+                    {proposal.description && (
+                      <p className="text-sm text-gray-500 mt-1">{proposal.description}</p>
+                    )}
+                  </div>
+                  {proposer && (
+                    <span className={`text-xs px-2 py-1 rounded-full ${FAMILY_COLORS[proposer.id].bgLight} ${FAMILY_COLORS[proposer.id].text} whitespace-nowrap`}>
+                      {proposer.emoji} {proposer.name}
+                    </span>
+                  )}
+                </div>
+
+                {/* Vote results */}
+                <div className="mt-3 flex gap-4">
+                  <div className="flex items-center gap-1">
+                    <span className="text-green-500 text-lg">👍</span>
+                    <span className="text-sm font-medium text-gray-700">{yesVotes.length}</span>
+                    <div className="flex -space-x-1 ml-1">
+                      {yesVotes.map(([fId]) => {
+                        const f = families.find(fam => fam.id === fId)
+                        return f ? (
+                          <span key={fId} className="text-xs" title={f.name}>{f.emoji}</span>
+                        ) : null
+                      })}
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-red-400 text-lg">👎</span>
+                    <span className="text-sm font-medium text-gray-700">{noVotes.length}</span>
+                    <div className="flex -space-x-1 ml-1">
+                      {noVotes.map(([fId]) => {
+                        const f = families.find(fam => fam.id === fId)
+                        return f ? (
+                          <span key={fId} className="text-xs" title={f.name}>{f.emoji}</span>
+                        ) : null
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Vote buttons */}
+                {currentFamily && (
+                  <div className="mt-3 flex gap-2">
+                    <button
+                      onClick={() => onCastVote(proposal.id, currentFamily, 'yes')}
+                      className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${
+                        myVote === 'yes'
+                          ? 'bg-green-500 text-white'
+                          : 'bg-green-50 text-green-700 hover:bg-green-100'
+                      }`}
+                    >
+                      👍 We're in!
+                    </button>
+                    <button
+                      onClick={() => onCastVote(proposal.id, currentFamily, 'no')}
+                      className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${
+                        myVote === 'no'
+                          ? 'bg-red-500 text-white'
+                          : 'bg-red-50 text-red-700 hover:bg-red-100'
+                      }`}
+                    >
+                      👎 Pass
+                    </button>
+                  </div>
+                )}
+              </div>
+
+              {proposal.timestamp && (
+                <div className="px-4 py-2 bg-gray-50 border-t border-gray-100">
+                  <p className="text-xs text-gray-400">
+                    {format(parseISO(proposal.timestamp), 'MMM d, h:mm a')}
+                  </p>
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
