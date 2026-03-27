@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { db, ref, set, push, onValue, update, remove, isConfigured } from '../firebase'
 import { FAMILIES, DEFAULT_TRIP_DATES } from '../utils/constants'
+import { SEED_ITINERARIES, SEED_TRIP_DATES } from '../utils/seedData'
 
 const LOCAL_KEY = 'familyTripData'
 
@@ -19,8 +20,8 @@ function saveLocalData(data) {
 
 const defaultData = () => ({
   families: FAMILIES.map(f => ({ ...f })),
-  tripDates: { ...DEFAULT_TRIP_DATES },
-  itineraries: {},
+  tripDates: { ...SEED_TRIP_DATES },
+  itineraries: { ...SEED_ITINERARIES },
   chat: [],
   votes: [],
   sheetsConfig: {},
