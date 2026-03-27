@@ -9,6 +9,7 @@ export default function Settings({
   const { families = [], tripDates = {}, sheetsConfig = {}, itineraries = {} } = data
   const [editingFamily, setEditingFamily] = useState(null)
   const [familyName, setFamilyName] = useState('')
+  const [familyEmoji, setFamilyEmoji] = useState('')
   const [importTab, setImportTab] = useState('sheets') // 'sheets' or 'paste'
   const [importFamily, setImportFamily] = useState(currentFamily || 'family1')
   const [sheetUrl, setSheetUrl] = useState('')
@@ -16,10 +17,10 @@ export default function Settings({
   const { fetchSheet, loading: sheetsLoading, error: sheetsError } = useGoogleSheets()
   const [importStatus, setImportStatus] = useState(null)
 
-  const handleFamilyRename = (familyId) => {
+  const handleFamilySave = (familyId) => {
     if (!familyName.trim()) return
     const updated = families.map(f =>
-      f.id === familyId ? { ...f, name: familyName.trim() } : f
+      f.id === familyId ? { ...f, name: familyName.trim(), emoji: familyEmoji || f.emoji } : f
     )
     onUpdateFamilies(updated)
     setEditingFamily(null)
@@ -105,37 +106,51 @@ export default function Settings({
         </div>
       </section>
 
-      {/* Family Names */}
+      {/* Family Names & Emojis */}
       <section>
-        <h2 className="text-lg font-bold text-gray-900 mb-3">Rename Families</h2>
+        <h2 className="text-lg font-bold text-gray-900 mb-3">Edit Families</h2>
         <div className="space-y-2">
           {families.map(f => {
             const colors = FAMILY_COLORS[f.id]
             return (
-              <div key={f.id} className="flex items-center gap-2">
-                <span className={`w-3 h-3 rounded-full ${colors.bg}`} />
-                {editingFamily === f.id ? (
-                  <div className="flex-1 flex gap-2">
-                    <input
-                      type="text"
-                      value={familyName}
-                      onChange={(e) => setFamilyName(e.target.value)}
-                      onKeyDown={(e) => e.key === 'Enter' && handleFamilyRename(f.id)}
-                      className="flex-1 px-2 py-1 border rounded text-sm"
-                      autoFocus
-                    />
-                    <button onClick={() => handleFamilyRename(f.id)} className="text-green-600 text-sm font-medium">Save</button>
-                    <button onClick={() => setEditingFamily(null)} className="text-gray-400 text-sm">Cancel</button>
-                  </div>
-                ) : (
-                  <div className="flex-1 flex items-center justify-between">
-                    <span className="text-sm text-gray-700">{f.emoji} {f.name}</span>
-                    <button
-                      onClick={() => { setEditingFamily(f.id); setFamilyName(f.name) }}
-                      className="text-xs text-blue-500"
-                    >Edit</button>
-                  </div>
-                )}
+              <div key={f.id}>
+                <div className="flex items-center gap-2">
+                  <span className={`w-3 h-3 rounded-full ${colors.bg}`} />
+                  {editingFamily === f.id ? (
+                    <div className="flex-1 space-y-2">
+                      <div className="flex gap-2">
+                        <input
+                          type="text"
+                          value={familyEmoji}
+                          onChange={(e) => setFamilyEmoji(e.target.value)}
+                          className="w-12 px-2 py-1 border rounded text-sm text-center"
+                          placeholder="emoji"
+                        />
+                        <input
+                          type="text"
+                          value={familyName}
+                          onChange={(e) => setFamilyName(e.target.value)}
+                          onKeyDown={(e) => e.key === 'Enter' && handleFamilySave(f.id)}
+                          className="flex-1 px-2 py-1 border rounded text-sm"
+                          placeholder="Family name"
+                          autoFocus
+                        />
+                      </div>
+                      <div className="flex gap-2">
+                        <button onClick={() => handleFamilySave(f.id)} className="text-green-600 text-sm font-medium">Save</button>
+                        <button onClick={() => setEditingFamily(null)} className="text-gray-400 text-sm">Cancel</button>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex-1 flex items-center justify-between">
+                      <span className="text-sm text-gray-700">{f.emoji} {f.name}</span>
+                      <button
+                        onClick={() => { setEditingFamily(f.id); setFamilyName(f.name); setFamilyEmoji(f.emoji) }}
+                        className="text-xs text-blue-500"
+                      >Edit</button>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
