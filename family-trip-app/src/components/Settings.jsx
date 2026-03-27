@@ -11,7 +11,7 @@ export default function Settings({
   const [familyName, setFamilyName] = useState('')
   const [familyEmoji, setFamilyEmoji] = useState('')
   const [importTab, setImportTab] = useState('sheets') // 'sheets' or 'paste'
-  const [importFamily, setImportFamily] = useState(currentFamily || 'family1')
+  const [importFamily, setImportFamily] = useState('family1')
   const [sheetUrl, setSheetUrl] = useState('')
   const [pasteText, setPasteText] = useState('')
   const { fetchSheet, loading: sheetsLoading, error: sheetsError } = useGoogleSheets()
