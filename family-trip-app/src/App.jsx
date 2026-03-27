@@ -111,7 +111,7 @@ export default function App() {
       {/* Content */}
       <main className="flex-1 overflow-y-auto flex flex-col">
         <Routes>
-          <Route path="/" element={<DailySchedule data={enrichedData} />} />
+          <Route path="/" element={<DailySchedule data={enrichedData} onUpdateItinerary={updateItinerary} />} />
           <Route path="/map" element={<MapView data={enrichedData} />} />
           <Route path="/chat" element={
             <Chat data={enrichedData} currentFamily={currentFamily} onSendMessage={sendMessage} />
