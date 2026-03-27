@@ -1,8 +1,8 @@
 export const FAMILIES = [
-  { id: 'family1', name: 'Family 1', color: 'family-1', emoji: '🏠' },
-  { id: 'family2', name: 'Family 2', color: 'family-2', emoji: '🏡' },
-  { id: 'family3', name: 'Family 3', color: 'family-3', emoji: '🏘' },
-  { id: 'family4', name: 'Family 4', color: 'family-4', emoji: '🏰' },
+  { id: 'family1', name: 'Hua Family', color: 'family-1', emoji: '🏠' },
+  { id: 'family2', name: 'Ku Family', color: 'family-2', emoji: '🏡' },
+  { id: 'family3', name: 'Kim Family', color: 'family-3', emoji: '🏘' },
+  { id: 'family4', name: 'DeAragon Family', color: 'family-4', emoji: '🏰' },
 ]
 
 export const FAMILY_COLORS = {
