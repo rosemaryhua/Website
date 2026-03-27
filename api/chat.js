@@ -3,10 +3,12 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const apiKey = process.env.ANTHROPIC_API_KEY
+  const apiKey = (process.env.ANTHROPIC_API_KEY || '').trim()
   if (!apiKey) {
     return res.status(500).json({ error: 'ANTHROPIC_API_KEY not configured' })
   }
+  // Debug: show first/last chars of key to verify correct key is loaded
+  const keyPreview = apiKey.slice(0, 7) + '...' + apiKey.slice(-4)
 
   const { messages, itineraryContext } = req.body
 
@@ -47,7 +49,7 @@ ${itineraryContext}
 
     if (!response.ok) {
       const err = await response.text()
-      return res.status(response.status).json({ error: err })
+      return res.status(response.status).json({ error: err, keyPreview })
     }
 
     const data = await response.json()
