@@ -34,35 +34,14 @@ function ActivityItem({ item, index, familyId, colors, allItems, onUpdateItinera
 
   if (editing) {
     return (
-      <div className="px-4 py-3 bg-gray-50 space-y-2">
-        <div className="grid grid-cols-2 gap-2">
-          <div>
-            <label className="text-xs text-gray-500">Date</label>
-            <input
-              type="date"
-              value={form.date}
-              onChange={(e) => setForm({ ...form, date: e.target.value })}
-              className="w-full px-2 py-1.5 border rounded text-sm"
-            />
-          </div>
-          <div>
-            <label className="text-xs text-gray-500">Time</label>
-            <input
-              type="text"
-              value={form.time}
-              onChange={(e) => setForm({ ...form, time: e.target.value })}
-              placeholder="e.g. 09:00"
-              className="w-full px-2 py-1.5 border rounded text-sm"
-            />
-          </div>
-        </div>
+      <div className="px-3 py-3 bg-gray-50 space-y-2">
         <div>
           <label className="text-xs text-gray-500">Activity</label>
           <input
             type="text"
             value={form.activity}
             onChange={(e) => setForm({ ...form, activity: e.target.value })}
-            className="w-full px-2 py-1.5 border rounded text-sm"
+            className="w-full px-2 py-1.5 border rounded text-sm bg-white"
           />
         </div>
         <div>
@@ -72,8 +51,29 @@ function ActivityItem({ item, index, familyId, colors, allItems, onUpdateItinera
             value={form.location}
             onChange={(e) => setForm({ ...form, location: e.target.value })}
             placeholder="Optional"
-            className="w-full px-2 py-1.5 border rounded text-sm"
+            className="w-full px-2 py-1.5 border rounded text-sm bg-white"
           />
+        </div>
+        <div className="flex gap-2">
+          <div className="flex-1">
+            <label className="text-xs text-gray-500">Date</label>
+            <input
+              type="date"
+              value={form.date}
+              onChange={(e) => setForm({ ...form, date: e.target.value })}
+              className="w-full px-2 py-1.5 border rounded text-sm bg-white"
+            />
+          </div>
+          <div className="w-24">
+            <label className="text-xs text-gray-500">Time</label>
+            <input
+              type="text"
+              value={form.time}
+              onChange={(e) => setForm({ ...form, time: e.target.value })}
+              placeholder="09:00"
+              className="w-full px-2 py-1.5 border rounded text-sm bg-white"
+            />
+          </div>
         </div>
         <div>
           <label className="text-xs text-gray-500">Notes</label>
@@ -82,7 +82,7 @@ function ActivityItem({ item, index, familyId, colors, allItems, onUpdateItinera
             value={form.notes}
             onChange={(e) => setForm({ ...form, notes: e.target.value })}
             placeholder="Optional"
-            className="w-full px-2 py-1.5 border rounded text-sm"
+            className="w-full px-2 py-1.5 border rounded text-sm bg-white"
           />
         </div>
         <div className="flex gap-2 pt-1">

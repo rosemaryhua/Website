@@ -2,11 +2,13 @@ import { useState } from 'react'
 import { format, parseISO } from 'date-fns'
 import { FAMILY_COLORS } from '../utils/constants'
 
-export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
+export default function Voting({ data, onAddVote, onCastVote }) {
   const { votes = [], families = [] } = data
   const [showNew, setShowNew] = useState(false)
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
+  const [proposerFamily, setProposerFamily] = useState('family1')
+  const [voteAsFamily, setVoteAsFamily] = useState('family1')
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -14,7 +16,7 @@ export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
     onAddVote({
       title: title.trim(),
       description: description.trim(),
-      proposedBy: currentFamily,
+      proposedBy: proposerFamily,
     })
     setTitle('')
     setDescription('')
@@ -27,7 +29,7 @@ export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
     <div className="flex flex-col h-full">
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {/* New proposal button */}
-        {!showNew && currentFamily && (
+        {!showNew && (
           <button
             onClick={() => setShowNew(true)}
             className="w-full py-3 border-2 border-dashed border-blue-300 rounded-xl text-blue-600 font-medium hover:bg-blue-50 transition-colors"
@@ -36,21 +38,27 @@ export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
           </button>
         )}
 
-        {!currentFamily && (
-          <div className="p-4 bg-yellow-50 rounded-xl text-center text-yellow-700 text-sm">
-            Select your family in Settings to propose and vote on activities
-          </div>
-        )}
-
         {/* New proposal form */}
         {showNew && (
           <form onSubmit={handleSubmit} className="bg-blue-50 rounded-xl p-4 space-y-3">
+            <div>
+              <label className="text-xs text-gray-500 mb-1 block">Family</label>
+              <select
+                value={proposerFamily}
+                onChange={(e) => setProposerFamily(e.target.value)}
+                className="w-full px-3 py-2 rounded-lg border border-blue-200 text-sm outline-none focus:ring-2 focus:ring-blue-300 bg-white"
+              >
+                {families.map(f => (
+                  <option key={f.id} value={f.id}>{f.emoji} {f.name}</option>
+                ))}
+              </select>
+            </div>
             <input
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              placeholder="Activity name (e.g., Beach day at Bondi)"
-              className="w-full px-3 py-2 rounded-lg border border-blue-200 text-sm outline-none focus:ring-2 focus:ring-blue-300"
+              placeholder="Activity name (e.g., Beach day at Haeundae)"
+              className="w-full px-3 py-2 rounded-lg border border-blue-200 text-sm outline-none focus:ring-2 focus:ring-blue-300 bg-white"
               autoFocus
             />
             <textarea
@@ -58,7 +66,7 @@ export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Details (optional) — when, where, what to bring..."
               rows={2}
-              className="w-full px-3 py-2 rounded-lg border border-blue-200 text-sm outline-none focus:ring-2 focus:ring-blue-300 resize-none"
+              className="w-full px-3 py-2 rounded-lg border border-blue-200 text-sm outline-none focus:ring-2 focus:ring-blue-300 resize-none bg-white"
             />
             <div className="flex gap-2">
               <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium">
@@ -85,7 +93,7 @@ export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
           const proposer = families.find(f => f.id === proposal.proposedBy)
           const yesVotes = Object.entries(proposal.votes || {}).filter(([, v]) => v === 'yes')
           const noVotes = Object.entries(proposal.votes || {}).filter(([, v]) => v === 'no')
-          const myVote = currentFamily ? (proposal.votes || {})[currentFamily] : null
+          const myVote = (proposal.votes || {})[voteAsFamily] || null
 
           return (
             <div key={proposal.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
@@ -132,11 +140,20 @@ export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
                   </div>
                 </div>
 
-                {/* Vote buttons */}
-                {currentFamily && (
-                  <div className="mt-3 flex gap-2">
+                {/* Vote as family selector + buttons */}
+                <div className="mt-3 space-y-2">
+                  <select
+                    value={voteAsFamily}
+                    onChange={(e) => setVoteAsFamily(e.target.value)}
+                    className="w-full px-2 py-1.5 border rounded-lg text-xs text-gray-600 bg-white"
+                  >
+                    {families.map(f => (
+                      <option key={f.id} value={f.id}>Vote as {f.emoji} {f.name}</option>
+                    ))}
+                  </select>
+                  <div className="flex gap-2">
                     <button
-                      onClick={() => onCastVote(proposal.id, currentFamily, 'yes')}
+                      onClick={() => onCastVote(proposal.id, voteAsFamily, 'yes')}
                       className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${
                         myVote === 'yes'
                           ? 'bg-green-500 text-white'
@@ -146,7 +163,7 @@ export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
                       👍 We're in!
                     </button>
                     <button
-                      onClick={() => onCastVote(proposal.id, currentFamily, 'no')}
+                      onClick={() => onCastVote(proposal.id, voteAsFamily, 'no')}
                       className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${
                         myVote === 'no'
                           ? 'bg-red-500 text-white'
@@ -156,7 +173,7 @@ export default function Voting({ data, currentFamily, onAddVote, onCastVote }) {
                       👎 Pass
                     </button>
                   </div>
-                )}
+                </div>
               </div>
 
               {proposal.timestamp && (

@@ -41,7 +41,7 @@ function PasswordGate({ children }) {
     <div className="h-full flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-900 p-6">
       <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-sm text-center">
         <div className="text-4xl mb-3">🇰🇷</div>
-        <h1 className="text-xl font-bold text-gray-900 mb-1">Family Trip</h1>
+        <h1 className="text-xl font-bold text-gray-900 mb-1">Hua Ku Kim DeAragon Family Trip</h1>
         <p className="text-sm text-gray-500 mb-6">Enter the password to continue</p>
         <input
           type="password"
@@ -117,7 +117,7 @@ export default function App() {
             <Chat data={enrichedData} />
           } />
           <Route path="/vote" element={
-            <Voting data={enrichedData} currentFamily={currentFamily} onAddVote={addVote} onCastVote={castVote} />
+            <Voting data={enrichedData} onAddVote={addVote} onCastVote={castVote} />
           } />
           <Route path="/settings" element={
             <Settings
