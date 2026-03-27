@@ -1,70 +1,14 @@
-import { useMemo, useState } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
-import L from 'leaflet'
+import { useState } from 'react'
 import { FAMILY_COLORS } from '../utils/constants'
-
-function createFamilyIcon(color) {
-  return L.divIcon({
-    className: 'custom-marker',
-    html: `<div style="
-      background: ${color};
-      width: 28px;
-      height: 28px;
-      border-radius: 50% 50% 50% 0;
-      transform: rotate(-45deg);
-      border: 3px solid white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    "></div>`,
-    iconSize: [28, 28],
-    iconAnchor: [14, 28],
-    popupAnchor: [0, -28],
-  })
-}
-
-function FitBounds({ markers }) {
-  const map = useMap()
-  useMemo(() => {
-    if (markers.length > 0) {
-      const bounds = L.latLngBounds(markers.map(m => [m.lat, m.lng]))
-      map.fitBounds(bounds, { padding: [50, 50], maxZoom: 14 })
-    }
-  }, [markers, map])
-  return null
-}
+import { MAP_PINS, CITY_CENTERS } from '../utils/mapPins'
 
 export default function MapView({ data, onUpdateMapsConfig }) {
-  const { families = [], itineraries = {}, mapsConfig = {} } = data
-  const [filter, setFilter] = useState('all')
-  const [tab, setTab] = useState('lists') // 'lists' or 'pins'
+  const { families = [], mapsConfig = {} } = data
+  const [tab, setTab] = useState('lists')
+  const [cityFilter, setCityFilter] = useState('Seoul')
   const [addingMap, setAddingMap] = useState(null)
   const [newUrl, setNewUrl] = useState('')
   const [newLabel, setNewLabel] = useState('')
-
-  const markers = useMemo(() => {
-    const result = []
-    for (const family of families) {
-      if (filter !== 'all' && filter !== family.id) continue
-      const items = itineraries[family.id] || []
-      for (const item of items) {
-        const lat = parseFloat(item.lat)
-        const lng = parseFloat(item.lng)
-        if (!isNaN(lat) && !isNaN(lng)) {
-          result.push({
-            lat, lng,
-            familyId: family.id,
-            familyName: family.name,
-            emoji: family.emoji,
-            ...item,
-          })
-        }
-      }
-    }
-    return result
-  }, [families, itineraries, filter])
-
-  const center = markers.length > 0
-    ? [markers.reduce((s, m) => s + m.lat, 0) / markers.length, markers.reduce((s, m) => s + m.lng, 0) / markers.length]
-    : [37.5665, 126.978] // Default to Seoul
 
   const handleAddMap = (familyId) => {
     if (!newUrl.trim()) return
@@ -82,7 +26,12 @@ export default function MapView({ data, onUpdateMapsConfig }) {
     onUpdateMapsConfig(familyId, updated)
   }
 
-  const allMapsEmpty = families.every(f => !(mapsConfig[f.id]?.length > 0))
+  const filteredPins = MAP_PINS.filter(p => p.city === cityFilter)
+  const cities = [...new Set(MAP_PINS.map(p => p.city))]
+
+  const openInGoogleMaps = (pin) => {
+    window.open(`https://www.google.com/maps/search/?api=1&query=${pin.lat},${pin.lng}`, '_blank')
+  }
 
   return (
     <div className="flex flex-col h-full">
@@ -198,71 +147,50 @@ export default function MapView({ data, onUpdateMapsConfig }) {
           })}
         </div>
       ) : (
-        <>
-          {/* Family filter chips */}
+        <div className="flex-1 overflow-y-auto">
+          {/* City filter */}
           <div className="flex gap-2 p-3 overflow-x-auto shrink-0 bg-white border-b border-gray-100">
-            <button
-              onClick={() => setFilter('all')}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-                filter === 'all' ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-600'
-              }`}
-            >
-              All
-            </button>
-            {families.map(f => {
-              const colors = FAMILY_COLORS[f.id]
-              return (
-                <button
-                  key={f.id}
-                  onClick={() => setFilter(f.id)}
-                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
-                    filter === f.id ? `${colors.bg} text-white` : `${colors.bgLight} ${colors.text}`
-                  }`}
-                >
-                  {f.emoji} {f.name}
-                </button>
-              )
-            })}
+            {cities.map(city => (
+              <button
+                key={city}
+                onClick={() => setCityFilter(city)}
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
+                  cityFilter === city ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600'
+                }`}
+              >
+                {city} ({MAP_PINS.filter(p => p.city === city).length})
+              </button>
+            ))}
           </div>
 
-          {markers.length === 0 ? (
-            <div className="flex-1 flex items-center justify-center p-6 text-center text-gray-500">
-              <div>
-                <svg className="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+          {/* Pin list */}
+          <div className="divide-y divide-gray-100">
+            {filteredPins.map((pin, i) => (
+              <button
+                key={i}
+                onClick={() => openInGoogleMaps(pin)}
+                className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 active:bg-gray-100 transition-colors text-left"
+              >
+                <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white shrink-0">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-medium text-gray-900 truncate">{pin.name}</p>
+                  <p className="text-xs text-gray-400">{pin.lat.toFixed(4)}, {pin.lng.toFixed(4)}</p>
+                </div>
+                <svg className="w-4 h-4 text-gray-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
-                <p className="text-lg mb-2">No activity pins yet</p>
-                <p className="text-sm">Add "lat" and "lng" columns to your Google Sheet to see activities pinned on the map.</p>
-              </div>
-            </div>
-          ) : (
-            <div className="flex-1 p-3" style={{ minHeight: '400px' }}>
-              <MapContainer center={center} zoom={12} className="rounded-xl shadow-inner" style={{ height: '100%', minHeight: '400px' }}>
-                <TileLayer
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <FitBounds markers={markers} />
-                {markers.map((m, i) => (
-                  <Marker
-                    key={i}
-                    position={[m.lat, m.lng]}
-                    icon={createFamilyIcon(FAMILY_COLORS[m.familyId].hex)}
-                  >
-                    <Popup>
-                      <div className="text-sm">
-                        <p className="font-bold">{m.emoji} {m.familyName}</p>
-                        <p className="font-medium">{m.activity}</p>
-                        {m.date && <p className="text-gray-500">{m.date} {m.time}</p>}
-                        {m.location && <p className="text-gray-500">{m.location}</p>}
-                      </div>
-                    </Popup>
-                  </Marker>
-                ))}
-              </MapContainer>
-            </div>
-          )}
-        </>
+              </button>
+            ))}
+          </div>
+
+          <div className="p-4 text-center text-xs text-gray-400">
+            Tap any pin to open in Google Maps
+          </div>
+        </div>
       )}
     </div>
   )
