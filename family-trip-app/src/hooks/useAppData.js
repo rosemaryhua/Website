@@ -25,6 +25,9 @@ const defaultData = () => ({
   chat: [],
   votes: [],
   sheetsConfig: {},
+  mapsConfig: {
+    family2: [{ url: 'https://maps.app.goo.gl/UeKnYUfDqdMKfEJF8', label: 'Ku Family Saved Places' }],
+  },
 })
 
 export function useAppData() {
@@ -115,6 +118,15 @@ export function useAppData() {
     persist(updated)
   }, [data, persist])
 
+  const updateMapsConfig = useCallback((familyId, maps) => {
+    const updated = {
+      ...data,
+      mapsConfig: { ...data.mapsConfig, [familyId]: maps },
+    }
+    setData(updated)
+    persist(updated)
+  }, [data, persist])
+
   return {
     data,
     connected,
@@ -126,5 +138,6 @@ export function useAppData() {
     addVote,
     castVote,
     updateSheetsConfig,
+    updateMapsConfig,
   }
 }

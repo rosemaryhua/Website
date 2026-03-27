@@ -71,7 +71,7 @@ export default function App() {
   const {
     data, connected, isConfigured,
     updateFamilies, updateTripDates, updateItinerary,
-    sendMessage, addVote, castVote, updateSheetsConfig,
+    sendMessage, addVote, castVote, updateSheetsConfig, updateMapsConfig,
   } = useAppData()
 
   const [currentFamily, setCurrentFamily] = useState(() =>
@@ -112,7 +112,7 @@ export default function App() {
       <main className="flex-1 overflow-y-auto flex flex-col">
         <Routes>
           <Route path="/" element={<DailySchedule data={enrichedData} onUpdateItinerary={updateItinerary} />} />
-          <Route path="/map" element={<MapView data={enrichedData} />} />
+          <Route path="/map" element={<MapView data={enrichedData} onUpdateMapsConfig={updateMapsConfig} />} />
           <Route path="/chat" element={
             <Chat data={enrichedData} currentFamily={currentFamily} onSendMessage={sendMessage} />
           } />
