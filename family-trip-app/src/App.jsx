@@ -10,7 +10,7 @@ import Settings from './components/Settings'
 const tabs = [
   { path: '/', label: 'Schedule', icon: CalendarIcon },
   { path: '/map', label: 'Map', icon: MapIcon },
-  { path: '/chat', label: 'Chat', icon: ChatIcon },
+  { path: '/chat', label: 'Concierge', icon: ChatIcon },
   { path: '/vote', label: 'Vote', icon: VoteIcon },
   { path: '/settings', label: 'Settings', icon: SettingsIcon },
 ]
@@ -114,7 +114,7 @@ export default function App() {
           <Route path="/" element={<DailySchedule data={enrichedData} onUpdateItinerary={updateItinerary} />} />
           <Route path="/map" element={<MapView data={enrichedData} onUpdateMapsConfig={updateMapsConfig} />} />
           <Route path="/chat" element={
-            <Chat data={enrichedData} currentFamily={currentFamily} onSendMessage={sendMessage} />
+            <Chat data={enrichedData} />
           } />
           <Route path="/vote" element={
             <Voting data={enrichedData} currentFamily={currentFamily} onAddVote={addVote} onCastVote={castVote} />
