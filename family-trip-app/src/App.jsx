@@ -96,9 +96,9 @@ export default function App() {
       <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-4 py-3 shrink-0 shadow-lg">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-lg font-bold tracking-tight">Family Trip</h1>
+            <h1 className="text-lg font-bold tracking-tight">Korea 2026</h1>
             <p className="text-blue-200 text-xs">
-              {data.families?.map(f => f.emoji).join(' ')} &middot; {data.tripDates?.start ? `${data.tripDates.start} → ${data.tripDates.end}` : 'Set dates in Settings'}
+              Hua, Ku, Kim, DeAragon Family Trip
             </p>
           </div>
           <div className="flex items-center gap-1.5">
