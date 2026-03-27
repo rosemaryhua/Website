@@ -37,6 +37,62 @@ export const SEED_ITINERARIES = {
     { date: '2026-04-10', time: '16:30', activity: 'Flight ICN → (arrive 18:25)', location: 'Incheon Airport', notes: '' },
   ],
 
+  family2: [
+    // Ku Family — Taipei: Fri 4/3 - Mon 4/6
+
+    // DAY 1 — Friday Apr 3
+    { date: '2026-04-03', time: '08:00', activity: 'Flight UA871: SFO → TPE (arrive 6:45 PM)', location: 'SFO → Taoyuan Airport', notes: '' },
+    { date: '2026-04-03', time: '19:00', activity: 'Arrive at Airbnb', location: 'Taipei Airbnb', notes: '' },
+
+    // DAY 2 — Saturday Apr 4
+    { date: '2026-04-04', time: '20:00', activity: 'Wa-Shu?', location: '', notes: '' },
+    { date: '2026-04-04', time: '21:00', activity: 'Cozy Taipei', location: '', notes: 'Rez: 2 adults' },
+
+    // DAY 3 — Sunday Apr 5
+    { date: '2026-04-05', time: '20:30', activity: 'Indulge Bistro', location: '', notes: 'Rez: 6 adults, 2 kids' },
+
+    // DAY 4 — Monday Apr 6 (Taipei → Seoul)
+    { date: '2026-04-06', time: '11:00', activity: 'Travel / Check-in Taoyuan Airport', location: 'Taoyuan Airport', notes: '' },
+    { date: '2026-04-06', time: '13:00', activity: 'Flight Asiana OZ712: TPE → ICN', location: 'Taoyuan → Incheon Airport', notes: 'Arrive 4:30 PM' },
+    { date: '2026-04-06', time: '16:30', activity: 'Arrive at Airbnb', location: 'Seoul Airbnb', notes: '' },
+
+    // Ku Family — Seoul: Mon 4/6 - Sun 4/12
+
+    // DAY 2 — Tuesday Apr 7
+    { date: '2026-04-07', time: '09:00', activity: 'Seongsu-Dong / Seoul Forest (rent bikes, shopping, lunch)', location: 'Seongsu-dong / Seoul Forest', notes: '' },
+    { date: '2026-04-07', time: '13:00', activity: 'Travel to Acupuncture', location: '', notes: '' },
+    { date: '2026-04-07', time: '14:20', activity: 'Pat Acupuncture', location: '', notes: '2:20 PM – 3:20 PM' },
+    { date: '2026-04-07', time: '18:00', activity: 'Dinner at Seoryung', location: 'Seoul Station', notes: 'Rez: 17' },
+
+    // DAY 3 — Wednesday Apr 8
+    { date: '2026-04-08', time: '09:00', activity: 'Bukchon Hanok Village / Gahoe-Dong Church (lunch)', location: 'Bukchon', notes: '' },
+    { date: '2026-04-08', time: '13:30', activity: 'Insadong', location: 'Insadong', notes: '' },
+    { date: '2026-04-08', time: '18:00', activity: 'Dinner at Mimiok', location: '', notes: 'Rez: 16' },
+
+    // DAY 4 — Thursday Apr 9
+    { date: '2026-04-09', time: '09:00', activity: 'Gyeongbokgung Palace (hanbok rental, changing of the guard, lunch)', location: 'Gyeongbokgung', notes: '' },
+    { date: '2026-04-09', time: '13:30', activity: 'Myeongdong Cathedral', location: 'Myeongdong', notes: '' },
+    { date: '2026-04-09', time: '17:30', activity: 'Travel to Gwangjang Market', location: '', notes: '' },
+    { date: '2026-04-09', time: '18:00', activity: 'Dinner at Gwangjang Market', location: 'Gwangjang Market', notes: '' },
+
+    // DAY 5 — Friday Apr 10
+    { date: '2026-04-10', time: '09:30', activity: 'Clean-up / Check-out Airbnb', location: 'Seoul Airbnb', notes: '' },
+    { date: '2026-04-10', time: '11:00', activity: 'Saenamteo (St. Andrew Kim martyr site)', location: 'Saenamteo', notes: '' },
+    { date: '2026-04-10', time: '13:00', activity: 'Travel to Acupuncture', location: '', notes: '' },
+    { date: '2026-04-10', time: '14:00', activity: 'Pat Acupuncture', location: '', notes: '2:00 PM – 3:00 PM' },
+    { date: '2026-04-10', time: '15:00', activity: 'Travel / Check-in to new Airbnb', location: 'Seoul Airbnb', notes: '' },
+
+    // DAY 6 — Saturday Apr 11
+    { date: '2026-04-11', time: '09:30', activity: 'Danggogae Catholic Martyrs\' Shrine', location: 'Danggogae', notes: '' },
+    { date: '2026-04-11', time: '11:00', activity: 'Seosomun Shrine History Museum', location: 'Seosomun', notes: '' },
+
+    // DAY 7 — Sunday Apr 12
+    { date: '2026-04-12', time: '09:30', activity: 'Clean-up / Check-out Airbnb', location: 'Seoul Airbnb', notes: '' },
+    { date: '2026-04-12', time: '12:30', activity: 'Travel to Incheon', location: '', notes: '' },
+    { date: '2026-04-12', time: '14:00', activity: 'Check-in at Incheon Airport', location: 'Incheon Airport', notes: '' },
+    { date: '2026-04-12', time: '16:00', activity: 'Flight Korean Air KE23', location: 'Incheon Airport', notes: '' },
+  ],
+
   family3: [
     // Kim Family — Fri-Sat 4/3-4/4
     { date: '2026-04-03', time: '', activity: 'Flight SFO → ICN', location: 'SFO Airport', notes: 'Arrive 4/4 at 20:30' },
