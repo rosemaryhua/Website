@@ -3,7 +3,7 @@ import { FAMILY_COLORS } from '../utils/constants'
 import { useGoogleSheets } from '../hooks/useGoogleSheets'
 
 export default function Settings({
-  data, currentFamily, onSetCurrentFamily,
+  data,
   onUpdateFamilies, onUpdateTripDates, onUpdateItinerary, onUpdateSheetsConfig,
 }) {
   const { families = [], tripDates = {}, sheetsConfig = {}, itineraries = {} } = data
@@ -76,36 +76,6 @@ export default function Settings({
 
   return (
     <div className="p-4 space-y-6">
-      {/* Your Family */}
-      <section>
-        <h2 className="text-lg font-bold text-gray-900 mb-3">Your Family</h2>
-        <div className="grid grid-cols-2 gap-2">
-          {families.map(f => {
-            const colors = FAMILY_COLORS[f.id]
-            const isSelected = currentFamily === f.id
-            return (
-              <button
-                key={f.id}
-                onClick={() => onSetCurrentFamily(f.id)}
-                className={`p-3 rounded-xl border-2 transition-all text-left ${
-                  isSelected
-                    ? `${colors.border} ${colors.bgLight}`
-                    : 'border-gray-200 hover:border-gray-300'
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <span className="text-xl">{f.emoji}</span>
-                  <span className={`font-medium ${isSelected ? colors.text : 'text-gray-700'}`}>
-                    {f.name}
-                  </span>
-                </div>
-                {isSelected && <p className="text-xs text-gray-500 mt-1">That's you!</p>}
-              </button>
-            )
-          })}
-        </div>
-      </section>
-
       {/* Family Names & Emojis */}
       <section>
         <h2 className="text-lg font-bold text-gray-900 mb-3">Edit Families</h2>

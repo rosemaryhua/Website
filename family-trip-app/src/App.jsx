@@ -122,8 +122,6 @@ export default function App() {
           <Route path="/settings" element={
             <Settings
               data={enrichedData}
-              currentFamily={currentFamily}
-              onSetCurrentFamily={handleSetFamily}
               onUpdateFamilies={updateFamilies}
               onUpdateTripDates={updateTripDates}
               onUpdateItinerary={updateItinerary}
