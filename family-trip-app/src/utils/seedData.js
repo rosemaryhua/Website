@@ -1,6 +1,46 @@
 export const SEED_ITINERARIES = {
   family1: [
-    // Hua Family — DAY 1: Monday Apr 6
+    // Hua Family — TAIPEI: Mar 30 – Apr 6
+    // Accommodation: Kimpton Da An Hotel (free bike rental, complimentary breakfast 7-10am)
+
+    // DAY 1 — Monday Mar 30
+    { date: '2026-03-30', time: '18:45', activity: 'Arrive at Taipei', location: 'Taoyuan Airport', notes: '' },
+    { date: '2026-03-30', time: '20:00', activity: 'Transfer to Kimpton Da An Hotel', location: 'Kimpton Da An Hotel Taipei', notes: 'Free bike rental, complimentary breakfast 7-10am' },
+    { date: '2026-03-30', time: '20:30', activity: 'Dinner / rest at hotel', location: 'Kimpton Da An Hotel', notes: '' },
+
+    // DAY 2 — Tuesday Mar 31 (DeAragons land ~4am)
+    { date: '2026-03-31', time: '05:30', activity: 'Fu Hang Soy Milk (opens 5:30am)', location: '', notes: 'Alt: Ruian Soy Milk shop (24/7)' },
+    { date: '2026-03-31', time: '11:30', activity: 'Chiao Hu Wonderland', location: '', notes: '11:30 AM – 6:00 PM' },
+    { date: '2026-03-31', time: '14:00', activity: 'Huashan 1914 Creative Park', location: 'Huashan 1914 Creative Park', notes: '' },
+    { date: '2026-03-31', time: '16:00', activity: 'Taipei 101', location: 'Taipei 101', notes: '' },
+
+    // DAY 3 — Wednesday Apr 1
+    { date: '2026-04-01', time: '09:00', activity: 'Taipei Zoo', location: 'Taipei Zoo', notes: '' },
+    { date: '2026-04-01', time: '12:00', activity: 'Maokong Gondola', location: 'Maokong', notes: '' },
+    { date: '2026-04-01', time: '15:00', activity: 'Return to hotel, rest', location: 'Kimpton Da An Hotel', notes: '' },
+    { date: '2026-04-01', time: '18:00', activity: 'Rao He Night Market', location: 'Raohe Night Market', notes: '' },
+
+    // DAY 4 — Thursday Apr 2
+    { date: '2026-04-02', time: '10:00', activity: 'Kuo Yuan Ye Pastry Museum DIY', location: 'Kuo Yuan Ye Pastry Museum', notes: 'DeAragons, Huas, Wongs bought tix already' },
+    { date: '2026-04-02', time: '13:00', activity: 'Taipei Children\'s Amusement Park', location: 'Taipei Children\'s Amusement Park', notes: '' },
+    { date: '2026-04-02', time: '15:00', activity: 'Le Hair Salon?', location: '', notes: '' },
+    { date: '2026-04-02', time: '18:00', activity: 'Dinner at Sunrise Buffet', location: 'Sunrise Buffet', notes: '' },
+
+    // DAY 5 — Friday Apr 3
+    { date: '2026-04-03', time: '10:00', activity: 'Walking distance beef noodle brunch', location: 'Near hotel', notes: '' },
+    { date: '2026-04-03', time: '12:00', activity: 'Keelung day trip', location: 'Keelung', notes: '' },
+
+    // DAY 6 — Saturday Apr 4 (Cousin day)
+    { date: '2026-04-04', time: '11:30', activity: 'Brunch at Mr. Tree Station Daan with cousin', location: 'Mr. Tree Station, Daan', notes: '' },
+    { date: '2026-04-04', time: '13:00', activity: 'Laser tag & BBQ', location: '', notes: '' },
+
+    // DAY 7 — Sunday Apr 5
+    { date: '2026-04-05', time: '09:00', activity: 'Easter Mass (+ egg hunt)', location: '', notes: '' },
+    { date: '2026-04-05', time: '14:00', activity: 'Yongkang Street & Chiang Kai-Shek Memorial', location: 'Yongkang / CKS Memorial Hall', notes: '' },
+    { date: '2026-04-05', time: '20:30', activity: 'Dinner with Kus at Indulge Bistro', location: 'Indulge Bistro', notes: '' },
+
+    // DAY 8 — Monday Apr 6 (Taipei → Seoul)
+    { date: '2026-04-06', time: '12:00', activity: 'Hotel check out', location: 'Kimpton Da An Hotel', notes: '' },
     { date: '2026-04-06', time: '12:55', activity: 'Flight OZ 712: TPE → ICN (arrive 16:30)', location: 'Taoyuan → Incheon Airport Terminal 2', notes: 'Pickup at Door 5, Gate 5. Mr. Jang JunYoung 장준용 010-2838-4999, ~1:15 drive' },
     { date: '2026-04-06', time: '17:45', activity: 'Check into Airbnb', location: 'Seoul Seodaemun-gu Yeonhui-dong 413-53', notes: '' },
     { date: '2026-04-06', time: '18:30', activity: 'Sinseon Ox Bone Soup (dinner)', location: 'Seoul Mapo-gu Donggyo-dong 163-9 (Hongik Univ. Station)', notes: '~16 mins from Airbnb. Get T-money card' },
@@ -39,30 +79,45 @@ export const SEED_ITINERARIES = {
 
   family4: [
     // DeAragon Family — Taipei: Mon 3/30 - Mon 4/6
+    // Joining 100% of Hua plans in Taipei
 
     // Monday Mar 30
     { date: '2026-03-30', time: '04:05', activity: 'DeAragon Family arrival (UA 853)', location: 'Taoyuan Airport', notes: '' },
     { date: '2026-03-30', time: '18:45', activity: 'Hua Family arrival (UA 871)', location: 'Taoyuan Airport', notes: '' },
-    { date: '2026-03-30', time: '20:00', activity: 'Check into Kimpton Da\'An Hotel', location: 'Kimpton Da\'An Hotel, Taipei', notes: '' },
+    { date: '2026-03-30', time: '20:00', activity: 'Check into Kimpton Da\'An Hotel', location: 'Kimpton Da\'An Hotel, Taipei', notes: 'Free bike rental, complimentary breakfast 7-10am' },
 
     // Tuesday Mar 31
-    { date: '2026-03-31', time: '10:00', activity: 'Pastry Museum', location: 'Taipei', notes: '' },
+    { date: '2026-03-31', time: '05:30', activity: 'Fu Hang Soy Milk (opens 5:30am)', location: '', notes: 'Alt: Ruian Soy Milk shop (24/7)' },
+    { date: '2026-03-31', time: '11:30', activity: 'Chiao Hu Wonderland', location: '', notes: '11:30 AM – 6:00 PM' },
+    { date: '2026-03-31', time: '14:00', activity: 'Huashan 1914 Creative Park', location: 'Huashan 1914 Creative Park', notes: '' },
+    { date: '2026-03-31', time: '16:00', activity: 'Taipei 101', location: 'Taipei 101', notes: '' },
 
     // Wednesday Apr 1
-    { date: '2026-04-01', time: '18:00', activity: 'Liu Family Dinner', location: '', notes: '' },
+    { date: '2026-04-01', time: '09:00', activity: 'Taipei Zoo', location: 'Taipei Zoo', notes: '' },
+    { date: '2026-04-01', time: '12:00', activity: 'Maokong Gondola', location: 'Maokong', notes: '' },
+    { date: '2026-04-01', time: '15:00', activity: 'Return to hotel, rest', location: 'Kimpton Da An Hotel', notes: '' },
+    { date: '2026-04-01', time: '18:00', activity: 'Rao He Night Market', location: 'Raohe Night Market', notes: '' },
 
     // Thursday Apr 2
-    { date: '2026-04-02', time: '18:00', activity: 'Keelung Family Dinner', location: '', notes: '' },
+    { date: '2026-04-02', time: '10:00', activity: 'Kuo Yuan Ye Pastry Museum DIY', location: 'Kuo Yuan Ye Pastry Museum', notes: 'DeAragons, Huas, Wongs bought tix already' },
+    { date: '2026-04-02', time: '13:00', activity: 'Taipei Children\'s Amusement Park', location: 'Taipei Children\'s Amusement Park', notes: '' },
+    { date: '2026-04-02', time: '18:00', activity: 'Dinner at Sunrise Buffet', location: 'Sunrise Buffet', notes: '' },
 
-    // Saturday Apr 4
-    { date: '2026-04-04', time: '11:30', activity: 'Lunch with Liu cousins (9 people)', location: '', notes: '' },
-    { date: '2026-04-04', time: '12:30', activity: 'BBQ', location: '', notes: '12:30 PM – 5:30 PM' },
-    { date: '2026-04-04', time: '15:30', activity: 'Laser gun', location: '', notes: '3:30 PM – 5:30 PM' },
+    // Friday Apr 3
+    { date: '2026-04-03', time: '10:00', activity: 'Walking distance beef noodle brunch', location: 'Near hotel', notes: '' },
+    { date: '2026-04-03', time: '12:00', activity: 'Keelung day trip', location: 'Keelung', notes: '' },
+
+    // Saturday Apr 4 (Cousin day)
+    { date: '2026-04-04', time: '11:30', activity: 'Brunch at Mr. Tree Station Daan with cousin', location: 'Mr. Tree Station, Daan', notes: '' },
+    { date: '2026-04-04', time: '13:00', activity: 'Laser tag & BBQ', location: '', notes: '' },
 
     // Sunday Apr 5
-    { date: '2026-04-05', time: '20:30', activity: 'Ku hangout', location: '', notes: '' },
+    { date: '2026-04-05', time: '09:00', activity: 'Easter Mass (+ egg hunt)', location: '', notes: '' },
+    { date: '2026-04-05', time: '14:00', activity: 'Yongkang Street & Chiang Kai-Shek Memorial', location: 'Yongkang / CKS Memorial Hall', notes: '' },
+    { date: '2026-04-05', time: '20:30', activity: 'Dinner with Kus at Indulge Bistro', location: 'Indulge Bistro', notes: '' },
 
     // Monday Apr 6 (Taipei → Seoul)
+    { date: '2026-04-06', time: '12:00', activity: 'Hotel check out', location: 'Kimpton Da An Hotel', notes: '' },
     { date: '2026-04-06', time: '12:55', activity: 'Flight OZ 712: TPE → ICN (arrive 4:30 PM)', location: 'Taoyuan → Incheon Airport', notes: '' },
     { date: '2026-04-06', time: '16:30', activity: 'Arrive at Airbnb', location: 'Seodaemun-gu, 187-53 Yeonhui-dong', notes: '' },
 
