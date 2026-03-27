@@ -186,7 +186,7 @@ export default function Settings({
               importTab === 'paste' ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500'
             }`}
           >
-            Paste Text
+            Paste Text from Apple Notes
           </button>
         </div>
 
