@@ -37,6 +37,54 @@ export const SEED_ITINERARIES = {
     { date: '2026-04-10', time: '16:30', activity: 'Flight ICN → (arrive 18:25)', location: 'Incheon Airport', notes: '' },
   ],
 
+  family4: [
+    // DeAragon Family — Taipei: Mon 3/30 - Mon 4/6
+
+    // Monday Mar 30
+    { date: '2026-03-30', time: '04:05', activity: 'DeAragon Family arrival (UA 853)', location: 'Taoyuan Airport', notes: '' },
+    { date: '2026-03-30', time: '18:45', activity: 'Hua Family arrival (UA 871)', location: 'Taoyuan Airport', notes: '' },
+    { date: '2026-03-30', time: '20:00', activity: 'Check into Kimpton Da\'An Hotel', location: 'Kimpton Da\'An Hotel, Taipei', notes: '' },
+
+    // Tuesday Mar 31
+    { date: '2026-03-31', time: '10:00', activity: 'Pastry Museum', location: 'Taipei', notes: '' },
+
+    // Wednesday Apr 1
+    { date: '2026-04-01', time: '18:00', activity: 'Liu Family Dinner', location: '', notes: '' },
+
+    // Thursday Apr 2
+    { date: '2026-04-02', time: '18:00', activity: 'Keelung Family Dinner', location: '', notes: '' },
+
+    // Saturday Apr 4
+    { date: '2026-04-04', time: '11:30', activity: 'Lunch with Liu cousins (9 people)', location: '', notes: '' },
+    { date: '2026-04-04', time: '12:30', activity: 'BBQ', location: '', notes: '12:30 PM – 5:30 PM' },
+    { date: '2026-04-04', time: '15:30', activity: 'Laser gun', location: '', notes: '3:30 PM – 5:30 PM' },
+
+    // Sunday Apr 5
+    { date: '2026-04-05', time: '20:30', activity: 'Ku hangout', location: '', notes: '' },
+
+    // Monday Apr 6 (Taipei → Seoul)
+    { date: '2026-04-06', time: '12:55', activity: 'Flight OZ 712: TPE → ICN (arrive 4:30 PM)', location: 'Taoyuan → Incheon Airport', notes: '' },
+    { date: '2026-04-06', time: '16:30', activity: 'Arrive at Airbnb', location: 'Seodaemun-gu, 187-53 Yeonhui-dong', notes: '' },
+
+    // DeAragon Family — Seoul: Mon 4/6 - Sun 4/12
+
+    // Tuesday Apr 7
+    { date: '2026-04-07', time: '14:00', activity: 'Rose Work: Lotte Shopping CEO meeting', location: '', notes: '2:00 PM – 6:00 PM' },
+    { date: '2026-04-07', time: '18:00', activity: 'Dinner (reservation confirmed)', location: '', notes: '' },
+
+    // Wednesday Apr 8
+    { date: '2026-04-08', time: '10:00', activity: 'Rose Work: Webinar shooting', location: '', notes: '10:00 AM – 11:00 AM' },
+    { date: '2026-04-08', time: '14:00', activity: 'Rose Work: CJ CIO meeting', location: '', notes: '2:00 PM – 5:00 PM' },
+    { date: '2026-04-08', time: '18:00', activity: 'Dinner (reservation confirmed)', location: '', notes: '' },
+
+    // Thursday Apr 9
+    { date: '2026-04-09', time: '11:30', activity: 'Rose Work: Lunch with Tom', location: '', notes: '' },
+    { date: '2026-04-09', time: '15:00', activity: 'Rose Work: Retail & CPG Customers Meetup', location: '', notes: '3:00 PM – 8:00 PM' },
+
+    // Sunday Apr 12
+    { date: '2026-04-12', time: '16:30', activity: 'Flight KE 2119: GMP → KIX (arrive 6:25 PM)', location: 'Gimpo Airport → Kansai Airport', notes: '' },
+  ],
+
   family2: [
     // Ku Family — Taipei: Fri 4/3 - Mon 4/6
 
@@ -167,6 +215,6 @@ export const SEED_ITINERARIES = {
 }
 
 export const SEED_TRIP_DATES = {
-  start: '2026-04-03',
+  start: '2026-03-30',
   end: '2026-04-17',
 }
