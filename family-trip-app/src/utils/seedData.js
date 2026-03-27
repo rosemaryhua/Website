@@ -4,9 +4,8 @@ export const SEED_ITINERARIES = {
     // Accommodation: Kimpton Da An Hotel (free bike rental, complimentary breakfast 7-10am)
 
     // DAY 1 — Monday Mar 30
-    { date: '2026-03-30', time: '15:00', activity: 'Check-in at Kimpton Da An Hotel', location: 'Kimpton Da An Hotel Taipei', notes: 'Free bike rental, complimentary breakfast 7-10am' },
     { date: '2026-03-30', time: '18:45', activity: 'Arrive at Taipei (UA 871)', location: 'Taoyuan Airport', notes: '' },
-    { date: '2026-03-30', time: '20:00', activity: 'Transfer to Kimpton Da An Hotel', location: 'Kimpton Da An Hotel Taipei', notes: '' },
+    { date: '2026-03-30', time: '20:15', activity: 'Check-in at Kimpton Da An Hotel', location: 'Kimpton Da An Hotel Taipei', notes: 'Free bike rental, complimentary breakfast 7-10am' },
     { date: '2026-03-30', time: '20:30', activity: 'Dinner / rest at hotel', location: 'Kimpton Da An Hotel', notes: '' },
 
     // DAY 2 — Tuesday Mar 31 (DeAragons land 4:05am)
@@ -82,11 +81,9 @@ export const SEED_ITINERARIES = {
     // DeAragon Family — Taipei: Mon 3/30 - Mon 4/6
     // Joining 100% of Hua plans in Taipei
 
-    // Monday Mar 30
-    { date: '2026-03-30', time: '15:00', activity: 'Check-in at Kimpton Da An Hotel (Huas arrive 6:45pm)', location: 'Kimpton Da An Hotel, Taipei', notes: 'Free bike rental, complimentary breakfast 7-10am. DeAragons arrive tomorrow.' },
-
     // Tuesday Mar 31
     { date: '2026-03-31', time: '04:05', activity: 'DeAragon Family arrival (UA 853)', location: 'Taoyuan Airport', notes: '' },
+    { date: '2026-03-31', time: '05:00', activity: 'Check-in at Kimpton Da An Hotel', location: 'Kimpton Da An Hotel, Taipei', notes: 'Free bike rental, complimentary breakfast 7-10am' },
     { date: '2026-03-31', time: '05:30', activity: 'Fu Hang Soy Milk (opens 5:30am)', location: '', notes: 'Alt: Ruian Soy Milk shop (24/7)' },
     { date: '2026-03-31', time: '11:30', activity: 'Chiao Hu Wonderland', location: '', notes: '11:30 AM – 6:00 PM' },
     { date: '2026-03-31', time: '14:00', activity: 'Huashan 1914 Creative Park', location: 'Huashan 1914 Creative Park', notes: '' },
