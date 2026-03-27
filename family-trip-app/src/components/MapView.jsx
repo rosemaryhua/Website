@@ -236,8 +236,8 @@ export default function MapView({ data, onUpdateMapsConfig }) {
               </div>
             </div>
           ) : (
-            <div className="flex-1 p-3">
-              <MapContainer center={center} zoom={12} className="rounded-xl shadow-inner">
+            <div className="flex-1 p-3" style={{ minHeight: '400px' }}>
+              <MapContainer center={center} zoom={12} className="rounded-xl shadow-inner" style={{ height: '100%', minHeight: '400px' }}>
                 <TileLayer
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
