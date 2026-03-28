@@ -81,9 +81,16 @@ export default function Settings({
 
       const oldItems = itineraries[importFamily] || []
       setPreviousItinerary({ familyId: importFamily, items: oldItems })
-      onUpdateItinerary(importFamily, items)
+
+      // Only replace activities for dates referenced in the import, keep all other dates
+      const importedDates = new Set(items.map(i => i.date).filter(Boolean))
+      const kept = oldItems.filter(i => !importedDates.has(i.date))
+      const merged = [...kept, ...items]
+
+      onUpdateItinerary(importFamily, merged)
       const fName = families.find(f => f.id === importFamily)?.name || importFamily
-      setImportStatus({ type: 'success', message: `Imported ${items.length} activities for ${fName} (replaced ${oldItems.length} previous).` })
+      const dateList = [...importedDates].sort().join(', ')
+      setImportStatus({ type: 'success', message: `Updated ${importedDates.size} day(s) for ${fName}: ${dateList}. ${kept.length} activities on other dates kept.` })
       setPasteText('')
     } catch (err) {
       setImportStatus({ type: 'error', message: `Failed to parse: ${err.message}` })
