@@ -3,7 +3,7 @@ import { FAMILY_COLORS } from '../utils/constants'
 import { useGoogleSheets } from '../hooks/useGoogleSheets'
 
 export default function Settings({
-  data, onResetToDefaults,
+  data,
   onUpdateFamilies, onUpdateTripDates, onUpdateItinerary, onUpdateSheetsConfig,
 }) {
   const { families = [], tripDates = {}, sheetsConfig = {}, itineraries = {} } = data
@@ -306,22 +306,6 @@ export default function Settings({
             </p>
           )}
         </div>
-      </section>
-
-      {/* Reset Data */}
-      <section>
-        <p className="text-xs text-gray-500 mb-2 text-center">
-          Having trouble seeing the latest updates? Try resetting below. This will restore the original schedule and remove any manual edits.
-        </p>
-        <button
-          onClick={() => {
-            onResetToDefaults()
-            window.location.reload()
-          }}
-          className="w-full py-2.5 bg-gray-100 text-gray-600 rounded-lg text-sm font-medium hover:bg-gray-200 border border-gray-200"
-        >
-          Restore Original Schedule
-        </button>
       </section>
 
       <div className="h-4" />

@@ -70,7 +70,7 @@ export default function App() {
   const location = useLocation()
   const {
     data, connected, isConfigured,
-    resetToDefaults, updateFamilies, updateTripDates, updateItinerary,
+    updateFamilies, updateTripDates, updateItinerary,
     sendMessage, addVote, editVote, deleteVote, castVote, updateSheetsConfig, updateMapsConfig,
   } = useAppData()
 
@@ -122,7 +122,6 @@ export default function App() {
           <Route path="/settings" element={
             <Settings
               data={enrichedData}
-              onResetToDefaults={resetToDefaults}
               onUpdateFamilies={updateFamilies}
               onUpdateTripDates={updateTripDates}
               onUpdateItinerary={updateItinerary}
