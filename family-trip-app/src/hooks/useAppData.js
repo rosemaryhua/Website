@@ -118,6 +118,25 @@ export function useAppData() {
     persist(updated)
   }, [data, persist])
 
+  const editVote = useCallback((proposalId, updates) => {
+    const votes = (data.votes || []).map(v => {
+      if (v.id === proposalId) {
+        return { ...v, ...updates }
+      }
+      return v
+    })
+    const updated = { ...data, votes }
+    setData(updated)
+    persist(updated)
+  }, [data, persist])
+
+  const deleteVote = useCallback((proposalId) => {
+    const votes = (data.votes || []).filter(v => v.id !== proposalId)
+    const updated = { ...data, votes }
+    setData(updated)
+    persist(updated)
+  }, [data, persist])
+
   const updateSheetsConfig = useCallback((familyId, config) => {
     const updated = {
       ...data,
@@ -145,6 +164,8 @@ export function useAppData() {
     updateItinerary,
     sendMessage,
     addVote,
+    editVote,
+    deleteVote,
     castVote,
     updateSheetsConfig,
     updateMapsConfig,

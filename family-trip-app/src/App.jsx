@@ -71,7 +71,7 @@ export default function App() {
   const {
     data, connected, isConfigured,
     updateFamilies, updateTripDates, updateItinerary,
-    sendMessage, addVote, castVote, updateSheetsConfig, updateMapsConfig,
+    sendMessage, addVote, editVote, deleteVote, castVote, updateSheetsConfig, updateMapsConfig,
   } = useAppData()
 
   const [currentFamily, setCurrentFamily] = useState(() =>
@@ -117,7 +117,7 @@ export default function App() {
             <Chat data={enrichedData} />
           } />
           <Route path="/vote" element={
-            <Voting data={enrichedData} onAddVote={addVote} onCastVote={castVote} />
+            <Voting data={enrichedData} onAddVote={addVote} onEditVote={editVote} onDeleteVote={deleteVote} onCastVote={castVote} />
           } />
           <Route path="/settings" element={
             <Settings
