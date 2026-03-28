@@ -14,16 +14,71 @@ function formatTime(time) {
   return `${h}:${m} ${ampm}`
 }
 
+function to12h(time24) {
+  if (!time24) return { hour: '12', minute: '00', ampm: 'AM' }
+  const match = time24.match(/^(\d{1,2}):(\d{2})/)
+  if (!match) return { hour: '12', minute: '00', ampm: 'AM' }
+  let h = parseInt(match[1])
+  const m = match[2]
+  const ampm = h >= 12 ? 'PM' : 'AM'
+  if (h === 0) h = 12
+  else if (h > 12) h -= 12
+  return { hour: String(h), minute: m, ampm }
+}
+
+function to24h(hour, minute, ampm) {
+  let h = parseInt(hour)
+  if (ampm === 'AM' && h === 12) h = 0
+  else if (ampm === 'PM' && h !== 12) h += 12
+  return `${String(h).padStart(2, '0')}:${minute}`
+}
+
+function TimePickerFields({ hour, minute, ampm, onChange }) {
+  return (
+    <div className="flex gap-1 items-end">
+      <div className="w-14">
+        <label className="text-xs text-gray-500">Hour</label>
+        <select value={hour} onChange={(e) => onChange({ hour: e.target.value, minute, ampm })}
+          className="w-full px-1 py-1.5 border rounded text-sm bg-white">
+          {[12,1,2,3,4,5,6,7,8,9,10,11].map(h => (
+            <option key={h} value={String(h)}>{h}</option>
+          ))}
+        </select>
+      </div>
+      <div className="w-14">
+        <label className="text-xs text-gray-500">Min</label>
+        <select value={minute} onChange={(e) => onChange({ hour, minute: e.target.value, ampm })}
+          className="w-full px-1 py-1.5 border rounded text-sm bg-white">
+          {['00','05','10','15','20','25','30','35','40','45','50','55'].map(m => (
+            <option key={m} value={m}>{m}</option>
+          ))}
+        </select>
+      </div>
+      <div className="w-16">
+        <label className="text-xs text-gray-500">&nbsp;</label>
+        <select value={ampm} onChange={(e) => onChange({ hour, minute, ampm: e.target.value })}
+          className="w-full px-1 py-1.5 border rounded text-sm bg-white">
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+      </div>
+    </div>
+  )
+}
+
 function ActivityItem({ item, familyId, colors, allItems, families, itineraries, onUpdateItinerary }) {
   const [editing, setEditing] = useState(false)
   const [joining, setJoining] = useState(false)
   const [form, setForm] = useState({})
 
   const startEdit = () => {
+    const t = to12h(item.time)
     setForm({
       activity: item.activity || '',
       location: item.location || '',
-      time: item.time || '',
+      hour: t.hour,
+      minute: t.minute,
+      ampm: t.ampm,
       date: item.date || '',
       notes: item.notes || '',
     })
@@ -38,8 +93,10 @@ function ActivityItem({ item, familyId, colors, allItems, families, itineraries,
   const handleSave = () => {
     const idx = findItemIndex()
     if (idx === -1) return
+    const { hour, minute, ampm, ...rest } = form
+    const time = to24h(hour, minute, ampm)
     const updated = [...allItems]
-    updated[idx] = { ...updated[idx], ...form }
+    updated[idx] = { ...updated[idx], ...rest, time }
     onUpdateItinerary(familyId, updated)
     setEditing(false)
   }
@@ -74,27 +131,19 @@ function ActivityItem({ item, familyId, colors, allItems, families, itineraries,
             className="w-full px-2 py-1.5 border rounded text-sm bg-white"
           />
         </div>
-        <div className="flex gap-2">
-          <div className="flex-1">
-            <label className="text-xs text-gray-500">Date</label>
-            <input
-              type="date"
-              value={form.date}
-              onChange={(e) => setForm({ ...form, date: e.target.value })}
-              className="w-full px-2 py-1.5 border rounded text-sm bg-white"
-            />
-          </div>
-          <div className="w-24">
-            <label className="text-xs text-gray-500">Time</label>
-            <input
-              type="text"
-              value={form.time}
-              onChange={(e) => setForm({ ...form, time: e.target.value })}
-              placeholder="09:00"
-              className="w-full px-2 py-1.5 border rounded text-sm bg-white"
-            />
-          </div>
+        <div>
+          <label className="text-xs text-gray-500">Date</label>
+          <input
+            type="date"
+            value={form.date}
+            onChange={(e) => setForm({ ...form, date: e.target.value })}
+            className="w-full px-2 py-1.5 border rounded text-sm bg-white"
+          />
         </div>
+        <TimePickerFields
+          hour={form.hour} minute={form.minute} ampm={form.ampm}
+          onChange={({ hour, minute, ampm }) => setForm({ ...form, hour, minute, ampm })}
+        />
         <div>
           <label className="text-xs text-gray-500">Notes</label>
           <input
@@ -220,7 +269,9 @@ function AddActivityForm({ familyId, families, itineraries, dayStr, onUpdateItin
   const [form, setForm] = useState({
     activity: '',
     location: '',
-    time: '',
+    hour: '12',
+    minute: '00',
+    ampm: 'AM',
     date: dayStr,
     notes: '',
   })
@@ -234,7 +285,9 @@ function AddActivityForm({ familyId, families, itineraries, dayStr, onUpdateItin
 
   const handleAdd = () => {
     if (!form.activity.trim()) return
-    const newItem = { ...form, activity: form.activity.trim() }
+    const { hour, minute, ampm, ...rest } = form
+    const time = to24h(hour, minute, ampm)
+    const newItem = { ...rest, time, activity: form.activity.trim() }
 
     // Add to primary family
     onUpdateItinerary(familyId, [...allItems, newItem])
@@ -273,27 +326,19 @@ function AddActivityForm({ familyId, families, itineraries, dayStr, onUpdateItin
           className="w-full px-2 py-1.5 border rounded text-sm bg-white"
         />
       </div>
-      <div className="flex gap-2">
-        <div className="flex-1">
-          <label className="text-xs text-gray-500">Date</label>
-          <input
-            type="date"
-            value={form.date}
-            onChange={(e) => setForm({ ...form, date: e.target.value })}
-            className="w-full px-2 py-1.5 border rounded text-sm bg-white"
-          />
-        </div>
-        <div className="w-24">
-          <label className="text-xs text-gray-500">Time</label>
-          <input
-            type="text"
-            value={form.time}
-            onChange={(e) => setForm({ ...form, time: e.target.value })}
-            placeholder="09:00"
-            className="w-full px-2 py-1.5 border rounded text-sm bg-white"
-          />
-        </div>
+      <div>
+        <label className="text-xs text-gray-500">Date</label>
+        <input
+          type="date"
+          value={form.date}
+          onChange={(e) => setForm({ ...form, date: e.target.value })}
+          className="w-full px-2 py-1.5 border rounded text-sm bg-white"
+        />
       </div>
+      <TimePickerFields
+        hour={form.hour} minute={form.minute} ampm={form.ampm}
+        onChange={({ hour, minute, ampm }) => setForm({ ...form, hour, minute, ampm })}
+      />
       <div>
         <label className="text-xs text-gray-500">Notes</label>
         <input
