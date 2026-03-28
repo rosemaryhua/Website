@@ -10,7 +10,7 @@ export default function Settings({
   const [editingFamily, setEditingFamily] = useState(null)
   const [familyName, setFamilyName] = useState('')
   const [familyEmoji, setFamilyEmoji] = useState('')
-  const [importTab, setImportTab] = useState('sheets') // 'sheets' or 'paste'
+  const [importTab, setImportTab] = useState('paste') // 'paste' or 'sheets'
   const [importFamily, setImportFamily] = useState('family1')
   const [sheetUrl, setSheetUrl] = useState('')
   const [pasteText, setPasteText] = useState('')
@@ -191,14 +191,6 @@ export default function Settings({
         {/* Import method tabs */}
         <div className="flex rounded-lg bg-gray-100 p-1 mb-3">
           <button
-            onClick={() => setImportTab('sheets')}
-            className={`flex-1 py-2 rounded-md text-sm font-medium transition-all ${
-              importTab === 'sheets' ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500'
-            }`}
-          >
-            Google Sheets
-          </button>
-          <button
             onClick={() => setImportTab('paste')}
             className={`flex-1 py-2 rounded-md text-sm font-medium transition-all ${
               importTab === 'paste' ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500'
@@ -206,9 +198,37 @@ export default function Settings({
           >
             Paste Text from Apple Notes
           </button>
+          <button
+            onClick={() => setImportTab('sheets')}
+            className={`flex-1 py-2 rounded-md text-sm font-medium transition-all ${
+              importTab === 'sheets' ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500'
+            }`}
+          >
+            Google Sheets
+          </button>
         </div>
 
-        {importTab === 'sheets' ? (
+        {importTab === 'paste' ? (
+          <div className="space-y-3">
+            <p className="text-xs text-gray-500">
+              Paste your itinerary in any format. AI will parse it automatically.
+            </p>
+            <textarea
+              value={pasteText}
+              onChange={(e) => setPasteText(e.target.value)}
+              placeholder={`Paste your itinerary here...\n\nDAY 1 — April 6\n* Flight: OZ 712, TPE → ICN\n* Check into Airbnb\n* Dinner at restaurant\n\nDAY 2 — April 7\n* 9:00 AM: Starfield Library\n* 10:00 AM: COEX Aquarium`}
+              rows={6}
+              className="w-full px-3 py-2 border rounded-lg text-sm font-mono resize-none"
+            />
+            <button
+              onClick={handlePasteImport}
+              disabled={!pasteText.trim() || parsing}
+              className="w-full py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium disabled:opacity-50 hover:bg-blue-700"
+            >
+              {parsing ? 'Parsing with AI...' : 'Import from Text'}
+            </button>
+          </div>
+        ) : (
           <div className="space-y-3">
             <p className="text-xs text-gray-500">
               Paste a Google Sheets URL. The sheet must be published to web:<br />
@@ -230,27 +250,6 @@ export default function Settings({
               className="w-full py-2.5 bg-green-600 text-white rounded-lg text-sm font-medium disabled:opacity-50 hover:bg-green-700"
             >
               {sheetsLoading ? 'Importing...' : 'Import from Google Sheets'}
-            </button>
-          </div>
-        ) : (
-          <div className="space-y-3">
-            <p className="text-xs text-gray-500">
-              Paste your itinerary from Apple Notes. Use tab or pipe (|) to separate columns.<br />
-              Format: <strong>date | time | activity | location</strong>
-            </p>
-            <textarea
-              value={pasteText}
-              onChange={(e) => setPasteText(e.target.value)}
-              placeholder={`Example:\n3/15 | 9:00 AM | Breakfast at café | Main St\n3/15 | 11:00 AM | Beach day | Bondi Beach\n3/16 | 10:00 AM | Museum visit | National Museum`}
-              rows={6}
-              className="w-full px-3 py-2 border rounded-lg text-sm font-mono resize-none"
-            />
-            <button
-              onClick={handlePasteImport}
-              disabled={!pasteText.trim() || parsing}
-              className="w-full py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium disabled:opacity-50 hover:bg-blue-700"
-            >
-              {parsing ? 'Parsing with AI...' : 'Import from Text'}
             </button>
           </div>
         )}
