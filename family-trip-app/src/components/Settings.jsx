@@ -16,6 +16,7 @@ export default function Settings({
   const [pasteText, setPasteText] = useState('')
   const { fetchSheet, loading: sheetsLoading, error: sheetsError } = useGoogleSheets()
   const [importStatus, setImportStatus] = useState(null)
+  const [previousItinerary, setPreviousItinerary] = useState(null) // for undo
 
   const handleFamilySave = (familyId) => {
     if (!familyName.trim()) return
@@ -29,11 +30,14 @@ export default function Settings({
   const handleSheetsImport = async () => {
     if (!sheetUrl.trim()) return
     setImportStatus(null)
+    const oldItems = itineraries[importFamily] || []
     const result = await fetchSheet(sheetUrl)
     if (result) {
+      setPreviousItinerary({ familyId: importFamily, items: oldItems })
       onUpdateItinerary(importFamily, result)
       onUpdateSheetsConfig(importFamily, { url: sheetUrl, lastSync: new Date().toISOString() })
-      setImportStatus({ type: 'success', message: `Imported ${result.length} activities!` })
+      const familyName = families.find(f => f.id === importFamily)?.name || importFamily
+      setImportStatus({ type: 'success', message: `Replaced ${oldItems.length} activities with ${result.length} new activities for ${familyName}.` })
     }
   }
 
@@ -69,8 +73,11 @@ export default function Settings({
       return { date: '', time: '', activity: line.trim(), location: '', notes: '' }
     })
 
+    const oldItems = itineraries[importFamily] || []
+    setPreviousItinerary({ familyId: importFamily, items: oldItems })
     onUpdateItinerary(importFamily, items)
-    setImportStatus({ type: 'success', message: `Imported ${items.length} activities from text!` })
+    const familyName = families.find(f => f.id === importFamily)?.name || importFamily
+    setImportStatus({ type: 'success', message: `Replaced ${oldItems.length} activities with ${items.length} new activities for ${familyName}.` })
     setPasteText('')
   }
 
@@ -237,12 +244,24 @@ export default function Settings({
           </div>
         )}
 
-        {/* Status messages */}
+        {/* Status messages + undo */}
         {importStatus && (
           <div className={`mt-3 p-3 rounded-lg text-sm ${
             importStatus.type === 'success' ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'
           }`}>
-            {importStatus.message}
+            <p>{importStatus.message}</p>
+            {importStatus.type === 'success' && previousItinerary && (
+              <button
+                onClick={() => {
+                  onUpdateItinerary(previousItinerary.familyId, previousItinerary.items)
+                  setPreviousItinerary(null)
+                  setImportStatus({ type: 'success', message: 'Import undone. Previous schedule restored.' })
+                }}
+                className="mt-2 px-3 py-1.5 bg-white text-green-700 rounded-lg text-xs font-medium border border-green-300 hover:bg-green-50"
+              >
+                Undo Import
+              </button>
+            )}
           </div>
         )}
         {sheetsError && (
