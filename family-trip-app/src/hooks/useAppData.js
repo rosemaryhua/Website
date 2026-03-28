@@ -4,17 +4,9 @@ import { FAMILIES, DEFAULT_TRIP_DATES } from '../utils/constants'
 import { SEED_ITINERARIES, SEED_TRIP_DATES } from '../utils/seedData'
 
 const LOCAL_KEY = 'familyTripData'
-const DATA_VERSION_KEY = 'familyTripDataVersion'
-const CURRENT_VERSION = 6 // bump this to force a refresh of seed data
 
 function getLocalData() {
   try {
-    const storedVersion = parseInt(localStorage.getItem(DATA_VERSION_KEY) || '0')
-    if (storedVersion < CURRENT_VERSION) {
-      localStorage.removeItem(LOCAL_KEY)
-      localStorage.setItem(DATA_VERSION_KEY, String(CURRENT_VERSION))
-      return null
-    }
     const stored = localStorage.getItem(LOCAL_KEY)
     return stored ? JSON.parse(stored) : null
   } catch {
@@ -24,7 +16,6 @@ function getLocalData() {
 
 function saveLocalData(data) {
   localStorage.setItem(LOCAL_KEY, JSON.stringify(data))
-  localStorage.setItem(DATA_VERSION_KEY, String(CURRENT_VERSION))
 }
 
 const defaultData = () => ({
@@ -40,7 +31,15 @@ const defaultData = () => ({
 })
 
 export function useAppData() {
-  const [data, setData] = useState(() => getLocalData() || defaultData())
+  // If Firebase is configured, start with local cache or empty state.
+  // Firebase will send the real data momentarily via onValue.
+  // Only use seed data as fallback if Firebase is NOT configured.
+  const [data, setData] = useState(() => {
+    const local = getLocalData()
+    if (local) return local
+    if (isConfigured) return defaultData() // temporary until Firebase loads
+    return defaultData()
+  })
   const [connected, setConnected] = useState(false)
 
   useEffect(() => {
@@ -53,8 +52,15 @@ export function useAppData() {
     const unsub = onValue(dataRef, (snapshot) => {
       const val = snapshot.val()
       if (val) {
+        // Firebase has data — use it as source of truth
         setData(val)
         saveLocalData(val)
+      } else {
+        // Firebase is empty (first time) — seed it with defaults
+        const seed = defaultData()
+        set(ref(db, 'tripData'), seed)
+        setData(seed)
+        saveLocalData(seed)
       }
       setConnected(true)
     }, () => {
@@ -70,6 +76,19 @@ export function useAppData() {
       set(ref(db, 'tripData'), newData)
     }
   }, [])
+
+  const resetToDefaults = useCallback(() => {
+    const fresh = defaultData()
+    // Preserve user-generated content (votes, chat, maps)
+    fresh.votes = data.votes || []
+    fresh.chat = data.chat || []
+    fresh.mapsConfig = data.mapsConfig || {}
+    setData(fresh)
+    saveLocalData(fresh)
+    if (isConfigured) {
+      set(ref(db, 'tripData'), fresh)
+    }
+  }, [data, persist])
 
   const updateFamilies = useCallback((families) => {
     const updated = { ...data, families }
@@ -106,18 +125,6 @@ export function useAppData() {
     persist(updated)
   }, [data, persist])
 
-  const castVote = useCallback((proposalId, familyId, vote) => {
-    const votes = (data.votes || []).map(v => {
-      if (v.id === proposalId) {
-        return { ...v, votes: { ...v.votes, [familyId]: vote } }
-      }
-      return v
-    })
-    const updated = { ...data, votes }
-    setData(updated)
-    persist(updated)
-  }, [data, persist])
-
   const editVote = useCallback((proposalId, updates) => {
     const votes = (data.votes || []).map(v => {
       if (v.id === proposalId) {
@@ -137,17 +144,16 @@ export function useAppData() {
     persist(updated)
   }, [data, persist])
 
-  const resetToDefaults = useCallback(() => {
-    const fresh = defaultData()
-    // Preserve user-generated content (votes, chat, maps)
-    fresh.votes = data.votes || []
-    fresh.chat = data.chat || []
-    fresh.mapsConfig = data.mapsConfig || {}
-    setData(fresh)
-    saveLocalData(fresh)
-    if (isConfigured) {
-      set(ref(db, 'tripData'), fresh)
-    }
+  const castVote = useCallback((proposalId, familyId, vote) => {
+    const votes = (data.votes || []).map(v => {
+      if (v.id === proposalId) {
+        return { ...v, votes: { ...v.votes, [familyId]: vote } }
+      }
+      return v
+    })
+    const updated = { ...data, votes }
+    setData(updated)
+    persist(updated)
   }, [data, persist])
 
   const updateSheetsConfig = useCallback((familyId, config) => {
