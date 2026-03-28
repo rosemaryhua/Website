@@ -308,6 +308,20 @@ export default function Settings({
         </div>
       </section>
 
+      {/* Reset Data */}
+      <section>
+        <button
+          onClick={() => {
+            localStorage.clear()
+            window.location.reload()
+          }}
+          className="w-full py-2.5 bg-red-50 text-red-600 rounded-lg text-sm font-medium hover:bg-red-100 border border-red-200"
+        >
+          Reset to Latest Itineraries
+        </button>
+        <p className="text-xs text-gray-400 mt-1 text-center">Clears cached data and reloads the latest schedule</p>
+      </section>
+
       <div className="h-4" />
     </div>
   )
