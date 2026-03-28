@@ -34,10 +34,11 @@ export default function Settings({
     const result = await fetchSheet(sheetUrl)
     if (result) {
       setPreviousItinerary({ familyId: importFamily, items: oldItems })
-      onUpdateItinerary(importFamily, result)
+      const merged = [...oldItems, ...result]
+      onUpdateItinerary(importFamily, merged)
       onUpdateSheetsConfig(importFamily, { url: sheetUrl, lastSync: new Date().toISOString() })
       const familyName = families.find(f => f.id === importFamily)?.name || importFamily
-      setImportStatus({ type: 'success', message: `Replaced ${oldItems.length} activities with ${result.length} new activities for ${familyName}.` })
+      setImportStatus({ type: 'success', message: `Added ${result.length} activities to ${familyName} (${merged.length} total).` })
     }
   }
 
@@ -75,9 +76,10 @@ export default function Settings({
 
     const oldItems = itineraries[importFamily] || []
     setPreviousItinerary({ familyId: importFamily, items: oldItems })
-    onUpdateItinerary(importFamily, items)
-    const familyName = families.find(f => f.id === importFamily)?.name || importFamily
-    setImportStatus({ type: 'success', message: `Replaced ${oldItems.length} activities with ${items.length} new activities for ${familyName}.` })
+    const merged = [...oldItems, ...items]
+    onUpdateItinerary(importFamily, merged)
+    const fName = families.find(f => f.id === importFamily)?.name || importFamily
+    setImportStatus({ type: 'success', message: `Added ${items.length} activities to ${fName} (${merged.length} total).` })
     setPasteText('')
   }
 
