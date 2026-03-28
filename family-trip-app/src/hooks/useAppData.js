@@ -102,10 +102,57 @@ export function useAppData() {
     persist(updated)
   }, [data, persist])
 
+  const addLog = useCallback((entry) => {
+    const log = [...(data.activityLog || []), { ...entry, id: Date.now(), timestamp: new Date().toISOString() }]
+    // Keep last 200 entries
+    return log.slice(-200)
+  }, [data])
+
   const updateItinerary = useCallback((familyId, itinerary) => {
+    const oldItems = data.itineraries?.[familyId] || []
+    const newItems = itinerary
+
+    // Detect changes for the log
+    const familyName = (data.families || []).find(f => f.id === familyId)?.name || familyId
+    const logs = []
+
+    if (newItems.length > oldItems.length) {
+      // Find added items
+      const oldSet = new Set(oldItems.map(i => `${i.date}|${i.time}|${i.activity}`))
+      for (const item of newItems) {
+        if (!oldSet.has(`${item.date}|${item.time}|${item.activity}`)) {
+          logs.push({ type: 'added', familyId, familyName, activity: item.activity, date: item.date, time: item.time })
+        }
+      }
+    } else if (newItems.length < oldItems.length) {
+      // Find removed items
+      const newSet = new Set(newItems.map(i => `${i.date}|${i.time}|${i.activity}`))
+      for (const item of oldItems) {
+        if (!newSet.has(`${item.date}|${item.time}|${item.activity}`)) {
+          logs.push({ type: 'deleted', familyId, familyName, activity: item.activity, date: item.date, time: item.time })
+        }
+      }
+    } else {
+      // Same length — check for edits
+      for (let i = 0; i < newItems.length; i++) {
+        const o = oldItems[i]
+        const n = newItems[i]
+        if (o && (o.activity !== n.activity || o.time !== n.time || o.date !== n.date || o.location !== n.location)) {
+          logs.push({ type: 'edited', familyId, familyName, activity: n.activity, oldActivity: o.activity, date: n.date, time: n.time })
+        }
+      }
+    }
+
+    let activityLog = data.activityLog || []
+    for (const entry of logs) {
+      activityLog = [...activityLog, { ...entry, id: Date.now() + Math.random(), timestamp: new Date().toISOString() }]
+    }
+    activityLog = activityLog.slice(-200)
+
     const updated = {
       ...data,
       itineraries: { ...data.itineraries, [familyId]: itinerary },
+      activityLog,
     }
     setData(updated)
     persist(updated)
