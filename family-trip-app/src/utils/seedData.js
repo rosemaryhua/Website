@@ -82,29 +82,27 @@ export const SEED_ITINERARIES = {
     // Tuesday Mar 31
     { date: '2026-03-31', time: '04:05', activity: 'DeAragon Family arrival (UA 853)', location: 'Taoyuan Airport', notes: '' },
     { date: '2026-03-31', time: '05:00', activity: 'Check-in at Kimpton Da An Hotel', location: 'Kimpton Da An Hotel, Taipei', notes: 'Free bike rental, complimentary breakfast 7-10am', lat: '25.0416', lng: '121.5437' },
-    { date: '2026-03-31', time: '05:30', activity: 'Fu Hang Soy Milk (opens 5:30am)', location: '', notes: 'Alt: Ruian Soy Milk shop (24/7)', lat: '25.0441', lng: '121.5249' },
-    { date: '2026-03-31', time: '11:30', activity: 'Chiao Hu Wonderland', location: '', notes: '11:30 AM – 6:00 PM', lat: '25.0617', lng: '121.3614' },
-    { date: '2026-03-31', time: '14:00', activity: 'Huashan 1914 Creative Park', location: 'Huashan 1914 Creative Park', notes: '', lat: '25.044', lng: '121.5294' },
-    { date: '2026-03-31', time: '16:00', activity: 'Taipei 101', location: 'Taipei 101', notes: '', lat: '25.0339', lng: '121.5644' },
+    { date: '2026-03-31', time: '', activity: 'Taoyuan??', location: '', notes: '' },
+    { date: '2026-03-31', time: '11:30', activity: 'Chiao Hu Wonderland', location: '', notes: 'Hours: 11:30 AM – 6:00 PM', lat: '25.0617', lng: '121.3614' },
 
     // Wednesday Apr 1
-    { date: '2026-04-01', time: '09:00', activity: 'Taipei Zoo', location: 'Taipei Zoo', notes: '', lat: '24.9983', lng: '121.581' },
-    { date: '2026-04-01', time: '12:00', activity: 'Maokong Gondola', location: 'Maokong', notes: '', lat: '24.9983', lng: '121.5796' },
-    { date: '2026-04-01', time: '15:00', activity: 'Return to hotel, rest', location: 'Kimpton Da An Hotel', notes: '', lat: '25.0416', lng: '121.5437' },
-    { date: '2026-04-01', time: '18:00', activity: 'Rao He Night Market', location: 'Raohe Night Market', notes: '', lat: '25.0501', lng: '121.5744' },
+    { date: '2026-04-01', time: '10:00', activity: 'Kuo Yuan Ye Pastry Museum DIY', location: 'Kuo Yuan Ye Pastry Museum', notes: 'DeAragons, Huas, Wongs bought tix', lat: '25.0919', lng: '121.5265' },
+    { date: '2026-04-01', time: '13:00', activity: 'Taipei Children\'s Amusement Park', location: 'Taipei Children\'s Amusement Park', notes: '', lat: '25.0969', lng: '121.5146' },
+    { date: '2026-04-01', time: '15:00', activity: 'Le Hair Salon?', location: '', notes: '' },
+    { date: '2026-04-01', time: '18:00', activity: 'Dinner at Sunrise Buffet', location: 'Sunrise Buffet', notes: '' },
 
     // Thursday Apr 2
-    { date: '2026-04-02', time: '10:00', activity: 'Kuo Yuan Ye Pastry Museum DIY', location: 'Kuo Yuan Ye Pastry Museum', notes: 'DeAragons, Huas, Wongs bought tix already', lat: '25.0919', lng: '121.5265' },
-    { date: '2026-04-02', time: '13:00', activity: 'Taipei Children\'s Amusement Park', location: 'Taipei Children\'s Amusement Park', notes: '' },
-    { date: '2026-04-02', time: '18:00', activity: 'Dinner at Sunrise Buffet', location: 'Sunrise Buffet', notes: '' },
+    { date: '2026-04-02', time: '', activity: 'Huashan 1914 Creative Park', location: 'Huashan 1914 Creative Park', notes: '', lat: '25.044', lng: '121.5294' },
+    { date: '2026-04-02', time: '', activity: 'Taipei 101', location: 'Taipei 101', notes: '', lat: '25.0339', lng: '121.5644' },
+    { date: '2026-04-02', time: '', activity: 'Keelung day trip', location: 'Keelung', notes: '' },
 
     // Friday Apr 3
-    { date: '2026-04-03', time: '10:00', activity: 'Walking distance beef noodle brunch', location: 'Near hotel', notes: '' },
-    { date: '2026-04-03', time: '12:00', activity: 'Keelung day trip', location: 'Keelung', notes: '' },
+    { date: '2026-04-03', time: '11:30', activity: 'Brunch at Mr. Tree Station Daan with Agnes/Millie', location: 'Mr. Tree Station, Daan', notes: '', lat: '25.0294', lng: '121.5473' },
+    { date: '2026-04-03', time: '13:00', activity: 'Taipei Zoo', location: 'Taipei Zoo', notes: '', lat: '24.9983', lng: '121.581' },
+    { date: '2026-04-03', time: '15:00', activity: 'Maokong Gondola', location: 'Maokong', notes: '', lat: '24.9983', lng: '121.5796' },
 
     // Saturday Apr 4 (Cousin day)
-    { date: '2026-04-04', time: '11:30', activity: 'Brunch at Mr. Tree Station Daan with cousin', location: 'Mr. Tree Station, Daan', notes: '', lat: '25.0294', lng: '121.5473' },
-    { date: '2026-04-04', time: '13:00', activity: 'Laser tag & BBQ', location: '', notes: '' },
+    { date: '2026-04-04', time: '', activity: 'Laser tag & BBQ', location: '', notes: '' },
 
     // Sunday Apr 5
     { date: '2026-04-05', time: '09:00', activity: 'Easter Mass (+ egg hunt)', location: '', notes: '' },
