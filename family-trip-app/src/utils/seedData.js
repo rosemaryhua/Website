@@ -260,6 +260,30 @@ export const SEED_ITINERARIES = {
     // Kim Family — Fri 4/17
     { date: '2026-04-17', time: '', activity: 'Flight ICN → SFO', location: 'Incheon Airport', notes: '', lat: '37.4602', lng: '126.4407' },
   ],
+
+  family5: [
+    // Rosemary's Work Schedule — Apr 7-9, Apr 15
+
+    // Tuesday Apr 7
+    { date: '2026-04-07', time: '10:00', activity: 'Webinar Shooting: Retail&CPG (10:00-10:40), Travel&Hospitality (10:50-11:30)', location: 'Snowflake Office', notes: 'By Cordell Carmody, Soo Lee' },
+    { date: '2026-04-07', time: '12:00', activity: 'Lunch w/ MKTG Team', location: '', notes: '' },
+    { date: '2026-04-07', time: '14:00', activity: 'Move w/ Sanghyo Lee', location: '', notes: '' },
+    { date: '2026-04-07', time: '15:00', activity: 'Lotte Shopping Customer Meeting', location: '', notes: 'With CEO (1hr incl Q&A): CEO + C-level (Platform/AI Director, Marketing Director, Platform Dev Director). AI Agent use cases in Retail, Agentic commerce, CRM use cases on Snowflake. With working level team (30-40min): A2A Protocol Roadmap. SE Junyun supports technical Q&A.' },
+
+    // Wednesday Apr 8
+    { date: '2026-04-08', time: '09:00', activity: 'Move', location: '', notes: '' },
+    { date: '2026-04-08', time: '10:00', activity: '[Placeholder] AmorePacific', location: '', notes: 'Not confirmed yet' },
+    { date: '2026-04-08', time: '13:00', activity: 'Move w/ Sanghyo Lee', location: '', notes: '' },
+    { date: '2026-04-08', time: '14:00', activity: 'CJ Foodville Customer Meeting', location: '', notes: 'CIO, Team Leader. AI Agent use cases in Retail (SKO presentation), A2A Protocol Roadmap + Agentic commerce, CRM use cases on Snowflake.' },
+    { date: '2026-04-08', time: '18:00', activity: 'Team Dinner (Korean BBQ)', location: '', notes: '' },
+
+    // Thursday Apr 9
+    { date: '2026-04-09', time: '12:00', activity: 'Rose & Cordell Lunch w/ Tom', location: '', notes: '' },
+    { date: '2026-04-09', time: '16:30', activity: 'Retail&CPG Customers Meetup', location: '', notes: 'Target: 15-20 persons. (16:30-17:00) Registration & Greetings. (17:00-17:10) Opening Remarks by BK Chae. (17:10-18:00) Agentic AI in Retail&CPG: Trend, Insights, Use cases, DEMO by Rosemary DeAragon & Cordell Carmody. (18:00-18:20) CoCo DEMO, Q&A by Jaehan Kim. (18:30-19:30) Networking Dinner.' },
+
+    // Tuesday Apr 15
+    { date: '2026-04-15', time: '', activity: 'Retail & CPG Customers Meetup (Japan)', location: '', notes: 'https://www.snowflake.com/events/retail-and-cpg-customers-meetup/' },
+  ],
 }
 
 export const SEED_TRIP_DATES = {

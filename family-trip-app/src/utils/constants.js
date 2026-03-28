@@ -3,6 +3,7 @@ export const FAMILIES = [
   { id: 'family2', name: 'Ku Family', color: 'family-2', emoji: '🥃' },
   { id: 'family3', name: 'Kim Family', color: 'family-3', emoji: '🥘' },
   { id: 'family4', name: 'DeAragon Family', color: 'family-4', emoji: '🍜' },
+  { id: 'family5', name: "Rosemary's Work Schedule", color: 'family-5', emoji: '💼' },
 ]
 
 export const FAMILY_COLORS = {
@@ -10,6 +11,7 @@ export const FAMILY_COLORS = {
   family2: { bg: 'bg-family-2', bgLight: 'bg-family-2-light', text: 'text-family-2', border: 'border-family-2', hex: '#10b981' },
   family3: { bg: 'bg-family-3', bgLight: 'bg-family-3-light', text: 'text-family-3', border: 'border-family-3', hex: '#f59e0b' },
   family4: { bg: 'bg-family-4', bgLight: 'bg-family-4-light', text: 'text-family-4', border: 'border-family-4', hex: '#ef4444' },
+  family5: { bg: 'bg-family-5', bgLight: 'bg-family-5-light', text: 'text-family-5', border: 'border-family-5', hex: '#8b5cf6' },
 }
 
 export const DEFAULT_TRIP_DATES = {

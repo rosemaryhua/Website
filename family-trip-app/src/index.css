@@ -9,6 +9,8 @@
   --color-family-2-light: #d1fae5;
   --color-family-3-light: #fef3c7;
   --color-family-4-light: #fee2e2;
+  --color-family-5: #8b5cf6;
+  --color-family-5-light: #ede9fe;
 }
 
 html, body, #root {
