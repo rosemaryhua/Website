@@ -147,7 +147,7 @@ function ActivityItem({ item, familyId, colors, allItems, onUpdateItinerary }) {
   )
 }
 
-function AddActivityForm({ familyId, dayStr, onUpdateItinerary, allItems, onClose }) {
+function AddActivityForm({ familyId, families, itineraries, dayStr, onUpdateItinerary, allItems, onClose }) {
   const [form, setForm] = useState({
     activity: '',
     location: '',
@@ -155,11 +155,29 @@ function AddActivityForm({ familyId, dayStr, onUpdateItinerary, allItems, onClos
     date: dayStr,
     notes: '',
   })
+  const [alsoAdd, setAlsoAdd] = useState({})
+
+  const otherFamilies = families.filter(f => f.id !== familyId)
+
+  const toggleFamily = (fId) => {
+    setAlsoAdd(prev => ({ ...prev, [fId]: !prev[fId] }))
+  }
 
   const handleAdd = () => {
     if (!form.activity.trim()) return
-    const updated = [...allItems, { ...form, activity: form.activity.trim() }]
-    onUpdateItinerary(familyId, updated)
+    const newItem = { ...form, activity: form.activity.trim() }
+
+    // Add to primary family
+    onUpdateItinerary(familyId, [...allItems, newItem])
+
+    // Add to selected other families
+    for (const f of otherFamilies) {
+      if (alsoAdd[f.id]) {
+        const theirItems = itineraries[f.id] || []
+        onUpdateItinerary(f.id, [...theirItems, newItem])
+      }
+    }
+
     onClose()
   }
 
@@ -217,6 +235,29 @@ function AddActivityForm({ familyId, dayStr, onUpdateItinerary, allItems, onClos
           className="w-full px-2 py-1.5 border rounded text-sm bg-white"
         />
       </div>
+      {/* Also add to other families */}
+      <div>
+        <label className="text-xs text-gray-500 mb-1 block">Also add to:</label>
+        <div className="flex flex-wrap gap-2">
+          {otherFamilies.map(f => {
+            const colors = FAMILY_COLORS[f.id]
+            const selected = alsoAdd[f.id]
+            return (
+              <button
+                key={f.id}
+                type="button"
+                onClick={() => toggleFamily(f.id)}
+                className={`px-2.5 py-1 rounded-full text-xs font-medium transition-all ${
+                  selected ? `${colors.bg} text-white` : `${colors.bgLight} ${colors.text}`
+                }`}
+              >
+                {f.emoji} {f.name}
+              </button>
+            )
+          })}
+        </div>
+      </div>
+
       <div className="flex gap-2 pt-1">
         <button
           onClick={handleAdd}
@@ -355,6 +396,8 @@ export default function DailySchedule({ data, onUpdateItinerary }) {
               {addingFor === family.id ? (
                 <AddActivityForm
                   familyId={family.id}
+                  families={families}
+                  itineraries={itineraries}
                   dayStr={dayStr}
                   allItems={allItems}
                   onUpdateItinerary={onUpdateItinerary}
