@@ -14,8 +14,9 @@ function formatTime(time) {
   return `${h}:${m} ${ampm}`
 }
 
-function ActivityItem({ item, familyId, colors, allItems, onUpdateItinerary }) {
+function ActivityItem({ item, familyId, colors, allItems, families, itineraries, onUpdateItinerary }) {
   const [editing, setEditing] = useState(false)
+  const [joining, setJoining] = useState(false)
   const [form, setForm] = useState({})
 
   const startEdit = () => {
@@ -128,8 +129,47 @@ function ActivityItem({ item, familyId, colors, allItems, onUpdateItinerary }) {
     )
   }
 
+  const otherFamilies = families.filter(f => f.id !== familyId)
+
+  const handleJoin = (targetFamilyId) => {
+    const theirItems = itineraries[targetFamilyId] || []
+    const newItem = { date: item.date, time: item.time, activity: item.activity, location: item.location || '', notes: item.notes || '' }
+    onUpdateItinerary(targetFamilyId, [...theirItems, newItem])
+    setJoining(false)
+  }
+
+  if (joining) {
+    return (
+      <div className="px-4 py-3 bg-purple-50 space-y-2">
+        <p className="text-sm font-medium text-gray-900">
+          Join "{item.activity}" — which family?
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {otherFamilies.map(f => {
+            const fc = FAMILY_COLORS[f.id]
+            return (
+              <button
+                key={f.id}
+                onClick={() => handleJoin(f.id)}
+                className={`px-3 py-1.5 rounded-lg text-sm font-medium ${fc.bg} text-white hover:opacity-90`}
+              >
+                {f.emoji} {f.name}
+              </button>
+            )
+          })}
+        </div>
+        <button
+          onClick={() => setJoining(false)}
+          className="text-xs text-gray-400 hover:text-gray-600"
+        >
+          Cancel
+        </button>
+      </div>
+    )
+  }
+
   return (
-    <div className="px-4 py-3 group" onClick={startEdit}>
+    <div className="px-4 py-3">
       <div className="flex items-start gap-3">
         {item.time && (
           <span className={`text-sm font-mono font-semibold ${colors.text} min-w-[70px]`}>
@@ -151,9 +191,26 @@ function ActivityItem({ item, familyId, colors, allItems, onUpdateItinerary }) {
             <p className="text-sm text-gray-400 mt-1">{item.notes}</p>
           )}
         </div>
-        <svg className="w-4 h-4 text-gray-300 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-        </svg>
+        <div className="flex gap-1 shrink-0 mt-1">
+          <button
+            onClick={(e) => { e.stopPropagation(); setJoining(true) }}
+            className="p-1 text-gray-300 hover:text-purple-500"
+            title="Join this activity"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+            </svg>
+          </button>
+          <button
+            onClick={startEdit}
+            className="p-1 text-gray-300 hover:text-gray-500"
+            title="Edit"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   )
@@ -398,6 +455,8 @@ export default function DailySchedule({ data, onUpdateItinerary }) {
                       familyId={family.id}
                       colors={colors}
                       allItems={allItems}
+                      families={families}
+                      itineraries={itineraries}
                       onUpdateItinerary={onUpdateItinerary}
                     />
                   ))}
