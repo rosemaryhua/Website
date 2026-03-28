@@ -177,13 +177,13 @@ export default function Settings({
         </div>
       </section>
 
-      {/* Import Itinerary */}
+      {/* Update Itinerary */}
       <section>
-        <h2 className="text-lg font-bold text-gray-900 mb-3">Import Itinerary</h2>
+        <h2 className="text-lg font-bold text-gray-900 mb-3">Update Itinerary</h2>
 
         {/* Family selector for import */}
         <div className="mb-3">
-          <label className="text-xs text-gray-500 mb-1 block">Import for:</label>
+          <label className="text-xs text-gray-500 mb-1 block">Update for:</label>
           <select
             value={importFamily}
             onChange={(e) => setImportFamily(e.target.value)}
