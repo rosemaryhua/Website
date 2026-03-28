@@ -139,12 +139,16 @@ export function useAppData() {
 
   const resetToDefaults = useCallback(() => {
     const fresh = defaultData()
+    // Preserve user-generated content (votes, chat, maps)
+    fresh.votes = data.votes || []
+    fresh.chat = data.chat || []
+    fresh.mapsConfig = data.mapsConfig || {}
     setData(fresh)
     saveLocalData(fresh)
     if (isConfigured) {
       set(ref(db, 'tripData'), fresh)
     }
-  }, [persist])
+  }, [data, persist])
 
   const updateSheetsConfig = useCallback((familyId, config) => {
     const updated = {
