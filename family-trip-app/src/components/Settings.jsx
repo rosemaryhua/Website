@@ -17,6 +17,7 @@ export default function Settings({
   const { fetchSheet, loading: sheetsLoading, error: sheetsError } = useGoogleSheets()
   const [importStatus, setImportStatus] = useState(null)
   const [previousItinerary, setPreviousItinerary] = useState(null) // for undo
+  const [parsing, setParsing] = useState(false)
 
   const handleFamilySave = (familyId) => {
     if (!familyName.trim()) return
@@ -53,105 +54,42 @@ export default function Settings({
     }
   }
 
-  const handlePasteImport = () => {
+  const handlePasteImport = async () => {
     if (!pasteText.trim()) return
-    const lines = pasteText.trim().split('\n')
-    const items = []
-    let currentDate = ''
+    setParsing(true)
+    setImportStatus(null)
 
-    // Month name to number mapping
-    const months = { jan:'01',feb:'02',mar:'03',apr:'04',may:'05',jun:'06',jul:'07',aug:'08',sep:'09',oct:'10',nov:'11',dec:'12',
-      january:'01',february:'02',march:'03',april:'04',june:'06',july:'07',august:'08',september:'09',october:'10',november:'11',december:'12' }
+    try {
+      const res = await fetch('/api/parse-itinerary', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: pasteText }),
+      })
 
-    const parseDate = (str) => {
-      // "April 6" or "Apr 6" or "APR 6"
-      const md = str.match(/(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w*\s+(\d{1,2})/i)
-      if (md) {
-        const m = months[md[1].toLowerCase()]
-        const d = md[2].padStart(2, '0')
-        return `2026-${m}-${d}`
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({ error: 'Request failed' }))
+        throw new Error(err.error || `Error ${res.status}`)
       }
-      // "4/6" or "04/06"
-      const sd = str.match(/(\d{1,2})\/(\d{1,2})/)
-      if (sd) return `2026-${sd[1].padStart(2,'0')}-${sd[2].padStart(2,'0')}`
-      return ''
+
+      const { items } = await res.json()
+
+      if (!items || items.length === 0) {
+        setImportStatus({ type: 'error', message: 'Could not parse any activities from the text.' })
+        setParsing(false)
+        return
+      }
+
+      const oldItems = itineraries[importFamily] || []
+      setPreviousItinerary({ familyId: importFamily, items: oldItems })
+      onUpdateItinerary(importFamily, items)
+      const fName = families.find(f => f.id === importFamily)?.name || importFamily
+      setImportStatus({ type: 'success', message: `Imported ${items.length} activities for ${fName} (replaced ${oldItems.length} previous).` })
+      setPasteText('')
+    } catch (err) {
+      setImportStatus({ type: 'error', message: `Failed to parse: ${err.message}` })
+    } finally {
+      setParsing(false)
     }
-
-    for (const raw of lines) {
-      const line = raw.trim()
-      if (!line) continue
-
-      // Skip pure section headers like "TAIPEI", "Seoul", "Accommodation:", URLs, separators
-      if (/^[⸻—─\-=]+$/.test(line)) continue
-      if (/^https?:\/\//.test(line)) continue
-      if (/^(taipei|seoul|busan|gyeongju|accommodation|dates:|spas)/i.test(line)) continue
-
-      // Detect day headers: "DAY 1 — March 30 Monday", "DAY 3 — April 1 Wednesday", etc.
-      const dayHeader = line.match(/DAY\s+\d+\s*[—\-–]\s*(.+)/i) ||
-        line.match(/^((?:mon|tue|wed|thu|fri|sat|sun)\w*)\s+((?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w*\s+\d{1,2})/i) ||
-        line.match(/^((?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w*\s+\d{1,2})\s/i)
-      if (dayHeader) {
-        const dateStr = dayHeader[1] || dayHeader[0]
-        const parsed = parseDate(dateStr)
-        if (parsed) currentDate = parsed
-        // Check if there's also an activity on this line after the date
-        const afterDate = line.replace(/DAY\s+\d+\s*[—\-–]\s*/i, '').replace(/^(mon|tue|wed|thu|fri|sat|sun)\w*\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w*\s+\d{1,2}\s*/i, '').trim()
-        if (!afterDate || /^(mon|tue|wed|thu|fri|sat|sun)/i.test(afterDate)) continue
-      }
-
-      // Pipe or tab separated: "date | time | activity | location"
-      const parts = line.split(/[|\t]/).map(s => s.trim()).filter(Boolean)
-      if (parts.length >= 3) {
-        const d = parseDate(parts[0]) || currentDate
-        items.push({ date: d, time: parts[1], activity: parts[2], location: parts[3] || '', notes: parts[4] || '' })
-        continue
-      }
-
-      // Bullet point line: "* 10:00 Activity name" or "* Activity name"
-      const bullet = line.replace(/^[*•\-]\s*/, '')
-      if (bullet === line && !dayHeader) {
-        // Not a bullet, not a day header — check if it's a time-prefixed line
-        const timeLine = line.match(/^(\d{1,2}:\d{2})\s*[-:]\s*(.+)/)
-        if (timeLine) {
-          items.push({ date: currentDate, time: timeLine[1], activity: timeLine[2].trim(), location: '', notes: '' })
-          continue
-        }
-        // Skip lines that don't look like activities (sub-items, notes, etc.)
-        if (/^\s{4,}/.test(raw)) continue
-        if (!line) continue
-      }
-
-      // Parse time from bullet: "10:00: Activity" or "10:00 - 11:00: Activity" or just "Activity"
-      const timeActivity = bullet.match(/^(\d{1,2}:\d{2})(?:\s*[-–]\s*\d{1,2}:\d{2})?\s*[:]\s*(.+)/) ||
-        bullet.match(/^(\d{1,2}:\d{2})(?:\s*[-–]\s*\d{1,2}:\d{2})?\s+(.+)/)
-      if (timeActivity) {
-        const activity = timeActivity[2].trim()
-        if (activity) {
-          items.push({ date: currentDate, time: timeActivity[1], activity, location: '', notes: '' })
-        }
-        continue
-      }
-
-      // Bullet with no time
-      if (bullet && bullet !== line) {
-        // Skip indented sub-items (notes under an activity)
-        if (/^\s{4,}/.test(raw)) continue
-        items.push({ date: currentDate, time: '', activity: bullet.trim(), location: '', notes: '' })
-        continue
-      }
-    }
-
-    if (items.length === 0) {
-      setImportStatus({ type: 'error', message: 'Could not parse any activities from the text. Try using bullet points (* Activity name) with day headers (DAY 1 — April 6).' })
-      return
-    }
-
-    const oldItems = itineraries[importFamily] || []
-    setPreviousItinerary({ familyId: importFamily, items: oldItems })
-    onUpdateItinerary(importFamily, items)
-    const fName = families.find(f => f.id === importFamily)?.name || importFamily
-    setImportStatus({ type: 'success', message: `Imported ${items.length} activities for ${fName} (replaced ${oldItems.length} previous).` })
-    setPasteText('')
   }
 
   return (
@@ -309,10 +247,10 @@ export default function Settings({
             />
             <button
               onClick={handlePasteImport}
-              disabled={!pasteText.trim()}
+              disabled={!pasteText.trim() || parsing}
               className="w-full py-2.5 bg-blue-600 text-white rounded-lg text-sm font-medium disabled:opacity-50 hover:bg-blue-700"
             >
-              Import from Text
+              {parsing ? 'Parsing with AI...' : 'Import from Text'}
             </button>
           </div>
         )}
