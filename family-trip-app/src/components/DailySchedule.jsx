@@ -2,6 +2,18 @@ import { useState, useMemo } from 'react'
 import { format, parseISO, eachDayOfInterval, isValid } from 'date-fns'
 import { FAMILY_COLORS } from '../utils/constants'
 
+function formatTime(time) {
+  if (!time) return ''
+  const match = time.match(/^(\d{1,2}):(\d{2})/)
+  if (!match) return time
+  let h = parseInt(match[1])
+  const m = match[2]
+  const ampm = h >= 12 ? 'PM' : 'AM'
+  if (h === 0) h = 12
+  else if (h > 12) h -= 12
+  return `${h}:${m} ${ampm}`
+}
+
 function ActivityItem({ item, familyId, colors, allItems, onUpdateItinerary }) {
   const [editing, setEditing] = useState(false)
   const [form, setForm] = useState({})
@@ -120,8 +132,8 @@ function ActivityItem({ item, familyId, colors, allItems, onUpdateItinerary }) {
     <div className="px-4 py-3 group" onClick={startEdit}>
       <div className="flex items-start gap-3">
         {item.time && (
-          <span className={`text-sm font-mono font-semibold ${colors.text} min-w-[55px]`}>
-            {item.time}
+          <span className={`text-sm font-mono font-semibold ${colors.text} min-w-[70px]`}>
+            {formatTime(item.time)}
           </span>
         )}
         <div className="flex-1 min-w-0">
