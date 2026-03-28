@@ -310,16 +310,18 @@ export default function Settings({
 
       {/* Reset Data */}
       <section>
+        <p className="text-xs text-gray-500 mb-2 text-center">
+          Having trouble seeing the latest updates? Try resetting below. This will restore the original schedule and remove any manual edits.
+        </p>
         <button
           onClick={() => {
             onResetToDefaults()
             window.location.reload()
           }}
-          className="w-full py-2.5 bg-red-50 text-red-600 rounded-lg text-sm font-medium hover:bg-red-100 border border-red-200"
+          className="w-full py-2.5 bg-gray-100 text-gray-600 rounded-lg text-sm font-medium hover:bg-gray-200 border border-gray-200"
         >
-          Reset to Latest Itineraries
+          Restore Original Schedule
         </button>
-        <p className="text-xs text-gray-400 mt-1 text-center">Clears cached data and reloads the latest schedule</p>
       </section>
 
       <div className="h-4" />
