@@ -137,6 +137,15 @@ export function useAppData() {
     persist(updated)
   }, [data, persist])
 
+  const resetToDefaults = useCallback(() => {
+    const fresh = defaultData()
+    setData(fresh)
+    saveLocalData(fresh)
+    if (isConfigured) {
+      set(ref(db, 'tripData'), fresh)
+    }
+  }, [persist])
+
   const updateSheetsConfig = useCallback((familyId, config) => {
     const updated = {
       ...data,
@@ -159,6 +168,7 @@ export function useAppData() {
     data,
     connected,
     isConfigured,
+    resetToDefaults,
     updateFamilies,
     updateTripDates,
     updateItinerary,

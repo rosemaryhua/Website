@@ -3,7 +3,7 @@ import { FAMILY_COLORS } from '../utils/constants'
 import { useGoogleSheets } from '../hooks/useGoogleSheets'
 
 export default function Settings({
-  data,
+  data, onResetToDefaults,
   onUpdateFamilies, onUpdateTripDates, onUpdateItinerary, onUpdateSheetsConfig,
 }) {
   const { families = [], tripDates = {}, sheetsConfig = {}, itineraries = {} } = data
@@ -312,7 +312,7 @@ export default function Settings({
       <section>
         <button
           onClick={() => {
-            localStorage.clear()
+            onResetToDefaults()
             window.location.reload()
           }}
           className="w-full py-2.5 bg-red-50 text-red-600 rounded-lg text-sm font-medium hover:bg-red-100 border border-red-200"
