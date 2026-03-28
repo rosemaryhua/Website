@@ -5,7 +5,7 @@ import { SEED_ITINERARIES, SEED_TRIP_DATES } from '../utils/seedData'
 
 const LOCAL_KEY = 'familyTripData'
 const DATA_VERSION_KEY = 'familyTripDataVersion'
-const CURRENT_VERSION = 3 // bump this to force a refresh of seed data
+const CURRENT_VERSION = 4 // bump this to force a refresh of seed data
 
 function getLocalData() {
   try {
