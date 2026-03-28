@@ -14,7 +14,7 @@ const tabs = [
   { path: '/chat', label: 'Concierge', icon: ChatIcon },
   { path: '/vote', label: 'Vote', icon: VoteIcon },
   { path: '/log', label: 'Log', icon: LogIcon },
-  { path: '/settings', label: 'Settings', icon: SettingsIcon },
+  { path: '/settings', label: 'Update', icon: SettingsIcon },
 ]
 
 const TRIP_PASSWORD = 'korea2026'
