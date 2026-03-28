@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import { format, parseISO, eachDayOfInterval, isValid } from 'date-fns'
 import { FAMILY_COLORS } from '../utils/constants'
 
-function ActivityItem({ item, index, familyId, colors, allItems, onUpdateItinerary }) {
+function ActivityItem({ item, familyId, colors, allItems, onUpdateItinerary }) {
   const [editing, setEditing] = useState(false)
   const [form, setForm] = useState({})
 
@@ -17,18 +17,25 @@ function ActivityItem({ item, index, familyId, colors, allItems, onUpdateItinera
     setEditing(true)
   }
 
-  const handleSave = () => {
-    const itemIndex = allItems.findIndex(a =>
+  const findItemIndex = () =>
+    allItems.findIndex(a =>
       a.date === item.date && a.time === item.time && a.activity === item.activity && a.location === item.location
     )
-    if (itemIndex === -1) return
+
+  const handleSave = () => {
+    const idx = findItemIndex()
+    if (idx === -1) return
     const updated = [...allItems]
-    updated[itemIndex] = { ...updated[itemIndex], ...form }
+    updated[idx] = { ...updated[idx], ...form }
     onUpdateItinerary(familyId, updated)
     setEditing(false)
   }
 
-  const handleCancel = () => {
+  const handleDelete = () => {
+    const idx = findItemIndex()
+    if (idx === -1) return
+    const updated = allItems.filter((_, i) => i !== idx)
+    onUpdateItinerary(familyId, updated)
     setEditing(false)
   }
 
@@ -85,7 +92,7 @@ function ActivityItem({ item, index, familyId, colors, allItems, onUpdateItinera
             className="w-full px-2 py-1.5 border rounded text-sm bg-white"
           />
         </div>
-        <div className="flex gap-2 pt-1">
+        <div className="flex items-center gap-2 pt-1">
           <button
             onClick={handleSave}
             className="px-4 py-1.5 bg-green-600 text-white rounded-lg text-sm font-medium"
@@ -93,10 +100,16 @@ function ActivityItem({ item, index, familyId, colors, allItems, onUpdateItinera
             Confirm
           </button>
           <button
-            onClick={handleCancel}
+            onClick={() => setEditing(false)}
             className="px-4 py-1.5 bg-gray-200 text-gray-700 rounded-lg text-sm"
           >
             Cancel
+          </button>
+          <button
+            onClick={handleDelete}
+            className="ml-auto text-xs text-red-400 hover:text-red-600"
+          >
+            Delete
           </button>
         </div>
       </div>
@@ -134,6 +147,95 @@ function ActivityItem({ item, index, familyId, colors, allItems, onUpdateItinera
   )
 }
 
+function AddActivityForm({ familyId, dayStr, onUpdateItinerary, allItems, onClose }) {
+  const [form, setForm] = useState({
+    activity: '',
+    location: '',
+    time: '',
+    date: dayStr,
+    notes: '',
+  })
+
+  const handleAdd = () => {
+    if (!form.activity.trim()) return
+    const updated = [...allItems, { ...form, activity: form.activity.trim() }]
+    onUpdateItinerary(familyId, updated)
+    onClose()
+  }
+
+  return (
+    <div className="px-3 py-3 bg-blue-50 space-y-2 border-t border-blue-100">
+      <div>
+        <label className="text-xs text-gray-500">Activity</label>
+        <input
+          type="text"
+          value={form.activity}
+          onChange={(e) => setForm({ ...form, activity: e.target.value })}
+          placeholder="What's the plan?"
+          className="w-full px-2 py-1.5 border rounded text-sm bg-white"
+          autoFocus
+        />
+      </div>
+      <div>
+        <label className="text-xs text-gray-500">Location</label>
+        <input
+          type="text"
+          value={form.location}
+          onChange={(e) => setForm({ ...form, location: e.target.value })}
+          placeholder="Optional"
+          className="w-full px-2 py-1.5 border rounded text-sm bg-white"
+        />
+      </div>
+      <div className="flex gap-2">
+        <div className="flex-1">
+          <label className="text-xs text-gray-500">Date</label>
+          <input
+            type="date"
+            value={form.date}
+            onChange={(e) => setForm({ ...form, date: e.target.value })}
+            className="w-full px-2 py-1.5 border rounded text-sm bg-white"
+          />
+        </div>
+        <div className="w-24">
+          <label className="text-xs text-gray-500">Time</label>
+          <input
+            type="text"
+            value={form.time}
+            onChange={(e) => setForm({ ...form, time: e.target.value })}
+            placeholder="09:00"
+            className="w-full px-2 py-1.5 border rounded text-sm bg-white"
+          />
+        </div>
+      </div>
+      <div>
+        <label className="text-xs text-gray-500">Notes</label>
+        <input
+          type="text"
+          value={form.notes}
+          onChange={(e) => setForm({ ...form, notes: e.target.value })}
+          placeholder="Optional"
+          className="w-full px-2 py-1.5 border rounded text-sm bg-white"
+        />
+      </div>
+      <div className="flex gap-2 pt-1">
+        <button
+          onClick={handleAdd}
+          disabled={!form.activity.trim()}
+          className="px-4 py-1.5 bg-blue-600 text-white rounded-lg text-sm font-medium disabled:opacity-50"
+        >
+          Add
+        </button>
+        <button
+          onClick={onClose}
+          className="px-4 py-1.5 bg-gray-200 text-gray-700 rounded-lg text-sm"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  )
+}
+
 export default function DailySchedule({ data, onUpdateItinerary }) {
   const { families = [], itineraries = {}, tripDates = {} } = data
 
@@ -149,6 +251,7 @@ export default function DailySchedule({ data, onUpdateItinerary }) {
   }, [tripDates])
 
   const [selectedDay, setSelectedDay] = useState(0)
+  const [addingFor, setAddingFor] = useState(null) // familyId or null
   const currentDay = days[selectedDay]
 
   const activitiesForDay = useMemo(() => {
@@ -180,6 +283,8 @@ export default function DailySchedule({ data, onUpdateItinerary }) {
     )
   }
 
+  const dayStr = currentDay ? format(currentDay, 'yyyy-MM-dd') : ''
+
   return (
     <div className="flex flex-col h-full">
       {/* Day selector - horizontal scroll */}
@@ -187,7 +292,7 @@ export default function DailySchedule({ data, onUpdateItinerary }) {
         {days.map((day, i) => (
           <button
             key={i}
-            onClick={() => setSelectedDay(i)}
+            onClick={() => { setSelectedDay(i); setAddingFor(null) }}
             className={`flex flex-col items-center px-3 py-2 rounded-xl min-w-[60px] transition-all ${
               i === selectedDay
                 ? 'bg-blue-600 text-white shadow-md'
@@ -225,17 +330,18 @@ export default function DailySchedule({ data, onUpdateItinerary }) {
                 </span>
               </div>
 
-              {activities.length === 0 ? (
+              {activities.length === 0 && addingFor !== family.id && (
                 <div className="px-4 py-3 text-gray-400 text-sm italic">
                   No activities scheduled
                 </div>
-              ) : (
+              )}
+
+              {activities.length > 0 && (
                 <div className="divide-y divide-gray-100">
                   {activities.map((item, i) => (
                     <ActivityItem
                       key={`${item.date}-${item.time}-${i}`}
                       item={item}
-                      index={i}
                       familyId={family.id}
                       colors={colors}
                       allItems={allItems}
@@ -243,6 +349,24 @@ export default function DailySchedule({ data, onUpdateItinerary }) {
                     />
                   ))}
                 </div>
+              )}
+
+              {/* Add activity form or button */}
+              {addingFor === family.id ? (
+                <AddActivityForm
+                  familyId={family.id}
+                  dayStr={dayStr}
+                  allItems={allItems}
+                  onUpdateItinerary={onUpdateItinerary}
+                  onClose={() => setAddingFor(null)}
+                />
+              ) : (
+                <button
+                  onClick={() => setAddingFor(family.id)}
+                  className={`w-full px-4 py-2 text-sm ${colors.text} hover:bg-gray-50 transition-colors border-t border-gray-100`}
+                >
+                  + Add activity
+                </button>
               )}
             </div>
           )
